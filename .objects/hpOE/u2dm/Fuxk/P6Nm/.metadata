@@ -1,0 +1,16 @@
+﻿{
+  "Name": "AllVesselTabLeftPanel",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "P6Nm7JcO3kCmi7zB80suUw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/P6Nm7JcO3kCmi7zB80suUw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-03-06T04:15:03.0690765Z",
+  "Updated": "2024-03-06T04:16:08.0403988Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

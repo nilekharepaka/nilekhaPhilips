@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lBSghBMv20ejcMIhDlpfnA" Reference="_D5NUh_b5Em3iyA_6q7ZHw/egJPL_xMfEW2RfiUScwEtg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="vZIfwWQy5kq5f5GwofY3tA" DesignTimeRectangle="268, 235, 17, 17" DesignTimeScaleFactor="1" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl src='*layouts/DLS_Layout*' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl src='*layouts/DLS_Layout*' tag='IMG' type='' class='pt-image pt-image-left dls-icon' aaname='' /&gt;" Guid="a29742f6-91fe-4001-b743-e94b34dc9e83" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABUAAAAVCAYAAACpF6WWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAB1SURBVDhP7ZSxDcAgDASzCtSkJzWpYSGyEAOxjskjEdlKSlAaF9cc5srfjLE0m7VR53aKMQngvT+EC+HsPiV5i/+j9URxVGsVwOd8CVdK6Z47gP+jpVGN3mj0dQivUeH+j2IP8cCBx55yx/eU87mnM1kQtdQAnvEGvT9I50QAAAAASUVORK5CYII=" Reference="_D5NUh_b5Em3iyA_6q7ZHw/egJPL_xMfEW2RfiUScwEtg" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="eaee981fa456eed12dc193219c42ffcf.png" xmlns="">0Z7mpvolBrUOozmoVEg8dCQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

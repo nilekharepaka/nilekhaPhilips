@@ -1,0 +1,17 @@
+﻿{
+  "Name": "LeftPanelMeasurementsHeaderLabel",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "WEVUwbW90EK7xY53_GVm7w",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/WEVUwbW90EK7xY53_GVm7w",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-14T17:23:32.8421568Z",
+  "Updated": "2024-02-14T17:32:54.7623166Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

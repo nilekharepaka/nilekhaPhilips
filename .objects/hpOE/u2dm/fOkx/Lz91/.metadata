@@ -1,0 +1,17 @@
+﻿{
+  "Name": "ViewmodeButton",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "Lz91kVkj5k-UL58BUXzFHA",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/Lz91kVkj5k-UL58BUXzFHA",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/fOkxFK_x2UyFhKyF61sQbg",
+  "Created": "2024-01-22T10:17:19.621341Z",
+  "Updated": "2024-01-22T10:18:39.6267673Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

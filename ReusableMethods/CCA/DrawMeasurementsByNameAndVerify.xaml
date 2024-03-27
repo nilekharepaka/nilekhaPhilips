@@ -1,0 +1,997 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="DrawMeasurementsByNameAndVerify" this:DrawMeasurementsByNameAndVerify.ViewportIndex="1" this:DrawMeasurementsByNameAndVerify.browser="chrome" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="InputElement" Type="InArgument(ui:UiElement)" />
+    <x:Property Name="SelectOption" Type="InArgument(x:String)" />
+    <x:Property Name="SelectSubOption" Type="InArgument(x:String)" />
+    <x:Property Name="DrawStatus" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="ViewportIndex" Type="InArgument(x:String)" />
+    <x:Property Name="browser" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:DrawMeasurementsByNameAndVerify.InputElement>
+    <InArgument x:TypeArguments="ui:UiElement" />
+  </this:DrawMeasurementsByNameAndVerify.InputElement>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>645,2705</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>AVApps_CT_Cardiac_Sanity.Core</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="DrawMeasurementsByNameAndVerify" sap:VirtualizedContainerService.HintSize="655,2640" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="593,2529" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="73403c91-20ff-456b-8462-634ec1f44bc9" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="559,2392" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:UiElement" Name="ViewportElement" />
+              <Variable x:TypeArguments="x:String" Name="MeasurementFound" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'CCAViewPortWithIndex'" HighlightTime="0.1" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NHighlight_1" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9" Version="V3">
+              <uix:NHighlight.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">ViewportElement</CSharpReference>
+                </OutArgument>
+              </uix:NHighlight.OutUiElement>
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\SelectOptionsAndSuboptionsFromRightClickDropdown.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="497,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\SelectOptionsAndSuboptionsFromRightClickDropdown.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputEmelent">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">InputElement</CSharpValue>
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="OptionToSelect">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">SelectOption</CSharpValue>
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="SubOptionToSelect">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">SelectSubOption</CSharpValue>
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="ViewportIndex">1</InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="ModeDetails" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <Switch x:TypeArguments="x:String" DisplayName="Switch" sap:VirtualizedContainerService.HintSize="497,1805" sap2010:WorkflowViewState.IdRef="Switch`1_2">
+              <Switch.Default>
+                <Sequence sap:VirtualizedContainerService.HintSize="496,380" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_2">
+                    <ui:LogMessage.Level>
+                      <InArgument x:TypeArguments="ui:LogLevel">
+                        <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">UiPath.Core.Activities.LogLevel.Error</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Level>
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">"no match"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">DrawStatus</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                    </Assign.Value>
+                  </Assign>
+                </Sequence>
+              </Switch.Default>
+              <Switch.Expression>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">SelectSubOption</CSharpValue>
+                </InArgument>
+              </Switch.Expression>
+              <Sequence x:Key="Line" sap:VirtualizedContainerService.HintSize="450,1268" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Down" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="83fff606-d9db-4030-84e2-df36a55b8756">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-50" Y="-40" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover CursorMotionType="Smooth" DisplayName="Hover" sap:VirtualizedContainerService.HintSize="388,137" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_1" Version="V3">
+                  <uix:NHover.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NHover.InUiElement>
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="e53f1101-d490-406f-b4df-998f29b5a041">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NClick ActivateBefore="True" ClickType="Up" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Double" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover DisplayName="Hover 'TaskGuidanceLeftPanelLabel'" sap:VirtualizedContainerService.HintSize="388,157" HoverTime="2" sap2010:WorkflowViewState.IdRef="NHover_3" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9">
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="OsPEpI0Ruk66jKJWG2BYVg" DesignTimeRectangle="10, 220, 108, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'TaskGuidanceLeftPanelLabel'" FullSelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' /&gt;" FuzzySelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' type='' check:text='Task Guidance' /&gt;" Guid="0c13cc10-d45c-46a5-96f4-f915afa69491"   InformativeScreenshot="deac78f82e2ce1e6a4549c50542229b4.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/T7ixZcKxdEmwD53AKVxMmA" ScopeSelectorArgument="&lt;html app='*.exe' title='*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NInjectJsScript DisplayName="Inject Js Script 'CCAViewPortWithIndex'" ExecutionWorld="Page" sap:VirtualizedContainerService.HintSize="388,248" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9" ScriptCode="ReusableMethods\\Scripts\\CheckForMeasurementAnnotatorsByName.js" Version="V3">
+                  <uix:NInjectJsScript.InputParameter>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">SelectSubOption</CSharpValue>
+                    </InArgument>
+                  </uix:NInjectJsScript.InputParameter>
+                  <uix:NInjectJsScript.ScriptOutput>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">MeasurementFound</CSharpReference>
+                    </OutArgument>
+                  </uix:NInjectJsScript.ScriptOutput>
+                  <uix:NInjectJsScript.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                      <uix:TargetAnchorable.FullSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.FullSelectorArgument>
+                      <uix:TargetAnchorable.ScopeSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.ScopeSelectorArgument>
+                    </uix:TargetAnchorable>
+                  </uix:NInjectJsScript.Target>
+                </uix:NInjectJsScript>
+              </Sequence>
+              <Sequence x:Key="Circle*" sap:VirtualizedContainerService.HintSize="450,1268" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Down" CursorMotionType="Smooth" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="83fff606-d9db-4030-84e2-df36a55b8756">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-50" Y="-40" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover CursorMotionType="Smooth" DisplayName="Hover" sap:VirtualizedContainerService.HintSize="388,137" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_4" Version="V3">
+                  <uix:NHover.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NHover.InUiElement>
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="e53f1101-d490-406f-b4df-998f29b5a041">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NClick ActivateBefore="True" ClickType="Up" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Double" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover DisplayName="Hover 'TaskGuidanceLeftPanelLabel'" sap:VirtualizedContainerService.HintSize="388,157" HoverTime="2" sap2010:WorkflowViewState.IdRef="NHover_6" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9">
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="OsPEpI0Ruk66jKJWG2BYVg" DesignTimeRectangle="10, 220, 108, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'TaskGuidanceLeftPanelLabel'" FullSelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' /&gt;" FuzzySelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' type='' check:text='Task Guidance' /&gt;" Guid="0c13cc10-d45c-46a5-96f4-f915afa69491"   InformativeScreenshot="deac78f82e2ce1e6a4549c50542229b4.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/T7ixZcKxdEmwD53AKVxMmA" ScopeSelectorArgument="&lt;html app='*.exe' title='*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NInjectJsScript DisplayName="Inject Js Script 'CCAViewPortWithIndex'" ExecutionWorld="Page" sap:VirtualizedContainerService.HintSize="388,248" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9" ScriptCode="ReusableMethods\\Scripts\\CheckForMeasurementAnnotatorsByName.js" Version="V3">
+                  <uix:NInjectJsScript.InputParameter>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">SelectSubOption</CSharpValue>
+                    </InArgument>
+                  </uix:NInjectJsScript.InputParameter>
+                  <uix:NInjectJsScript.ScriptOutput>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">MeasurementFound</CSharpReference>
+                    </OutArgument>
+                  </uix:NInjectJsScript.ScriptOutput>
+                  <uix:NInjectJsScript.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                      <uix:TargetAnchorable.FullSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.FullSelectorArgument>
+                      <uix:TargetAnchorable.ScopeSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.ScopeSelectorArgument>
+                    </uix:TargetAnchorable>
+                  </uix:NInjectJsScript.Target>
+                </uix:NInjectJsScript>
+              </Sequence>
+              <Sequence x:Key="Smooth Polyline" sap:VirtualizedContainerService.HintSize="450,1622" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="83fff606-d9db-4030-84e2-df36a55b8756">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-50" Y="-40" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover CursorMotionType="Smooth" DisplayName="Hover" sap:VirtualizedContainerService.HintSize="388,137" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_5" Version="V3">
+                  <uix:NHover.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NHover.InUiElement>
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="e53f1101-d490-406f-b4df-998f29b5a041">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover CursorMotionType="Smooth" DisplayName="Hover" sap:VirtualizedContainerService.HintSize="388,137" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_16" Version="V3">
+                  <uix:NHover.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NHover.InUiElement>
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="e53f1101-d490-406f-b4df-998f29b5a041">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-70" Y="-80" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-70" Y="-80" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Double" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-70" Y="-80" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover DisplayName="Hover 'TaskGuidanceLeftPanelLabel'" sap:VirtualizedContainerService.HintSize="388,157" HoverTime="2" sap2010:WorkflowViewState.IdRef="NHover_7" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9">
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="OsPEpI0Ruk66jKJWG2BYVg" DesignTimeRectangle="10, 220, 108, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'TaskGuidanceLeftPanelLabel'" FullSelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' /&gt;" FuzzySelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' type='' check:text='Task Guidance' /&gt;" Guid="0c13cc10-d45c-46a5-96f4-f915afa69491"   InformativeScreenshot="deac78f82e2ce1e6a4549c50542229b4.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/T7ixZcKxdEmwD53AKVxMmA" ScopeSelectorArgument="&lt;html app='*.exe' title='*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NInjectJsScript DisplayName="Inject Js Script 'CCAViewPortWithIndex'" ExecutionWorld="Page" sap:VirtualizedContainerService.HintSize="388,248" sap2010:WorkflowViewState.IdRef="NInjectJsScript_3" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9" ScriptCode="ReusableMethods\\Scripts\\CheckForMeasurementAnnotatorsByName.js" Version="V3">
+                  <uix:NInjectJsScript.InputParameter>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">SelectSubOption</CSharpValue>
+                    </InArgument>
+                  </uix:NInjectJsScript.InputParameter>
+                  <uix:NInjectJsScript.ScriptOutput>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">MeasurementFound</CSharpReference>
+                    </OutArgument>
+                  </uix:NInjectJsScript.ScriptOutput>
+                  <uix:NInjectJsScript.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                      <uix:TargetAnchorable.FullSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.FullSelectorArgument>
+                      <uix:TargetAnchorable.ScopeSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.ScopeSelectorArgument>
+                    </uix:TargetAnchorable>
+                  </uix:NInjectJsScript.Target>
+                </uix:NInjectJsScript>
+              </Sequence>
+              <Sequence x:Key="Angle" sap:VirtualizedContainerService.HintSize="450,1622" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="83fff606-d9db-4030-84e2-df36a55b8756">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-50" Y="-40" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover CursorMotionType="Smooth" DisplayName="Hover" sap:VirtualizedContainerService.HintSize="388,137" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_8" Version="V3">
+                  <uix:NHover.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NHover.InUiElement>
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="e53f1101-d490-406f-b4df-998f29b5a041">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover CursorMotionType="Smooth" DisplayName="Hover" sap:VirtualizedContainerService.HintSize="388,137" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_15" Version="V3">
+                  <uix:NHover.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NHover.InUiElement>
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="e53f1101-d490-406f-b4df-998f29b5a041">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-70" Y="-80" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-70" Y="-80" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Double" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-70" Y="-80" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover DisplayName="Hover 'TaskGuidanceLeftPanelLabel'" sap:VirtualizedContainerService.HintSize="388,157" HoverTime="2" sap2010:WorkflowViewState.IdRef="NHover_9" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9">
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="OsPEpI0Ruk66jKJWG2BYVg" DesignTimeRectangle="10, 220, 108, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'TaskGuidanceLeftPanelLabel'" FullSelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' /&gt;" FuzzySelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' type='' check:text='Task Guidance' /&gt;" Guid="0c13cc10-d45c-46a5-96f4-f915afa69491"   InformativeScreenshot="deac78f82e2ce1e6a4549c50542229b4.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/T7ixZcKxdEmwD53AKVxMmA" ScopeSelectorArgument="&lt;html app='*.exe' title='*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NInjectJsScript DisplayName="Inject Js Script 'CCAViewPortWithIndex'" ExecutionWorld="Page" sap:VirtualizedContainerService.HintSize="388,248" sap2010:WorkflowViewState.IdRef="NInjectJsScript_4" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9" ScriptCode="ReusableMethods\\Scripts\\CheckForMeasurementAnnotatorsByName.js" Version="V3">
+                  <uix:NInjectJsScript.InputParameter>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">SelectSubOption</CSharpValue>
+                    </InArgument>
+                  </uix:NInjectJsScript.InputParameter>
+                  <uix:NInjectJsScript.ScriptOutput>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">MeasurementFound</CSharpReference>
+                    </OutArgument>
+                  </uix:NInjectJsScript.ScriptOutput>
+                  <uix:NInjectJsScript.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                      <uix:TargetAnchorable.FullSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.FullSelectorArgument>
+                      <uix:TargetAnchorable.ScopeSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.ScopeSelectorArgument>
+                    </uix:TargetAnchorable>
+                  </uix:NInjectJsScript.Target>
+                </uix:NInjectJsScript>
+              </Sequence>
+              <Sequence x:Key="Freehand Contour" sap:VirtualizedContainerService.HintSize="450,1445" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Down" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="83fff606-d9db-4030-84e2-df36a55b8756">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-50" Y="-40" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover CursorMotionType="Smooth" DisplayName="Hover" sap:VirtualizedContainerService.HintSize="388,137" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_10" Version="V3">
+                  <uix:NHover.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NHover.InUiElement>
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="e53f1101-d490-406f-b4df-998f29b5a041">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NHover CursorMotionType="Smooth" DisplayName="Hover" sap:VirtualizedContainerService.HintSize="388,137" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_11" Version="V3">
+                  <uix:NHover.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NHover.InUiElement>
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="e53f1101-d490-406f-b4df-998f29b5a041">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-70" Y="-80" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NClick ActivateBefore="True" ClickType="Up" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-70" Y="-80" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Double" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-70" Y="-80" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover DisplayName="Hover 'TaskGuidanceLeftPanelLabel'" sap:VirtualizedContainerService.HintSize="388,157" HoverTime="2" sap2010:WorkflowViewState.IdRef="NHover_12" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9">
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="OsPEpI0Ruk66jKJWG2BYVg" DesignTimeRectangle="10, 220, 108, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'TaskGuidanceLeftPanelLabel'" FullSelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' /&gt;" FuzzySelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' type='' check:text='Task Guidance' /&gt;" Guid="0c13cc10-d45c-46a5-96f4-f915afa69491"   InformativeScreenshot="deac78f82e2ce1e6a4549c50542229b4.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/T7ixZcKxdEmwD53AKVxMmA" ScopeSelectorArgument="&lt;html app='*.exe' title='*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NInjectJsScript DisplayName="Inject Js Script 'CCAViewPortWithIndex'" ExecutionWorld="Page" sap:VirtualizedContainerService.HintSize="388,248" sap2010:WorkflowViewState.IdRef="NInjectJsScript_5" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9" ScriptCode="ReusableMethods\\Scripts\\CheckForMeasurementAnnotatorsByName.js" Version="V3">
+                  <uix:NInjectJsScript.InputParameter>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">SelectSubOption</CSharpValue>
+                    </InArgument>
+                  </uix:NInjectJsScript.InputParameter>
+                  <uix:NInjectJsScript.ScriptOutput>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">MeasurementFound</CSharpReference>
+                    </OutArgument>
+                  </uix:NInjectJsScript.ScriptOutput>
+                  <uix:NInjectJsScript.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                      <uix:TargetAnchorable.FullSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.FullSelectorArgument>
+                      <uix:TargetAnchorable.ScopeSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.ScopeSelectorArgument>
+                    </uix:TargetAnchorable>
+                  </uix:NInjectJsScript.Target>
+                </uix:NInjectJsScript>
+              </Sequence>
+              <Sequence x:Key="Smooth Polygon" sap:VirtualizedContainerService.HintSize="450,1622" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_24" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="83fff606-d9db-4030-84e2-df36a55b8756">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-50" Y="-40" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover CursorMotionType="Smooth" DisplayName="Hover" sap:VirtualizedContainerService.HintSize="388,137" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_13" Version="V3">
+                  <uix:NHover.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NHover.InUiElement>
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="e53f1101-d490-406f-b4df-998f29b5a041">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover CursorMotionType="Smooth" DisplayName="Hover" sap:VirtualizedContainerService.HintSize="388,137" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_14" Version="V3">
+                  <uix:NHover.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NHover.InUiElement>
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="e53f1101-d490-406f-b4df-998f29b5a041">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-70" Y="-80" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NClick ActivateBefore="True" ClickType="Single" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-70" Y="-80" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Double" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_25" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-70" Y="-80" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover DisplayName="Hover 'TaskGuidanceLeftPanelLabel'" sap:VirtualizedContainerService.HintSize="388,157" HoverTime="2" sap2010:WorkflowViewState.IdRef="NHover_19" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9">
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="OsPEpI0Ruk66jKJWG2BYVg" DesignTimeRectangle="10, 220, 108, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'TaskGuidanceLeftPanelLabel'" FullSelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' /&gt;" FuzzySelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' type='' check:text='Task Guidance' /&gt;" Guid="0c13cc10-d45c-46a5-96f4-f915afa69491"   InformativeScreenshot="deac78f82e2ce1e6a4549c50542229b4.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/T7ixZcKxdEmwD53AKVxMmA" ScopeSelectorArgument="&lt;html app='*.exe' title='*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NInjectJsScript DisplayName="Inject Js Script 'CCAViewPortWithIndex'" ExecutionWorld="Page" sap:VirtualizedContainerService.HintSize="388,248" sap2010:WorkflowViewState.IdRef="NInjectJsScript_6" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9" ScriptCode="ReusableMethods\\Scripts\\CheckForMeasurementAnnotatorsByName.js" Version="V3">
+                  <uix:NInjectJsScript.InputParameter>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">SelectSubOption</CSharpValue>
+                    </InArgument>
+                  </uix:NInjectJsScript.InputParameter>
+                  <uix:NInjectJsScript.ScriptOutput>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">MeasurementFound</CSharpReference>
+                    </OutArgument>
+                  </uix:NInjectJsScript.ScriptOutput>
+                  <uix:NInjectJsScript.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                      <uix:TargetAnchorable.FullSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.FullSelectorArgument>
+                      <uix:TargetAnchorable.ScopeSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.ScopeSelectorArgument>
+                    </uix:TargetAnchorable>
+                  </uix:NInjectJsScript.Target>
+                </uix:NInjectJsScript>
+              </Sequence>
+              <Sequence x:Key="Arrow + Text Annotation" sap:VirtualizedContainerService.HintSize="450,1487" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Down" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_21" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="83fff606-d9db-4030-84e2-df36a55b8756">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="-50" Y="-40" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NHover CursorMotionType="Smooth" DisplayName="Hover" sap:VirtualizedContainerService.HintSize="388,137" HoverTime="1" sap2010:WorkflowViewState.IdRef="NHover_17" Version="V3">
+                  <uix:NHover.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NHover.InUiElement>
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="e53f1101-d490-406f-b4df-998f29b5a041">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NClick ActivateBefore="True" ClickType="Up" CursorMotionType="Smooth" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_22" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NClick ActivateBefore="True" ClickType="Double" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="388,137" sap2010:WorkflowViewState.IdRef="NClick_23" KeyModifiers="None" MouseButton="Left" Version="V3">
+                  <uix:NClick.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NClick.InUiElement>
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                      <uix:TargetAnchorable.PointOffset>
+                        <uix:PointOffset X="100" Y="-100" />
+                      </uix:TargetAnchorable.PointOffset>
+                    </uix:TargetAnchorable>
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="2" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="388,179" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" Shortcuts="[d(hk)]a[u(hk)][d(hk)]r[u(hk)][d(hk)]r[u(hk)][d(hk)][k(Enter)][u(hk)]" Version="V3">
+                  <uix:NKeyboardShortcuts.InUiElement>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </uix:NKeyboardShortcuts.InUiElement>
+                </uix:NKeyboardShortcuts>
+                <uix:NHover DisplayName="Hover 'TaskGuidanceLeftPanelLabel'" sap:VirtualizedContainerService.HintSize="388,157" HoverTime="2" sap2010:WorkflowViewState.IdRef="NHover_18" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9">
+                  <uix:NHover.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="OsPEpI0Ruk66jKJWG2BYVg" DesignTimeRectangle="10, 220, 108, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'TaskGuidanceLeftPanelLabel'" FullSelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' /&gt;" FuzzySelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' type='' check:text='Task Guidance' /&gt;" Guid="0c13cc10-d45c-46a5-96f4-f915afa69491"   InformativeScreenshot="deac78f82e2ce1e6a4549c50542229b4.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/T7ixZcKxdEmwD53AKVxMmA" ScopeSelectorArgument="&lt;html app='*.exe' title='*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NHover.Target>
+                </uix:NHover>
+                <uix:NInjectJsScript DisplayName="Inject Js Script 'CCAViewPortWithIndex'" ExecutionWorld="Page" sap:VirtualizedContainerService.HintSize="388,248" sap2010:WorkflowViewState.IdRef="NInjectJsScript_7" ScopeIdentifier="73403c91-20ff-456b-8462-634ec1f44bc9" ScriptCode="ReusableMethods\\Scripts\\CheckForMeasurementAnnotatorsByName.js" Version="V3">
+                  <uix:NInjectJsScript.InputParameter>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">SelectSubOption</CSharpValue>
+                    </InArgument>
+                  </uix:NInjectJsScript.InputParameter>
+                  <uix:NInjectJsScript.ScriptOutput>
+                    <OutArgument x:TypeArguments="x:String">
+                      <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">MeasurementFound</CSharpReference>
+                    </OutArgument>
+                  </uix:NInjectJsScript.ScriptOutput>
+                  <uix:NInjectJsScript.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                      <uix:TargetAnchorable.FullSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.FullSelectorArgument>
+                      <uix:TargetAnchorable.ScopeSelectorArgument>
+                        <InArgument x:TypeArguments="x:String">
+                          <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                        </InArgument>
+                      </uix:TargetAnchorable.ScopeSelectorArgument>
+                    </uix:TargetAnchorable>
+                  </uix:NInjectJsScript.Target>
+                </uix:NInjectJsScript>
+              </Sequence>
+            </Switch>
+            <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">DrawStatus</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">MeasurementFound=="true"</CSharpValue>
+                </InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.InUiElement>
+        <InArgument x:TypeArguments="ui:UiElement">
+          <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">InputElement</CSharpValue>
+        </InArgument>
+      </uix:NApplicationCard.InUiElement>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

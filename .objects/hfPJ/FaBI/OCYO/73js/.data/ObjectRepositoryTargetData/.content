@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="c3chKNo5PUe2116qKE1pQQ" Reference="_D5NUh_b5Em3iyA_6q7ZHw/68xMCdCiSkamBo4BQSIp0g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" DesignTimeRectangle="802, 675, 124, 22" DesignTimeScaleFactor="1" FriendlyName="'SelectQuickBatch'" FullSelectorArgument="&lt;webctrl tag='DLS-MENU-ITEM' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DLS-MENU-ITEM' type='' class='pt-menu-item ng-star-inserted' aaname='                                ' check:innerText='Quick Batch' /&gt;" Guid="cb62d992-3b86-428e-8d7c-b9935af873be" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="b6f9161c8b69bcdc36ca03e933edc444.png" xmlns="">0Dvzi7lY_4Ei70uCn9e-ZpQ</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

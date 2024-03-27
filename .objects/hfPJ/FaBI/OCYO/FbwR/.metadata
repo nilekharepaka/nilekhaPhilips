@@ -1,0 +1,14 @@
+﻿{
+  "Name": "OrientationBatchImage",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "FbwR8sgZD0qPQ_tIIwZBYw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/FbwR8sgZD0qPQ_tIIwZBYw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/OCYOHz9Y9kKH6bCHntO-Xg",
+  "Created": "2024-01-12T09:28:42.0789936Z",
+  "Updated": "2024-01-12T09:28:42.0789936Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

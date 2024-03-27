@@ -1,0 +1,16 @@
+﻿{
+  "Name": "CommentsTextBoxLeftPanel",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "48PKIosSmkGvmLkeKm18YQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/48PKIosSmkGvmLkeKm18YQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-22T17:48:39.6082331Z",
+  "Updated": "2024-02-22T17:49:42.3111492Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

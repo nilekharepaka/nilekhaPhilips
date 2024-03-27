@@ -1,0 +1,16 @@
+﻿{
+  "Name": "TickMarkOnFindingsPanel",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "R0meRePb3EaKa53fblOyjQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/R0meRePb3EaKa53fblOyjQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-03-06T05:21:20.2027767Z",
+  "Updated": "2024-03-06T05:22:36.5667687Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

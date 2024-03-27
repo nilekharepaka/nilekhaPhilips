@@ -1,0 +1,16 @@
+﻿{
+  "Name": "FloatingBarRemoveBrushIcon",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "sd1PJjuxgka8KTCnEDHB8A",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/sd1PJjuxgka8KTCnEDHB8A",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-14T15:28:02.1667038Z",
+  "Updated": "2024-02-14T15:29:12.7471223Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

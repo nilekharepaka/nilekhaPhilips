@@ -1,0 +1,16 @@
+﻿{
+  "Name": "ShowCADRADScoreBtn",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "j0Z6k5fURU-pADx8qhZ9_g",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/j0Z6k5fURU-pADx8qhZ9_g",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-22T17:36:12.1374981Z",
+  "Updated": "2024-02-22T17:37:02.5297724Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

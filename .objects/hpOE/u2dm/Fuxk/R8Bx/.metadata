@@ -1,0 +1,16 @@
+﻿{
+  "Name": "FloatingBarAddCoronaryIcon",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "R8BxtU8CnkevPFZnG28HRA",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/R8BxtU8CnkevPFZnG28HRA",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-14T15:15:37.7008732Z",
+  "Updated": "2024-02-14T15:16:48.1241585Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

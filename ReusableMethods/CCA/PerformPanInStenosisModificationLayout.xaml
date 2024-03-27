@@ -1,0 +1,918 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="PerformPanInStenosisModificationLayout" this:PerformPanInStenosisModificationLayout.browser="chrome" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:i="clr-namespace:ImageUtilities;assembly=ImageUtilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="InputElement" Type="InArgument(ui:UiElement)" />
+    <x:Property Name="ChangedViewportName" Type="InArgument(x:String)" />
+    <x:Property Name="PanStatus" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="browser" Type="InArgument(x:String)" />
+    <x:Property Name="ViewportIndexToChange" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:PerformPanInStenosisModificationLayout.InputElement>
+    <InArgument x:TypeArguments="ui:UiElement" />
+  </this:PerformPanInStenosisModificationLayout.InputElement>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>645,7636</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>ImageUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>ImageUtilities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="PerformPanInStenosisModificationLayout" sap:VirtualizedContainerService.HintSize="655,7571" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="1" Name="ViewportIndex" />
+      <Variable x:TypeArguments="ui:Image" Name="ViewportImage" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="593,7460" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="3b38903d-009a-4639-ab3f-f36bfbdf6617" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="559,7323" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="ui:UiElement" Name="Viewport" />
+              <Variable x:TypeArguments="x:String" Default="C:\\UiPathTestAutomation\\Images\\VolumeViewportBeforePan.png" Name="VolumePathBefore" />
+              <Variable x:TypeArguments="x:String" Default="C:\\UiPathTestAutomation\\Images\\VolumeViewportAfterPan.png" Name="VolumePathAfter" />
+              <Variable x:TypeArguments="x:String" Default="C:\\UiPathTestAutomation\\Images\\AxialViewportBeforePan.png" Name="AxialPathBefore" />
+              <Variable x:TypeArguments="x:String" Default="C:\\UiPathTestAutomation\\Images\\AxialViewportAfterPan.png" Name="AxialPathAfter" />
+              <Variable x:TypeArguments="x:String" Default="C:\\UiPathTestAutomation\\Images\\CoronalViewportBeforePan.png" Name="cMPRPathBefore" />
+              <Variable x:TypeArguments="x:String" Default="C:\\UiPathTestAutomation\\Images\\CoronalViewportAfterPan.png" Name="cMPRPathAfter" />
+              <Variable x:TypeArguments="x:Boolean" Name="AxialCompare" />
+              <Variable x:TypeArguments="x:Boolean" Name="VolumeCompare" />
+              <Variable x:TypeArguments="x:Boolean" Name="cMPRCompare" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\SelectOptionsAndSuboptionsFromRightClickDropdown.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="497,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\SelectOptionsAndSuboptionsFromRightClickDropdown.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputEmelent">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">InputElement</CSharpValue>
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="OptionToSelect">Image</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="SubOptionToSelect">Pan</InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="ViewportIndex">1</InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="ModeDetails" />
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">ViewportIndex</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">1</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'CCAViewPortWithIndex'" HighlightTime="0.1" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NHighlight_1" ScopeIdentifier="3b38903d-009a-4639-ab3f-f36bfbdf6617" Version="V3">
+              <uix:NHighlight.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">Viewport</CSharpReference>
+                </OutArgument>
+              </uix:NHighlight.OutUiElement>
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click" sap:VirtualizedContainerService.HintSize="497,137" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Viewport</CSharpValue>
+                </InArgument>
+              </uix:NClick.InUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="b452a4da-32a7-44ed-a871-0381fe90ce29">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="TopLeft" X="50" Y="50" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">ViewportIndex</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">6</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'CCAViewPortWithIndex'" HighlightTime="0.1" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NHighlight_2" ScopeIdentifier="3b38903d-009a-4639-ab3f-f36bfbdf6617" Version="V3">
+              <uix:NHighlight.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">Viewport</CSharpReference>
+                </OutArgument>
+              </uix:NHighlight.OutUiElement>
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot" sap:VirtualizedContainerService.HintSize="497,87" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1">
+              <ui:TakeScreenshot.Screenshot>
+                <OutArgument x:TypeArguments="ui:Image">
+                  <CSharpReference x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">ViewportImage</CSharpReference>
+                </OutArgument>
+              </ui:TakeScreenshot.Screenshot>
+              <ui:TakeScreenshot.Target>
+                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Id="dc31c685-0025-4d62-986a-a3ca0fb82dc5">
+                  <ui:Target.Element>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">Viewport</CSharpValue>
+                    </InArgument>
+                  </ui:Target.Element>
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TakeScreenshot.Target>
+            </ui:TakeScreenshot>
+            <ui:SaveImage DisplayName="Save Image" sap:VirtualizedContainerService.HintSize="497,133" sap2010:WorkflowViewState.IdRef="SaveImage_1">
+              <ui:SaveImage.FileName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">VolumePathBefore</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.FileName>
+              <ui:SaveImage.Image>
+                <InArgument x:TypeArguments="ui:Image">
+                  <CSharpValue x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">ViewportImage</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.Image>
+            </ui:SaveImage>
+            <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">ViewportIndex</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">7</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'CCAViewPortWithIndex'" HighlightTime="0.1" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NHighlight_3" ScopeIdentifier="3b38903d-009a-4639-ab3f-f36bfbdf6617" Version="V3">
+              <uix:NHighlight.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">Viewport</CSharpReference>
+                </OutArgument>
+              </uix:NHighlight.OutUiElement>
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot" sap:VirtualizedContainerService.HintSize="497,87" sap2010:WorkflowViewState.IdRef="TakeScreenshot_2">
+              <ui:TakeScreenshot.Screenshot>
+                <OutArgument x:TypeArguments="ui:Image">
+                  <CSharpReference x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">ViewportImage</CSharpReference>
+                </OutArgument>
+              </ui:TakeScreenshot.Screenshot>
+              <ui:TakeScreenshot.Target>
+                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Id="dc31c685-0025-4d62-986a-a3ca0fb82dc5">
+                  <ui:Target.Element>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">Viewport</CSharpValue>
+                    </InArgument>
+                  </ui:Target.Element>
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TakeScreenshot.Target>
+            </ui:TakeScreenshot>
+            <ui:SaveImage DisplayName="Save Image" sap:VirtualizedContainerService.HintSize="497,133" sap2010:WorkflowViewState.IdRef="SaveImage_2">
+              <ui:SaveImage.FileName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">AxialPathBefore</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.FileName>
+              <ui:SaveImage.Image>
+                <InArgument x:TypeArguments="ui:Image">
+                  <CSharpValue x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">ViewportImage</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.Image>
+            </ui:SaveImage>
+            <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">ViewportIndex</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">1</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'CCAViewPortWithIndex'" HighlightTime="0.1" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NHighlight_4" ScopeIdentifier="3b38903d-009a-4639-ab3f-f36bfbdf6617" Version="V3">
+              <uix:NHighlight.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">Viewport</CSharpReference>
+                </OutArgument>
+              </uix:NHighlight.OutUiElement>
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot" sap:VirtualizedContainerService.HintSize="497,87" sap2010:WorkflowViewState.IdRef="TakeScreenshot_3">
+              <ui:TakeScreenshot.Screenshot>
+                <OutArgument x:TypeArguments="ui:Image">
+                  <CSharpReference x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">ViewportImage</CSharpReference>
+                </OutArgument>
+              </ui:TakeScreenshot.Screenshot>
+              <ui:TakeScreenshot.Target>
+                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Id="dc31c685-0025-4d62-986a-a3ca0fb82dc5">
+                  <ui:Target.Element>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">Viewport</CSharpValue>
+                    </InArgument>
+                  </ui:Target.Element>
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TakeScreenshot.Target>
+            </ui:TakeScreenshot>
+            <ui:SaveImage DisplayName="Save Image" sap:VirtualizedContainerService.HintSize="497,133" sap2010:WorkflowViewState.IdRef="SaveImage_3">
+              <ui:SaveImage.FileName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">cMPRPathBefore</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.FileName>
+              <ui:SaveImage.Image>
+                <InArgument x:TypeArguments="ui:Image">
+                  <CSharpValue x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">ViewportImage</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.Image>
+            </ui:SaveImage>
+            <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_6">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">ViewportIndex</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">ViewportIndexToChange</CSharpValue>
+                </InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'CCAViewPortWithIndex'" HighlightTime="0.1" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NHighlight_6" ScopeIdentifier="3b38903d-009a-4639-ab3f-f36bfbdf6617" Version="V3">
+              <uix:NHighlight.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">Viewport</CSharpReference>
+                </OutArgument>
+              </uix:NHighlight.OutUiElement>
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click" sap:VirtualizedContainerService.HintSize="497,137" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">Viewport</CSharpValue>
+                </InArgument>
+              </uix:NClick.InUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="aa5d0e90-b700-4c56-b614-e7d471fa7982">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="TopLeft" X="50" Y="50" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_7">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">ViewportIndex</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">1</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NHighlight Color="Gold" DelayAfter="2" DisplayName="Highlight 'CCAViewPortWithIndex'" HighlightTime="0.2" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NHighlight_7" ScopeIdentifier="3b38903d-009a-4639-ab3f-f36bfbdf6617" Version="V3">
+              <uix:NHighlight.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">Viewport</CSharpReference>
+                </OutArgument>
+              </uix:NHighlight.OutUiElement>
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <uix:NClick ActivateBefore="True" ClickType="Down" DisplayName="Click" sap:VirtualizedContainerService.HintSize="497,137" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">Viewport</CSharpValue>
+                </InArgument>
+              </uix:NClick.InUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="83fff606-d9db-4030-84e2-df36a55b8756">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset X="-100" Y="150" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NHover CursorMotionType="Smooth" DisplayName="Hover" sap:VirtualizedContainerService.HintSize="497,137" HoverTime="3" sap2010:WorkflowViewState.IdRef="NHover_1" Version="V3">
+              <uix:NHover.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">Viewport</CSharpValue>
+                </InArgument>
+              </uix:NHover.InUiElement>
+              <uix:NHover.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="e53f1101-d490-406f-b4df-998f29b5a041">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset X="-100" Y="-200" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NHover.Target>
+            </uix:NHover>
+            <uix:NClick ActivateBefore="True" ClickType="Up" CursorMotionType="Smooth" DelayAfter="5" DisplayName="Click" sap:VirtualizedContainerService.HintSize="497,137" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">Viewport</CSharpValue>
+                </InArgument>
+              </uix:NClick.InUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="15a38f24-1075-4cd2-bfaa-18ba5ea02b52">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset X="-100" Y="-200" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_8">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">ViewportIndex</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">1</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'CCAViewPortWithIndex'" HighlightTime="0.1" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NHighlight_8" ScopeIdentifier="3b38903d-009a-4639-ab3f-f36bfbdf6617" Version="V3">
+              <uix:NHighlight.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">Viewport</CSharpReference>
+                </OutArgument>
+              </uix:NHighlight.OutUiElement>
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click" sap:VirtualizedContainerService.HintSize="497,137" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">Viewport</CSharpValue>
+                </InArgument>
+              </uix:NClick.InUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="b452a4da-32a7-44ed-a871-0381fe90ce29">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="TopLeft" X="50" Y="50" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_18">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_43">ViewportIndex</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">6</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'CCAViewPortWithIndex'" HighlightTime="0.1" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NHighlight_9" ScopeIdentifier="3b38903d-009a-4639-ab3f-f36bfbdf6617" Version="V3">
+              <uix:NHighlight.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">Viewport</CSharpReference>
+                </OutArgument>
+              </uix:NHighlight.OutUiElement>
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot" sap:VirtualizedContainerService.HintSize="497,87" sap2010:WorkflowViewState.IdRef="TakeScreenshot_5">
+              <ui:TakeScreenshot.Screenshot>
+                <OutArgument x:TypeArguments="ui:Image">
+                  <CSharpReference x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpReference`1_22">ViewportImage</CSharpReference>
+                </OutArgument>
+              </ui:TakeScreenshot.Screenshot>
+              <ui:TakeScreenshot.Target>
+                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Id="dc31c685-0025-4d62-986a-a3ca0fb82dc5">
+                  <ui:Target.Element>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">Viewport</CSharpValue>
+                    </InArgument>
+                  </ui:Target.Element>
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TakeScreenshot.Target>
+            </ui:TakeScreenshot>
+            <ui:SaveImage DisplayName="Save Image" sap:VirtualizedContainerService.HintSize="497,133" sap2010:WorkflowViewState.IdRef="SaveImage_5">
+              <ui:SaveImage.FileName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_40">VolumePathAfter</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.FileName>
+              <ui:SaveImage.Image>
+                <InArgument x:TypeArguments="ui:Image">
+                  <CSharpValue x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_41">ViewportImage</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.Image>
+            </ui:SaveImage>
+            <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_9">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_23">ViewportIndex</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">7</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'CCAViewPortWithIndex'" HighlightTime="0.1" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NHighlight_10" ScopeIdentifier="3b38903d-009a-4639-ab3f-f36bfbdf6617" Version="V3">
+              <uix:NHighlight.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">Viewport</CSharpReference>
+                </OutArgument>
+              </uix:NHighlight.OutUiElement>
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_42">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot" sap:VirtualizedContainerService.HintSize="497,87" sap2010:WorkflowViewState.IdRef="TakeScreenshot_6">
+              <ui:TakeScreenshot.Screenshot>
+                <OutArgument x:TypeArguments="ui:Image">
+                  <CSharpReference x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpReference`1_25">ViewportImage</CSharpReference>
+                </OutArgument>
+              </ui:TakeScreenshot.Screenshot>
+              <ui:TakeScreenshot.Target>
+                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Id="dc31c685-0025-4d62-986a-a3ca0fb82dc5">
+                  <ui:Target.Element>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">Viewport</CSharpValue>
+                    </InArgument>
+                  </ui:Target.Element>
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TakeScreenshot.Target>
+            </ui:TakeScreenshot>
+            <ui:SaveImage DisplayName="Save Image" sap:VirtualizedContainerService.HintSize="497,133" sap2010:WorkflowViewState.IdRef="SaveImage_6">
+              <ui:SaveImage.FileName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">AxialPathAfter</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.FileName>
+              <ui:SaveImage.Image>
+                <InArgument x:TypeArguments="ui:Image">
+                  <CSharpValue x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">ViewportImage</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.Image>
+            </ui:SaveImage>
+            <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_10">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_26">ViewportIndex</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">1</InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'CCAViewPortWithIndex'" HighlightTime="0.1" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NHighlight_11" ScopeIdentifier="3b38903d-009a-4639-ab3f-f36bfbdf6617" Version="V3">
+              <uix:NHighlight.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_27">Viewport</CSharpReference>
+                </OutArgument>
+              </uix:NHighlight.OutUiElement>
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot" sap:VirtualizedContainerService.HintSize="497,87" sap2010:WorkflowViewState.IdRef="TakeScreenshot_7">
+              <ui:TakeScreenshot.Screenshot>
+                <OutArgument x:TypeArguments="ui:Image">
+                  <CSharpReference x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpReference`1_28">ViewportImage</CSharpReference>
+                </OutArgument>
+              </ui:TakeScreenshot.Screenshot>
+              <ui:TakeScreenshot.Target>
+                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Id="dc31c685-0025-4d62-986a-a3ca0fb82dc5">
+                  <ui:Target.Element>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">Viewport</CSharpValue>
+                    </InArgument>
+                  </ui:Target.Element>
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TakeScreenshot.Target>
+            </ui:TakeScreenshot>
+            <ui:SaveImage DisplayName="Save Image" sap:VirtualizedContainerService.HintSize="497,133" sap2010:WorkflowViewState.IdRef="SaveImage_7">
+              <ui:SaveImage.FileName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">cMPRPathAfter</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.FileName>
+              <ui:SaveImage.Image>
+                <InArgument x:TypeArguments="ui:Image">
+                  <CSharpValue x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">ViewportImage</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.Image>
+            </ui:SaveImage>
+            <i:CompareImages DisplayName="Compare images" sap:VirtualizedContainerService.HintSize="497,25" sap2010:WorkflowViewState.IdRef="CompareImages_1" Tollerance="0.01">
+              <i:CompareImages.InputImagePath1>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">AxialPathAfter</CSharpValue>
+                </InArgument>
+              </i:CompareImages.InputImagePath1>
+              <i:CompareImages.InputImagePath2>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">AxialPathBefore</CSharpValue>
+                </InArgument>
+              </i:CompareImages.InputImagePath2>
+              <i:CompareImages.Result>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_32">AxialCompare</CSharpReference>
+                </OutArgument>
+              </i:CompareImages.Result>
+            </i:CompareImages>
+            <i:CompareImages DisplayName="Compare images" sap:VirtualizedContainerService.HintSize="497,25" sap2010:WorkflowViewState.IdRef="CompareImages_3" Tollerance="0.01">
+              <i:CompareImages.InputImagePath1>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">VolumePathAfter</CSharpValue>
+                </InArgument>
+              </i:CompareImages.InputImagePath1>
+              <i:CompareImages.InputImagePath2>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">VolumePathBefore</CSharpValue>
+                </InArgument>
+              </i:CompareImages.InputImagePath2>
+              <i:CompareImages.Result>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_34">VolumeCompare</CSharpReference>
+                </OutArgument>
+              </i:CompareImages.Result>
+            </i:CompareImages>
+            <i:CompareImages DisplayName="Compare images" sap:VirtualizedContainerService.HintSize="497,25" sap2010:WorkflowViewState.IdRef="CompareImages_4" Tollerance="0.01">
+              <i:CompareImages.InputImagePath1>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">cMPRPathAfter</CSharpValue>
+                </InArgument>
+              </i:CompareImages.InputImagePath1>
+              <i:CompareImages.InputImagePath2>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">cMPRPathBefore</CSharpValue>
+                </InArgument>
+              </i:CompareImages.InputImagePath2>
+              <i:CompareImages.Result>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_35">cMPRCompare</CSharpReference>
+                </OutArgument>
+              </i:CompareImages.Result>
+            </i:CompareImages>
+            <Assign sap:VirtualizedContainerService.HintSize="497,82" sap2010:WorkflowViewState.IdRef="Assign_12">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_36">ViewportIndex</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">ViewportIndexToChange</CSharpValue>
+                </InArgument>
+              </Assign.Value>
+            </Assign>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'CCAViewPortWithIndex'" HighlightTime="0.1" sap:VirtualizedContainerService.HintSize="497,157" sap2010:WorkflowViewState.IdRef="NHighlight_13" ScopeIdentifier="3b38903d-009a-4639-ab3f-f36bfbdf6617" Version="V3">
+              <uix:NHighlight.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_37">Viewport</CSharpReference>
+                </OutArgument>
+              </uix:NHighlight.OutUiElement>
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd"   InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click" sap:VirtualizedContainerService.HintSize="497,137" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">Viewport</CSharpValue>
+                </InArgument>
+              </uix:NClick.InUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="b452a4da-32a7-44ed-a871-0381fe90ce29">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="TopLeft" X="50" Y="50" />
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <Switch x:TypeArguments="x:String" DisplayName="Switch" sap:VirtualizedContainerService.HintSize="497,312" sap2010:WorkflowViewState.IdRef="Switch`1_1">
+              <Switch.Default>
+                <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_13">
+                  <Assign.To>
+                    <OutArgument x:TypeArguments="x:Boolean">
+                      <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">PanStatus</CSharpReference>
+                    </OutArgument>
+                  </Assign.To>
+                  <Assign.Value>
+                    <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+                  </Assign.Value>
+                </Assign>
+              </Switch.Default>
+              <Switch.Expression>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">ChangedViewportName</CSharpValue>
+                </InArgument>
+              </Switch.Expression>
+              <Assign x:Key="Axial" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_14">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">
+                    <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_39">PanStatus</CSharpReference>
+                  </OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">
+                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_75" xml:space="preserve">cMPRCompare &amp;&amp; !AxialCompare  &amp;&amp; VolumeCompare</CSharpValue>
+                  </InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign x:Key="cMPR" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_15">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">
+                    <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_40">PanStatus</CSharpReference>
+                  </OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">
+                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76" xml:space="preserve">!cMPRCompare &amp;&amp; AxialCompare  &amp;&amp; VolumeCompare</CSharpValue>
+                  </InArgument>
+                </Assign.Value>
+              </Assign>
+              <Assign x:Key="Volume" sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_17">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">
+                    <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_42">PanStatus</CSharpReference>
+                  </OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">
+                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_77" xml:space="preserve">cMPRCompare &amp;&amp; AxialCompare  &amp;&amp; !VolumeCompare</CSharpValue>
+                  </InArgument>
+                </Assign.Value>
+              </Assign>
+            </Switch>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.InUiElement>
+        <InArgument x:TypeArguments="ui:UiElement">
+          <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74">InputElement</CSharpValue>
+        </InArgument>
+      </uix:NApplicationCard.InUiElement>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

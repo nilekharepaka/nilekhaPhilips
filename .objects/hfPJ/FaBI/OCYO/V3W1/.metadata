@@ -1,0 +1,14 @@
+﻿{
+  "Name": "QuickBatchName",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "V3W1FR8ZhUCOqEY_o6PaDQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/V3W1FR8ZhUCOqEY_o6PaDQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/OCYOHz9Y9kKH6bCHntO-Xg",
+  "Created": "2024-01-12T09:18:20.9565473Z",
+  "Updated": "2024-01-12T09:18:20.9565473Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

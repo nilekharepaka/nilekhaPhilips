@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="GoecBUmYL0i7YdfzlQCJ3g" Reference="_D5NUh_b5Em3iyA_6q7ZHw/twbZ_9jOYkSDy-2fSfaeLw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" DesignTimeRectangle="1081, 451, 24, 24" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl parentid='undefined' src='*/CCA_EditSp*' tag='IMG' class='pt-icon floating-commands-button-icon ng-star-inserted' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='undefined' src='*/CCA_EditSp*' tag='IMG' class='pt-icon floating-commands-button-icon ng-star-inserted' type='' aaname='' /&gt;" Guid="0d2c615e-352e-445b-8cbb-465794d5adc4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGGSURBVEhL7ZSxq4JQFMb9swzMEIogSghahJDGIsdojZbAEBpCEBptCBNpamhtDcf+hbYWwaGG87jnpVneyPe4vuX1wQdev3PPj3uvV47nefgLK4oCHMfBB/jWSdHyyB/gr12tVqnvmQMnkwnsdjsYjUbUnDlQlmUEuq5LzXPZUs/zEFqv11NZLkDTNBGoqmoqywWo6zoCe71eKssFOJ1OEdjtdlNZLkDLshDYbrdTWS5AYgKk3UVmwKTI2LbtVA0xU2CxWIzHg8HgIY/MHHg+n7FpqVSi1jE/Q6IgCKDT6VDzl8CknrNnk5UtFgv8UCKFYfiza5HUc5Z0rVaD5XKJsPV6fZvxrcvlApqmPdRnBhqGAa1WC58FQYBmswnj8Ri22y3CNpsNNBqN24y7rtcrDIfDuG/mMyRNX5lsZ6VSwbpIx+MRfN9HHw4HKJfLmGcCiqII/X4f5vM5OI6Dq1qtVjCbzfBvUigU4lqi/X7/MD/pzCvM6tPpBJIkUTNi5sB3/i9ADr4A9++wYH4XWW0AAAAASUVORK5CYII=" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target DesignTimeRectangle="1081, 427, 18, 18" ElementType="Icon" FriendlyName="'IMG'" FullSelectorArgument="&lt;webctrl src='*/floatingPanelGrabber.svg' tag='IMG' parentclass='pt-draggable pt-dialog-header header ng-star-inserted' /&gt;" FuzzySelectorArgument="&lt;webctrl src='*/floatingPanelGrabber.svg' tag='IMG' parentclass='pt-draggable pt-dialog-header header ng-star-inserted' type='' class='pt-icon dls-icon ng-star-inserted' aaname='' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABYAAAAWCAYAAADEtGw7AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGGSURBVEhL7VPJisJAFPSzchFR44LgzYtfIeJFxJPgFkRRBDEQBBVFPbijGHD5spqphjzSMx7NYWACRZKq6qLpVx36fhAI8vk8gkDIMAwEgT8e3Gg00Gw2EY/HNVM0GkWr1UK9Xkc4HNa0dDqNdruNWq2m8RI8m83weDzgui4Wi4VmWq/XuN/vSnMcR9P2+73SbrcbhsOh8BL8er1wvV5xPB4VMpmM4lOpFJ7Pp6bFYjGl5XI5pV0uF9G8PAmeTqc4n8/Y7XaYTCZiILhjTxuNRppG7nQ6qXev1xNegiORCMrlMqrVquzWQyKRQKVSUeC3X6OXa7iWGR6vDe+TCD7YNE11RoPBANlsVjPxv9/vo9vtIplMahoHyDZ0Op33R7FcLqU2q9VKDMR2uxWNQ/ZrHKqnjcdj4SXYX7fD4fC2buQJf93YfdaN/Nu6sfhepWzbFgMxn89F41H5tc1mI3WzLEt4bXiFQgGlUunXleY1LhaLCj+vNL1cw7V+Xgv+JP6DBQEFG/gCBB6YPj7RuDYAAAAASUVORK5CYII=" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.ScopeSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;html app='{0}.exe' title='CardiacCT' /&gt;", browser)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.ScopeSelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="19146994621d5ef25e2e2caf4457222e.png" xmlns="">01HIUq06IdEyPbIvw_Nay7g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="chrome" Name="browser" />
+    </scg:List>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="HngIkGWdl0aRM9mOfZWw9A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://192.168.58.206/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.13786265022005672006.26445001253937339832&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" DesignTimeRectangle="1115, 274, 50, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'11: 40.0%'" Guid="5f8cafbe-9fec-46d3-9723-7f75f52db1d4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADYAAAAUCAYAAADGIc7gAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJkSURBVFhH7VXLq3lRFP79WTIWEzMDE2WgUJKJFELKTRkQhRh4T0SexUUekWd5ZODfWbdv1zmdfe5JV9fg+mXw1dnfeuz97bX2Ov9UKhX9j3gLezW8hf1VqNVqarValE6nOZ4J02q1lEgkaLPZ0HK5JIPBQHa7nTqdDl2vV2aTBt1DKpWiw+FAFotF5ILBIO12OzqdTnQ8Hikej7MDSeMAcLDBB76IQaxgq1arjN/v9+Tz+RgfCARoNBqRXq/ncjFh0WiUiUgmkzSdTslms7E1BI3H4x8LczgctF6vOWEul4sdMBQKiT7b7ZYikQgXC4CDDT5YIwaxyOF0Omk4HDIBOG+v12MFGQwGirm4VoR6CEPFBO7z8/NHwrAJfCuVCq1WK1FYoVCgbrfL+SpxADjYlDgIwyUbjUZW1Xa7zbqj3++TRqPhYoCHhDWbTSqXy6JNCmyOKlutVk4Y4rPZLOeL9prNZtw++J7P599uH4dHDrRisVik8/nMnovX62U5PB4P5y/gKRXz+/0sDrcJQXJh8nilffANDjapL2KRQ8oBuMhGo0G5XI61K9oU+wv2XwtDsslkIr4hJWHPqJiUw2CD78fHBxscOEOpVOLa+NfCYLvdbt+AyQZx2OwZb0xYoyVRKXA4L4YI+HA4zFpV8Hva8BAgr5h8KgpvUN5ygHwq4h3BFxUSfPCmUG2TyURut1sc9fl8nruAh4TV63U29QSbEuTCgHv/sUwmw0a2Tqe7+x8DMP0wBWOxGFvDv1ar0eVyocViQWazWfTlhP114C2hqvi1KNmleClhj+At7NXwFvZaUNEXeuYYrQCf28gAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CardiacCT' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl aaname='*: {0}' parentname='TabContainerWidgetPT_*' tag='SPAN' parentclass='series-data' /&gt;", SeriesPercentage)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <TargetAnchorable.FuzzySelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl aaname='*: {0}' parentname='TabContainerWidgetPT_*' tag='SPAN' parentclass='series-data' type='' class='' check:text='11: 40.0%' /&gt;", SeriesPercentage)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FuzzySelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="926a46836f14fba520b7ebddec4fb114.png" xmlns="">0STzJ_NXZfUal_McNuQ7YdQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="40.0%" Name="SeriesPercentage" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

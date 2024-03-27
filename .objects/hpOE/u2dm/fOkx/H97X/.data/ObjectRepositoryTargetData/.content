@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="48mk1iB4WEyCfUx35bZC3w" Reference="_D5NUh_b5Em3iyA_6q7ZHw/H97XYBNAwku2Y_xNJrTZcg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://192.168.58.206/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.13786265022005672006.26445001253937339832&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="9qnIlYL3hECgvlPHnCKBQA" DesignTimeRectangle="754, 401, 188, 21" DesignTimeScaleFactor="1" FriendlyName="'6: 75.0% (364)'" Guid="2e531a11-792f-41a3-8d9e-7b58b7d8564c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAMAAAAAZCAYAAABn7SHgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAT+SURBVHhe7Zw5b6tMFIb5RZGyOc6iJJPFibJairIhRSgRjRs3NDRu3Fq6ckNDQ+OGhoaGhoZmmmlo/HfOd86wGBPbufp0G4cpHgWG8eAk73vmncGJ9v7+DtfX19ButxWKRkB6Pzs7g4uLC9De3t6UARSNgvR+fHwMjDHQXl5elAEUjYL0vr+/L02gPT09KQMoGgXpfWdnB46OjkDrdrvKAIpGQXrf3NzMDPDw8KAMoGgUpPetrS04ODgA7f7+XhlA0ShI7xSBDg8P1QygaB6k993d3SwC/TQDsJ4DEU8hTXP4BKwF/Yiel8z6SaYwjcbQHkcwnVbbUwhH9dczsLwYRNEnCWCgZ9eY5UEsqF1ANNbz/iZ4CQffYvl5FRzL58B9C5jtAxeiHFfEHlis6KfDwK/cE4nGt5VxEGaBL6bYTscGOBG9h+58H8VaQXqn+CN3gVYagA0hTFFkdqfSxoBV+6zADgTwiSkNIPz+wj4FbBii6CfQy8Wp42vSxAMTj4dhAn4f25kDMRqwh239CQp8smRM04OE+9Cn47n324FRlELiGfLcJMNGDhilIbBveUzoMEbBcywA0gDU1h1DJEIYzvVTrBOkd6r+JycnoN3d3S01ACMRhqO/FvwcJJQ0BqeLx39hgGGYQuxUqzlV3gQ8g64JCAZ4TXchQVMY/Qnw3BzVMQrIeLGzoEpjBXcTnH2GdN7H8TlMzFqfCmQQmkUsn6r+rH3p+Iq1gPROzwF+jEB9/MUnro3TPgfBMUagIEOnJw1xOwqAByO4rb2mwMQKnYbDzDyymsdYlbFqY5ThWHWLSp/RgwmOL6t82cbAifPooY8gpPvzGDzLwr5ojKXCpbEScMl4RZvpYowTkGIMSzwLOrKdDBrAaODjrJK/r3hSiV0YnWIXdDymn0PVAO1BAIKiXXGuWCtI77QI3tvbA+319XWlAQQPwDGyyswMXA9gDg/s733nsSGoVldzBO64nwuvIyuoCOxK/2UGKKr1DIo+ideT6wWOwk1whiKRzvqgsKcRjOfacmSGJxNgLJMGwEru27P3heuGaexAV8drAsfIzfDNAH0ffy5ZFCvbFGsD6X17e1tuhWpfX19LDWBgBJCL2ErbOMqrcqWtDhthnichLbgmsbGC4vXq7EHjLotARZusyhR9DMz4CVVnBgM007xJVhiAwNko+55ofVMzHQlb+PAHv2+BBiaDSXAxn+K5X9xHGWCtKQywsbEB2ufn51IDyMyNM4Ddyc87A6zsP80AJlZz2uWZiZl1u3mVJRbNANintgjukImkyPM+tBuDEcilqtzDNQAaiOJVPZ/XI1D93mQYimY0wwwCjqYz8jUOA8NFwy8w7rcZgN6rikBrC+mdtkHpabD28fGx3ACIjkLk5TYhhyhfA9AuDcf4UV8DMMrHAk1TaTMcXARXthrLNQDmb45CykQ+vw0qYr/M4/IaxpPYLbZAs90ZOR6aZratmVFdpBpuXN5X3htzfdkfTeXF+TjI/D1n1A2gFsHrTaF3uQb4lR+Hrm6D/mvUNujaQ3ovt0Gfn59/nwHyGUM+CFt4/X+iHoT9Ckjvp6encHl5qT4LpGgepHd6CiwNcHNzowygaBSkd4pA5+fnoD0+PioDKBpFMQNcXV2pP4lUNA/SO60B6OvKJ8EKxW+E9E4RiP4zhDKAonGQ3lutVvYXYcoAiqZBeqePQrRaLfgPOlWGncp+MUgAAAAASUVORK5CYII=" Reference="_D5NUh_b5Em3iyA_6q7ZHw/H97XYBNAwku2Y_xNJrTZcg" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl class='series-option' tag='DIV' innertext='{0}' /&gt;", phaseToBeSelected)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <TargetAnchorable.FuzzySelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl class='series-option' tag='DIV' innertext='{0}' type='' aaname='' check:text='6: 75.0% (364)' /&gt;", phaseToBeSelected)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FuzzySelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="6394a2f3bdc083c47c87a5f5514f213b.png" xmlns="">0yGX3TPjdXEadWkmuAtHCpg</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="6: 75.0% (364)" IsVariable="False" Name="phaseToBeSelected" />
+    </scg:List>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

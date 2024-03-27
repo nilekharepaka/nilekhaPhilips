@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="5duQobMUp0msW4GqN4pRKQ" Reference="_D5NUh_b5Em3iyA_6q7ZHw/hUE686SIlUWQwm9ELS2ymQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic5vw430.code1.emi.philips.com/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" DesignTimeRectangle="177, 194, 42, 33" DesignTimeScaleFactor="1" FriendlyName="'ClickFindingDashboardIcon'" FullSelectorArgument="&lt;webctrl class='pt-list-item' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='pt-list-item' tag='A' type='' aaname='' /&gt;" Guid="0458203f-1a6b-4513-b1ea-ebe5ec42e251" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="3c2909c1214822045daac8714a8cf87b.png" xmlns="">0uNBQ_GXwykywqTt22pxh3g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

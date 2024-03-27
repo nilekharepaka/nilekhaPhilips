@@ -1,0 +1,15 @@
+﻿{
+  "Name": "App_CCA",
+  "Type": "Screen",
+  "Id": "FuxkBz0uM0inN6k-q2TfLQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/u2dmBOgqj0yks0QmoElAlw",
+  "Created": "2024-01-18T20:55:14.187441Z",
+  "Updated": "2024-01-18T20:56:26.0338453Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

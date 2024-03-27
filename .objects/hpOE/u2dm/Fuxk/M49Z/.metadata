@@ -1,0 +1,13 @@
+﻿{
+  "Name": "LayoutText",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "M49ZnVV3GkC2wn1MZty1hQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/M49ZnVV3GkC2wn1MZty1hQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-10T04:21:01.1390946Z",
+  "Updated": "2024-02-10T04:21:01.1390946Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

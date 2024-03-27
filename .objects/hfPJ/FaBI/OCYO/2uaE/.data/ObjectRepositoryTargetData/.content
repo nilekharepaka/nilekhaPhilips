@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lr_oiPVLc0y77iH3o3NzVw" Reference="_D5NUh_b5Em3iyA_6q7ZHw/0RbEn_61IUWDCWJOpdP9nw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://192.168.58.202/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" CvElementArea="556, 469, 277, 29" CvTextArea="565, 478, 80, 11" CvTextArgument="Batch-5:32 PM" CvType="InputBox" DesignTimeRectangle="810, 476, 17, 17" DesignTimeScaleFactor="1" FriendlyName="'ClickCancelIcon'" FullSelectorArgument="&lt;webctrl parentid='undefined' tag='DLS-ICON' class='icon-dls-cross-circle pt-icon' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='undefined' tag='DLS-ICON' class='icon-dls-cross-circle pt-icon' aaname='' /&gt;" Guid="a4dd02a1-848e-464f-aaaa-c871c3408947" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="c500fc96875d62f9e435edba124f0dc8.png" xmlns="">0Zmg_iZxjMUKCBx1iy8-OVw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

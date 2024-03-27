@@ -1,0 +1,334 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="EnableTissueList" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:i="clr-namespace:ImageUtilities;assembly=ImageUtilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="TissueListStatus" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="InputElement" Type="InArgument(ui:UiElement)" />
+  </x:Members>
+  <this:EnableTissueList.InputElement>
+    <InArgument x:TypeArguments="ui:UiElement" />
+  </this:EnableTissueList.InputElement>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>582,3272</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>ImageUtilities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Reflection</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>ImageUtilities</AssemblyReference>
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="EnableTissueList" sap:VirtualizedContainerService.HintSize="592,3207" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="530,3096" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="06e82c35-8d30-437f-8410-b696551202bf" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2959" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:Int64" Name="AllPixelsBefore" />
+              <Variable x:TypeArguments="x:Double" Name="ColorPercentageRedBefore" />
+              <Variable x:TypeArguments="x:Int64" Name="MatchingPixelsRedBefore" />
+              <Variable x:TypeArguments="x:Int64" Name="AllPixelsAfterTL" />
+              <Variable x:TypeArguments="x:Double" Name="ColorPercentageRedAfter" />
+              <Variable x:TypeArguments="x:Int64" Name="MatchingPixelsRedAfter" />
+              <Variable x:TypeArguments="x:Int64" Name="AllPixelsGreen" />
+              <Variable x:TypeArguments="x:Double" Name="ColorPercentageGreen" />
+              <Variable x:TypeArguments="x:Int64" Name="MatchingPixelsGreen" />
+              <Variable x:TypeArguments="ui:Image" Name="ViewportBeforeTissueList" />
+              <Variable x:TypeArguments="ui:Image" Name="ViewportAfterTissueList" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'AVViewerIcon'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06e82c35-8d30-437f-8410-b696551202bf" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="N4saTlgRWkeKYEzjliKNHA" DesignTimeRectangle="21, 155, 20, 20" DesignTimeScaleFactor="1" ElementType="Icon" FriendlyName="'AVViewerIcon'" FullSelectorArgument="&lt;webctrl parentid='logicalMonitor*' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='logicalMonitor0' tag='IMG' type='' class='app-switcher-container-icon' aaname='' /&gt;" Guid="51453cd8-4b5d-4013-8030-df56c424151c" InformativeScreenshot="3c430dad3069281e43e5700adcbd5df3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/XFFNZkjKY0mUDQYUJgHNoQ" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'Viewport'" HighlightTime="0.3" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NHighlight_3" ScopeIdentifier="06e82c35-8d30-437f-8410-b696551202bf" Version="V3">
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="aDx-Ldgrm0Ga88A2bsxdVg" DesignTimeRectangle="265, 288, 679, 695" DesignTimeScaleFactor="1" FriendlyName="'Viewport'" FullSelectorArgument="&lt;webctrl idx='2' parentid='*' tag='CANVAS' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='2300' tag='CANVAS' class='annotationsCanvasG1 burnedAnnotations' aaname='' /&gt;" Guid="c5574fac-07aa-414c-8ab9-c75f19b4ad69"   InformativeScreenshot="7c2e65ce678116ab581967ba435fd154.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/EaKHS3iSq06gICUVPUWJWA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <uix:NTakeScreenshot DisplayName="Take Screenshot 'Viewport'" FileName="screenshot.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="434,233" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_6" ScopeIdentifier="06e82c35-8d30-437f-8410-b696551202bf" Version="V3">
+              <uix:NTakeScreenshot.OutImage>
+                <OutArgument x:TypeArguments="ui:Image">
+                  <CSharpReference x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpReference`1_25">ViewportBeforeTissueList</CSharpReference>
+                </OutArgument>
+              </uix:NTakeScreenshot.OutImage>
+              <uix:NTakeScreenshot.Target>
+                <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="aDx-Ldgrm0Ga88A2bsxdVg" DesignTimeRectangle="265, 288, 679, 695" DesignTimeScaleFactor="1" FriendlyName="'Viewport'" FullSelectorArgument="&lt;webctrl idx='2' parentid='*' tag='CANVAS' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='2300' tag='CANVAS' class='annotationsCanvasG1 burnedAnnotations' aaname='' /&gt;" Guid="c5574fac-07aa-414c-8ab9-c75f19b4ad69"   InformativeScreenshot="7c2e65ce678116ab581967ba435fd154.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/EaKHS3iSq06gICUVPUWJWA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NTakeScreenshot.Target>
+            </uix:NTakeScreenshot>
+            <i:ColorFinder DisplayName="Color Finder" GreenBlueMax="140" GreenBlueMin="45" GreenGreenMax="255" GreenGreenMin="135" GreenRedMax="215" GreenRedMin="75" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="ColorFinder_4" InputColor="Orange" OrangeBlueMax="35" OrangeBlueMin="20" OrangeGreenMax="60" OrangeGreenMin="25" OrangeRedMax="160" OrangeRedMin="130" PinkBlueMax="255" PinkBlueMin="115" PinkGreenMax="210" PinkGreenMin="65" PinkRedMax="255" PinkRedMin="136">
+              <i:ColorFinder.AllPixels>
+                <OutArgument x:TypeArguments="x:Int64">
+                  <CSharpReference x:TypeArguments="x:Int64" sap2010:WorkflowViewState.IdRef="CSharpReference`1_14">AllPixelsBefore</CSharpReference>
+                </OutArgument>
+              </i:ColorFinder.AllPixels>
+              <i:ColorFinder.ColorPercentage>
+                <OutArgument x:TypeArguments="x:Double">
+                  <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">ColorPercentageRedBefore</CSharpReference>
+                </OutArgument>
+              </i:ColorFinder.ColorPercentage>
+              <i:ColorFinder.InputImage>
+                <InArgument x:TypeArguments="sd:Image">
+                  <CSharpValue x:TypeArguments="sd:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">ViewportBeforeTissueList</CSharpValue>
+                </InArgument>
+              </i:ColorFinder.InputImage>
+              <i:ColorFinder.MatchingPixels>
+                <OutArgument x:TypeArguments="x:Int64">
+                  <CSharpReference x:TypeArguments="x:Int64" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">MatchingPixelsRedBefore</CSharpReference>
+                </OutArgument>
+              </i:ColorFinder.MatchingPixels>
+            </i:ColorFinder>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_6">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">"All pixels present in the image are "+AllPixelsBefore+" and red pixels are "+MatchingPixelsRedBefore+" and percentage of match is "+ColorPercentageRedBefore</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'TissueListIcon'" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="06e82c35-8d30-437f-8410-b696551202bf" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="http://192.168.58.206/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.13786265022005672006.26445001253937339832&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="3uU3ghzb50Oxsbdo469sFw" DesignTimeRectangle="220, 286, 22, 22" DesignTimeScaleFactor="1" FriendlyName="'TissueListIcon'" FullSelectorArgument="&lt;webctrl class='icon-size' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='icon-size' parentid='PopupVALN0' tag='DIV' type='' aaname='' /&gt;" Guid="4038c505-01bc-4135-85f3-fdc2945fafcf"   InformativeScreenshot="271afcf9fa033fc8dc8585ff6c19ddaa.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/osCw8vTeaEieBdLUND5Jbg" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'Viewport'" HighlightTime="0.3" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NHighlight_4" ScopeIdentifier="06e82c35-8d30-437f-8410-b696551202bf" Version="V3">
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="aDx-Ldgrm0Ga88A2bsxdVg" DesignTimeRectangle="265, 288, 679, 695" DesignTimeScaleFactor="1" FriendlyName="'Viewport'" FullSelectorArgument="&lt;webctrl idx='2' parentid='*' tag='CANVAS' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='2300' tag='CANVAS' class='annotationsCanvasG1 burnedAnnotations' aaname='' /&gt;" Guid="c5574fac-07aa-414c-8ab9-c75f19b4ad69"   InformativeScreenshot="7c2e65ce678116ab581967ba435fd154.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/EaKHS3iSq06gICUVPUWJWA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <uix:NTakeScreenshot DisplayName="Take Screenshot 'Viewport'" FileName="screenshot.png" FileNameMode="None" sap:VirtualizedContainerService.HintSize="434,233" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_4" ScopeIdentifier="06e82c35-8d30-437f-8410-b696551202bf" Version="V3">
+              <uix:NTakeScreenshot.OutImage>
+                <OutArgument x:TypeArguments="ui:Image">
+                  <CSharpReference x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">ViewportAfterTissueList</CSharpReference>
+                </OutArgument>
+              </uix:NTakeScreenshot.OutImage>
+              <uix:NTakeScreenshot.Target>
+                <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="aDx-Ldgrm0Ga88A2bsxdVg" DesignTimeRectangle="265, 288, 679, 695" DesignTimeScaleFactor="1" FriendlyName="'Viewport'" FullSelectorArgument="&lt;webctrl idx='2' parentid='*' tag='CANVAS' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='2300' tag='CANVAS' class='annotationsCanvasG1 burnedAnnotations' aaname='' /&gt;" Guid="c5574fac-07aa-414c-8ab9-c75f19b4ad69"   InformativeScreenshot="7c2e65ce678116ab581967ba435fd154.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/EaKHS3iSq06gICUVPUWJWA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+              </uix:NTakeScreenshot.Target>
+            </uix:NTakeScreenshot>
+            <i:ColorFinder DisplayName="Color Finder" GreenBlueMax="140" GreenBlueMin="45" GreenGreenMax="255" GreenGreenMin="135" GreenRedMax="215" GreenRedMin="75" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="ColorFinder_5" InputColor="Orange" OrangeBlueMax="35" OrangeBlueMin="20" OrangeGreenMax="60" OrangeGreenMin="25" OrangeRedMax="160" OrangeRedMin="130" PinkBlueMax="255" PinkBlueMin="115" PinkGreenMax="210" PinkGreenMin="65" PinkRedMax="255" PinkRedMin="136">
+              <i:ColorFinder.AllPixels>
+                <OutArgument x:TypeArguments="x:Int64">
+                  <CSharpReference x:TypeArguments="x:Int64" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">AllPixelsAfterTL</CSharpReference>
+                </OutArgument>
+              </i:ColorFinder.AllPixels>
+              <i:ColorFinder.ColorPercentage>
+                <OutArgument x:TypeArguments="x:Double">
+                  <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">ColorPercentageRedAfter</CSharpReference>
+                </OutArgument>
+              </i:ColorFinder.ColorPercentage>
+              <i:ColorFinder.InputImage>
+                <InArgument x:TypeArguments="sd:Image">
+                  <CSharpValue x:TypeArguments="sd:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">ViewportAfterTissueList</CSharpValue>
+                </InArgument>
+              </i:ColorFinder.InputImage>
+              <i:ColorFinder.MatchingPixels>
+                <OutArgument x:TypeArguments="x:Int64">
+                  <CSharpReference x:TypeArguments="x:Int64" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">MatchingPixelsRedAfter</CSharpReference>
+                </OutArgument>
+              </i:ColorFinder.MatchingPixels>
+            </i:ColorFinder>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_7">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">"All pixels present in the image are "+AllPixelsAfterTL+" and red pixels are "+MatchingPixelsRedAfter+" and percentage of match is "+ColorPercentageRedAfter</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <i:ColorFinder DisplayName="Color Finder" GreenBlueMax="84" GreenBlueMin="11" GreenGreenMax="255" GreenGreenMin="139" GreenRedMax="240" GreenRedMin="139" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="ColorFinder_6" InputColor="Green" OrangeBlueMax="0" OrangeBlueMin="0" OrangeGreenMax="156" OrangeGreenMin="117" OrangeRedMax="241" OrangeRedMin="180" PinkBlueMax="255" PinkBlueMin="115" PinkGreenMax="210" PinkGreenMin="65" PinkRedMax="255" PinkRedMin="136">
+              <i:ColorFinder.AllPixels>
+                <OutArgument x:TypeArguments="x:Int64">
+                  <CSharpReference x:TypeArguments="x:Int64" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">AllPixelsGreen</CSharpReference>
+                </OutArgument>
+              </i:ColorFinder.AllPixels>
+              <i:ColorFinder.ColorPercentage>
+                <OutArgument x:TypeArguments="x:Double">
+                  <CSharpReference x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpReference`1_22">ColorPercentageGreen</CSharpReference>
+                </OutArgument>
+              </i:ColorFinder.ColorPercentage>
+              <i:ColorFinder.InputImage>
+                <InArgument x:TypeArguments="sd:Image">
+                  <CSharpValue x:TypeArguments="sd:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">ViewportAfterTissueList</CSharpValue>
+                </InArgument>
+              </i:ColorFinder.InputImage>
+              <i:ColorFinder.MatchingPixels>
+                <OutArgument x:TypeArguments="x:Int64">
+                  <CSharpReference x:TypeArguments="x:Int64" sap2010:WorkflowViewState.IdRef="CSharpReference`1_23">MatchingPixelsGreen</CSharpReference>
+                </OutArgument>
+              </i:ColorFinder.MatchingPixels>
+            </i:ColorFinder>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="434,143" sap2010:WorkflowViewState.IdRef="LogMessage_8">
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">"All pixels present in the image are "+AllPixelsGreen+" and green pixels are "+MatchingPixelsGreen+" and percentage of match for green color is "+ColorPercentageGreen</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">TissueListStatus</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">(MatchingPixelsRedBefore&gt;MatchingPixelsRedAfter) &amp;&amp; (ColorPercentageGreen!=null)</CSharpValue>
+                </InArgument>
+              </Assign.Value>
+            </Assign>
+            <If sap:VirtualizedContainerService.HintSize="434,644" sap2010:WorkflowViewState.IdRef="If_2">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">TissueListStatus==true</CSharpValue>
+                </InArgument>
+              </If.Condition>
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,231" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_9">
+                    <ui:LogMessage.Level>
+                      <InArgument x:TypeArguments="ui:LogLevel">
+                        <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Level>
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">"Tissue list has been enabled and ribcage is not present."</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,231" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,143" sap2010:WorkflowViewState.IdRef="LogMessage_10">
+                    <ui:LogMessage.Level>
+                      <InArgument x:TypeArguments="ui:LogLevel">
+                        <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">UiPath.Core.Activities.LogLevel.Error</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Level>
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">"Tissue list has been enabled but ribcage is also present."</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                </Sequence>
+              </If.Else>
+            </If>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.InUiElement>
+        <InArgument x:TypeArguments="ui:UiElement">
+          <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">InputElement</CSharpValue>
+        </InArgument>
+      </uix:NApplicationCard.InUiElement>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

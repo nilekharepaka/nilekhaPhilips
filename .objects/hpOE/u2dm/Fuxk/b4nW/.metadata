@@ -1,0 +1,16 @@
+﻿{
+  "Name": "FloatingBarInjectDyeIcon",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "b4nWyrTeKEWoA5P9Bqq-sQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/b4nWyrTeKEWoA5P9Bqq-sQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-14T15:17:11.1816934Z",
+  "Updated": "2024-02-14T15:18:41.4145742Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

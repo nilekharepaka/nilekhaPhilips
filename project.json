@@ -1,0 +1,618 @@
+{
+  "name": "AVApps_CT_Cardiac_Sanity",
+  "projectId": "e53fe037-7448-439a-aa94-cf683542c9d9",
+  "description": "Project contains AVApps CT_Cardiac_Sanity tests",
+  "main": "Main.xaml",
+  "dependencies": {
+    "AVCommon": "[1.0.77]",
+    "CursorInfo": "[1.0.0.6]",
+    "ImageUtilities": "[1.1.1.4089]",
+    "TestScriptLogGenerator": "[1.0.4]",
+    "UiPath.System.Activities": "[23.4.4]",
+    "UiPath.Testing.Activities": "[23.4.1]",
+    "UiPath.UIAutomation.Activities": "[23.4.8]"
+  },
+  "webServices": [],
+  "entitiesStores": [],
+  "schemaVersion": "4.0",
+  "studioVersion": "23.4.4.0",
+  "projectVersion": "1.0.165145818",
+  "runtimeOptions": {
+    "autoDispose": false,
+    "netFrameworkLazyLoading": false,
+    "isPausable": true,
+    "isAttended": false,
+    "requiresUserInteraction": true,
+    "supportsPersistence": false,
+    "workflowSerialization": "DataContract",
+    "excludedLoggedData": [
+      "Private:*",
+      "*password*"
+    ],
+    "executionType": "Workflow",
+    "readyForPiP": false,
+    "startsInPiP": false,
+    "mustRestoreAllDependencies": true,
+    "pipType": "ChildSession"
+  },
+  "designOptions": {
+    "projectProfile": "Developement",
+    "outputType": "Tests",
+    "libraryOptions": {
+      "includeOriginalXaml": false,
+      "privateWorkflows": []
+    },
+    "processOptions": {
+      "ignoredFiles": [
+        "ReusableMethods/AVAppsCCAFloatingBarActivities.xaml"
+      ]
+    },
+    "fileInfoCollection": [
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "eb107405-7291-4776-a192-e2e280aa196d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\StudyLaunchInAVViewer.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7ad4bd01-6446-4bf4-9bd0-09171a66d2a7",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAWarningNotificationCheck.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "46015b19-8a3a-4f40-820f-ec2c3e369288",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\CCACoronariesSegmentsdisplayedTest.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f9c9064f-49ec-49bf-aa47-cce02dcbd133",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\CCAChangeRenderingModesTest.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "79d8e136-5309-4d7e-bb5d-d08f9a6a46de",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\CCAShowAndHideWallLumenCenterline.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "979f5558-d158-4bca-ad12-a0cb3ff52aeb",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\CCAEditLumenAndValidateNotificationMsg.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "70a12592-8996-45fa-9a92-3c703fc82f38",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\CCAEditSegmentationShowHideCoronariesReferenceLines.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "529a88ad-bd8e-463a-93e6-29888a7d4ba6",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAEditSegmentationInjectDyewithUndoRedoReset.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5ffc9e0a-e236-45c5-b2ff-ad8d8d81c595",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\CCAActivateAlgorithmTest.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3ab7a159-3932-4af7-810e-c154328ad150",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAEditSegmentationAddCoronary.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1fe5b856-f776-4a6a-ba89-1f257b0e5600",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAEditSegmentationInjectDye.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "910c8f27-28d2-4855-8691-3f7b91ec1657",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAEditSegmentationAddBalloon.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b4c443c2-d4fb-49a5-9bc6-7cb1230043f6",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAEditSegmentationRemoveBrush.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c5a3a375-fa28-48fe-b2b0-9ddb402fa277",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAEditSegmentationAddCoronaryWithUndoResetCancel.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c8448c92-cfc5-414b-aa9a-3a0ebe4447f1",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAEditSegmentationRemoveBrushWithUndoRedoReset.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2264b1b0-d800-4ffd-b125-63e373204fad",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\CCAEditSegmentationAddBalloonWithUndoRedoReset.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "d64d1677-f4ba-4e0d-98bb-8a9692634029",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAEditSegmentationLayoutAndFloatingToolbarChanges.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5ef5596d-441a-4269-8ace-efd0d52ab4e5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAEditSegmentationReset.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "56659832-bc6c-4da1-a42f-d89d8ab9cbfc",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAEditSegmentationUndo.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "460f71e2-fee6-4146-8fbc-5befb65ce10c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAEditSegmentationRedo.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "41ee6443-6e57-4aa1-9d42-95e4b218cb97",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAEditSegmentationCancel.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5a4cc1fd-aa4c-440a-9de2-ba7fffa9d8bd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleEditCurveWithUndoAndCancel.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0a5f717b-bee0-444b-9a64-a60c4ad4f098",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleEditCurveWithUndoAndAccept.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "fcff0bb2-2ccf-4f8f-abd7-c832460ac915",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleEditCurveWithUndoRedoAndCancel.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f7514b00-38c8-44e4-b951-172db0092c0f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleEditCurveWithUndoRedoAndAccept.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9983a333-9160-480b-b8fd-b8e580bfdd13",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleEditCurveWithReset.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "36f82c47-9ffd-4d3a-afaf-e59583e7c98f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleContinueCenterlineDistalWithUndoAndCancel.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "68578e4f-7688-4f10-b3da-c8794b1c18b5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleContinueCenterlineDistalWithUndoAndAccept.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "f4db8536-bf65-4c9f-937d-4aaa36dd0dc8",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleContinueCenterlineDistalWithUndoRedoAndCancel.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cbbaf632-cd39-4ceb-9d8a-ba1926fdaeae",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleContinueCenterlineDistalWithUndoRedoAndAccept.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "99869d6c-73e8-4fc2-bb37-265c7289b9d4",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleContinueCenterlineDistalWithReset.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "2e3d26e1-23c4-44c9-a522-9c6194529dde",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleContinueCenterlineProximalWithUndoAndCancel.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "15a0ed31-7ddb-4e35-9420-2f3df5736d6e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleContinueCenterlineProximalWithUndoAndAccept.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "90a44eb7-c223-477b-b20e-0df1c81d8cb2",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleContinueCenterlineProximalWithUndoRedoAndCancel.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3a25dcc2-89df-420e-9efe-41ba0f056c5b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleContinueCenterlineProximalWithUndoRedoAndAccept.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0cc516eb-6c04-4c98-9c35-b3cd040c29be",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleContinueCenterlineProximalWithReset.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "226c22f0-9a5d-4d33-800a-67ce20d0b66b",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\AvViewerQuickBatchInSlabMode.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a5f73918-40d3-4a91-983d-11dcd4db0a72",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCALeftPanelUI.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "fbb61d4a-bb9b-4d93-9da3-af80b8cec4b9",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\CCAMultiPhaseViewAndSelectionTest.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3fd840d0-ed25-4edf-b299-3b09e7dd46ec",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleStenosisFindngsEditingProximalMarkeronsMPRAndCancellation.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e510177e-480a-4ae9-b3e8-762e8ed96fd0",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleStenosisFindngsEditingDistalMarkeronsMPRAndCancellation.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ad1da263-8859-4727-a2ba-517b0997ae86",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleStenosisFindngsEditingByScrollingOnProximalCrossSectionAndCancellation.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "12dcf6a1-bbe5-495a-9ee4-a680e6a10724",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleStenosisFindngsEditingByScrollingOnDistalCrossSectionAndCancellation.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "bd060de8-e0ac-4044-adc2-3e2df2bbd3c9",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleStenosisFindngsEditingByScrollingOnLesionCrossSectionAndCancellation.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "03e6a332-ecd1-4f1b-817c-de9e385a05b6",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleStenosisFindingsEditingLesionMarkeronsMPRAndCancellation.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4f524d36-7087-4d01-a12a-1d4bfacfba14",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleStenosisFindngsEditingProximalMarkeronsMPRAndAccepting.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "135fafd3-e6ff-4591-a3ca-028d8b3614eb",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleStenosisFindngsEditingDistalMarkeronsMPRAndAccepting.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "4dd83d1a-99be-4c7d-9fc0-e7645908e743",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleStenosisFindngsEditingByScrollingOnProximalCrossSectionAndAccepting.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "e57ecb40-4be3-4692-beea-462be3b1edbf",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleStenosisFindngsEditingByScrollingOnDistalCrossSectionAndAccepting.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "8651e67e-0ab1-4d8f-a05b-881a1ae8a010",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleStenosisFindingEditingLesionMarkeronsMPRAndAccepting.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "37b52a0c-2b9d-4c8b-88bd-c0e142e3e82b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleStenosisFindngsEditingByScrollingOnLesionCrossSectionAndAccepting.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9fb2f923-2548-48ef-950b-1a34c1f3e57a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleEditWallOnsMPR.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "24ab756c-e3dd-44ac-a2b4-fad7e825ed46",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleEditWallOnCrossSection.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7b5d637a-578b-4ad4-9378-89b947a83d7b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleEditLumenLineOnsMPR.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "bc01d96b-eb7e-45c6-9c36-7e4025a2b61d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleEditLumenLineOnCrossSection.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1848d6f8-5d7c-4db3-8e3e-ae99ee89fdd7",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleVesselConfirmationWorkflow.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3ed10c95-1d14-4f23-b8bc-5ae472065842",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\AvViewerCardiacOrientationsTest.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c692b499-570c-411c-8666-3a71a9c8b6ac",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAPlanningModuleStentPlanningDeleteStent.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6d3b855c-af07-44af-a2ad-c84eeed22c21",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\ImageRenderingMode\\CCAImageRenderingModesHeartWithAllVolumeRendering.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "929c6011-bc53-4fdf-83b7-913536697a79",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\ImageRenderingMode\\CCAImageRenderingModesTreeWithAllVolumeRendering.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "7a1f4846-5f73-4f03-acc6-625c3ac944b2",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\ImageRenderingMode\\CCAImageRenderingModesTreeWithAllVRPreset.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b9e9b021-a084-4580-9b67-eb927c09b65a",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\AvViewerRibcageRemovalToolTests.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "3293acb3-995e-4200-9155-77c0409dc073",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAPlanningModuleAddGeneralCArmAngles.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "649bf0a0-d5bf-4c88-85f1-041eea41abab",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\ImageRenderingMode\\CCAImageRenderingModesWithAllCardiacVolumes.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "144634d1-d4d2-4fd4-9e16-bd57088d1a70",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAPlanningModuleDisplayCArmAngles.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "1d20d707-5933-4e5c-b61a-fe17bd589f28",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAPlanningModuleSelectAddedCArmAngles.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "8947325b-2341-4cc5-942b-b6a11cbf93c1",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAPlanningModuleStentPlanningAddStentAndAcceptVesselWithHighSeverity.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "964ca2ab-6b98-4f36-8848-fc1a29e64616",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAPlanningModuleStentPlanningAddStentAndCancelVesselWithHighSeverity.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6524da2a-621a-4dac-ba7a-dcb48fbee103",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\ImageRenderingMode\\CCAImageRenderingModesTaviWithAllVolumeRendering.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ce4f00ca-b65b-4fa7-a56c-19559cf4a25e",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\ImageRenderingMode\\CCAImageRenderingModesCoronaryWithAllVolumeRendering.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "074d89eb-01c8-41d1-89cf-805e77fa5784",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAPlanningModuleDeleteGeneralCArmAngles.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5c49a44e-24a9-47d1-9ce3-3ebc56b36fe3",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAPlanningModuleUpdateSelectedGeneralCArmAngles.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ebcf6ac8-2431-4fd3-90bb-1d9062240db6",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAPlanningModuleDeleteCArmAngleEntriesInStentCard.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "5fc260ee-c41e-48d6-ac5f-ebd105ca3fdd",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCAPlanningModuleStentcardWithCArmAngles.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c3f4a025-5dd4-4fb0-9643-c5c66e09b29e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCACoronaryOverviewLayoutImageRenderingModesStandardMPRAxial.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6a89aca7-f575-42da-954d-b2c4b737353a",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCACoronaryOverviewLayoutImageRenderingModesStandardMPRCoronal.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6dac6340-765d-4349-8e78-cc3df7c3556b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCACoronaryOverviewLayoutImageRenderingModesStandardMPRSagittal.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ed302bb9-cfa4-4c02-a363-a155883b6c90",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADefaultDiagnosisLayoutImageRenderingModesAxial.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "55a34d32-fadd-4cdd-a2ca-6329ba49e189",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADefaultDiagnosisLayoutImageRenderingModesVolume.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "97883f95-ede6-437b-b5f9-659f9f734242",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\ImageRenderingMode\\CCAImageRenderingModesBypassWithAllVolumeRendering.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ed951798-8b63-46cd-864d-240799f8f8e5",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\ImageRenderingMode\\CCAImageRenderingModesMitralWithAllVolumeRendering.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "142b66fd-1585-44be-a30d-2056d9987a16",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CCADiagnosisModuleDeleteStenosisFindings.xaml"
+      }
+    ],
+    "modernBehavior": true,
+    "saveToCloud": false
+  },
+  "expressionLanguage": "CSharp",
+  "isTemplate": false,
+  "templateProjectData": {},
+  "publishData": {},
+  "targetFramework": "Windows"
+}

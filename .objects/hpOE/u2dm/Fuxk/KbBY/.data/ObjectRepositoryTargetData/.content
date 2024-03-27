@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="BwPxxt-6eUCEXG2auTzq3g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.33.1.2850666031064781382.27307363043434903132&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" CvElementArea="166, 422, 19, 19" CvType="Icon" DesignTimeRectangle="166, 484, 19, 19" DesignTimeScaleFactor="1" ElementType="RadioButton" FriendlyName="'INPUT 518a1dbb-a15e-462…'" FuzzySelectorArgument="&lt;webctrl class='pt-input' parentclass='pt-layout-container' tag='INPUT' type='radio' aaname='              ' /&gt;" Guid="869b0247-0341-44b1-be93-e4ac7705cbd6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABcAAAAXCAYAAADgKtSgAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADFSURBVEhL7dPNCoQgGIXhuRUXkQhB2KJNSITe/yU1HMGPRo/ZwLQYaPEsvzf/eiml9sQ5t4cQLtFay1yNxKdpopGaZVmKWE7i27bRyJnW6mO873s63DKOI40mMW6MocMtOMo8eBTj2B4bbrHW0mgiZ+69p4Ez2PExlpP4PM80ULOuaxHLSbzruq9WPwxDEctJHDDAQrnWRSYfccDl4gdhURzFlRUnRTzBR/COsUq8itblMdX4Lzxx6o/jeGZ3ec6cujGu9je2hhh/eZRT4QAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='*.exe' title='CardiacCT' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl class='pt-input' parentclass='pt-layout-container' idx='{0}' /&gt;", VesselListCheckCircleIndex)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="5cae6948571876d3329929929387c1d7.png" xmlns="">0TLhULKr-PUi1tPlCslZxHw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="1" Name="VesselListCheckCircleIndex" />
+    </scg:List>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

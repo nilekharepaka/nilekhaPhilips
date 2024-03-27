@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Findings",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "17aOpTCtKkmfXMc2BFnOmw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/17aOpTCtKkmfXMc2BFnOmw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/OCYOHz9Y9kKH6bCHntO-Xg",
+  "Created": "2024-02-09T18:29:26.8461285Z",
+  "Updated": "2024-02-09T18:29:26.8461285Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

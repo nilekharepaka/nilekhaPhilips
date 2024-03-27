@@ -1,0 +1,14 @@
+﻿{
+  "Name": "CenterLineProximalFloatingIcon",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "kVmdVqU7CkWXOMBKjNq_Vg",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/kVmdVqU7CkWXOMBKjNq_Vg",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-05T14:39:00.7586038Z",
+  "Updated": "2024-02-05T14:39:00.7586038Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

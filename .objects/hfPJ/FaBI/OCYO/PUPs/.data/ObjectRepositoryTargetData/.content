@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="f65CnPv7_UaV3o4kgZ5aIg" Reference="_D5NUh_b5Em3iyA_6q7ZHw/b4zj9SbdZ0qG2YInG9IdoQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" DesignTimeRectangle="265, 243, 679, 740" DesignTimeScaleFactor="1" FriendlyName="'SlabViewportScreenshot'" FullSelectorArgument="&lt;webctrl idx='2' parentid='*' tag='CANVAS' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='1536' tag='CANVAS' class='annotationsCanvasG1 burnedAnnotations' aaname='' /&gt;" Guid="a02af6ff-b9fd-454d-bdeb-b470842fc051" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4de7e8ef54384e64688dc50da2b680ad.png" xmlns="">0KawMivW820ORLAkIt0hm9Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TakeScreenshot</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

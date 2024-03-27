@@ -1,0 +1,16 @@
+﻿{
+  "Name": "NewCenterlineBtn",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "Y39rx8a6KUy3-XnQBDXUjw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/Y39rx8a6KUy3-XnQBDXUjw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-22T17:24:01.5672089Z",
+  "Updated": "2024-02-22T17:25:33.5162834Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

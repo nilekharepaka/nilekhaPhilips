@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="l6W2otIMWUOLJ8snuEyZkg" Reference="_D5NUh_b5Em3iyA_6q7ZHw/_06x1Pd89UuY-lShDg7YDw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" CvTextArea="280, 423, 24, 11" CvTextArgument="LAD" CvType="Text" DesignTimeRectangle="263, 424, 22, 11" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'LAD'" Guid="541a0a55-52f9-49ca-b6e7-de5e09842607" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAABoAAAAPCAYAAAD6Ud/mAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEcSURBVDhP7ZK7ioNAGIX3LQR7n8FG8AUEO+1MZS2kE1JYpLAW7CxE0iQWXiFaGUtv4BudZX6IuGDhht0twhaHmTlz+f6ZMx8cx+Ev9OagIAhIa2+tMAwxTRMOh8PiKYqCvu8xjiO1wzCgrmtomvZl726QLMvI8xyXywW+7y8+AzVNQ+3Ts20bj8cDqqou3m7Q6XTC9XqFaZpUsSRJ5G+BeJ5HHMfwPG/xdoEEQUCSJLAsi/ppmuJ4PNLcFojpfD4jy7JlvAuk6zqKooAoijR2HAe3240q/1EQy4QFzQ5katsWXddR4Fugl56OZVFVFd1q7UdRBNd1N0G7PsM8z1T9U2VZUiYsm/Valtf9fodhGLTuW9/7N/UPelEcPgEAKoGwXTRLtwAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='*.exe' title='CardiacCT' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="361, 423, 41, 11" CvTextArgument="Phase -" CvType="Text" DesignTimeRectangle="344, 422, 43, 15" ElementType="Text" FriendlyName="'Phase -'" FullSelectorArgument="&lt;webctrl class='phase-label' tag='LABEL' /&gt;" FuzzySelectorArgument="&lt;webctrl class='phase-label' tag='LABEL' type='' aaname='Phase - ' check:innerText='Phase -' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC8AAAATCAYAAAAAn1R6AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGxSURBVEhL7ZO7igJRDIb3Laays7ISxEKwUNBKEBFFbEQURUWR8a54v9c+li/1L38gZx3YHRSLWWGKn2GSnOQ7Sc6XZVn4VPnwXsmH90oGPp/P43K54Hw+43Q6yXe73SKTySAajWK5XErM42GvdLvdcL/fnfAEJKjaarUaFouFXOA/watc4dPpNDabDcrlsvj6/T72+71MaDAYIBQKIZvNik2nxfhUKoVAIIBWqyV2arfbSRN4ptvt4ng8in21Wkm81nxFf8KzeLvdxnw+l+SE6vV6Yo/FYhKby+UcySjG1Ot1JBIJcxHNFwwGUa1WBZ7/tBcKBYxGI/P/ihzwuucsym4SPJlM/rrzs9kMlUpF/NPpFIfDQbp7vV7lAuzweDyWHMViUf55TmNZg2I9xkQiEZO7VCoZP8VmqO9RrmujcoO3bRudTsd0juCUxnECXB9ejJMiPLuv/nf0Njy722g0xBYOh8VOeK6IdpuijevCLq7Xa1k92hkXj8dN3LNirbfh9cFy5bgOk8lEVofj5hk+zMeHrA9WHzL9zWbTUe8ZDYfDH/hPlA/vlXx4r/TB8Ba+AcD3CkBVl4TWAAAAAElFTkSuQmCC" SearchSteps="Selector" />
+          <Target CvTextArea="273, 274, 53, 13" CvTextArgument="Hangings:" CvType="Text" DesignTimeRectangle="256, 275, 52, 11" ElementType="Text" FriendlyName="'Hangings'" FullSelectorArgument="&lt;webctrl parentid='PopupVALN2' tag='SPAN' aaname='Hangings: ' visibleinnertext='Hangings:' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='PopupVALN2' tag='SPAN' aaname='Hangings: ' visibleinnertext='Hangings:' type='' class='hanging-menu-title' check:text='Hangings:' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADgAAAAPCAYAAACx+QwLAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJeSURBVEhL7VS/a9tAFO6/4szyUnuOO3SJOsRLJqdDHUzo4EKxoWkgNIMI2HgQHVQIhoIg1BTLEGIwN1iD4cBwYDQE/Ttf351O8dlVa6XEDQ0dPji9H7r3fe+9e1Yo7OAp4z/Bfx0GQQc38RiO4ZRwxjFuLlZtD4JXLtjExX6W7wHxeAT/Eu5B8BDeVECICNFCgiM4s5O4izHEVRf9CYeQPhHCaxSVz2p4YGnObYz4NkI4/I6QvuO5jzcb8u2zEbi6b5kfnK/+VwgB9rma1LKGP+9gw4eYutiVZyowjsbo7iU+u8MQXTt0rsCdRhi0k2ILVhsDQXdYMo7uMwhm51P8IoSr7YU9F6HOca5jsI7+L8Gy6CxJTzwca5vEGkFSY8bBDYgoJWijdclITZHYF6SmWeBYFqT/dUTkla+CLhMIPpQSe/kjAlnwCxm3RjAz/x0JQt2s6mmoetT5AVp0tmXX5wx+r43a7pLoOvJ38P0A0ayPmlKfcFcEnX9ZIBXSoxHjNNqcRJmHCDqHsFRcHoJFNH0SVeVLMPTbei0kyi9xfOohmJHol/Wl3UB+gqcjRDSStrIXsd+jMdpYYB0+qdxNRVlBHoJJjDlyKZ6X9VRIyHXhJL7hT3GPHazDo3FTy05LzYcjMFr6aOqh9psOHnwJKScZa05KCz7CJ7VTeQiWcDKkO+V9Ml92kdGOkWDNrzQRZF958N72wWU96X8IBsFt4OcONK9E9qOVhddU8KSrR1qipHbaPzJiNmDLBCs4+ca1yrrzrI+WemTywJiaNJ9e14PM2GxsmeDj44kT3MEPlI/czKznrGcAAAAASUVORK5CYII=" SearchSteps="Selector" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl aaname='{0}' tag='LABEL' parentclass='card-header' /&gt;", VesselName)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <TargetAnchorable.FuzzySelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl aaname='{0}' tag='LABEL' parentclass='card-header' type='' class='' check:text='LAD' /&gt;", VesselName)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FuzzySelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="4d3fd337036514a641461f89a8452831.png" xmlns="">0LQZjCK-UKEqNURO-sb7Ynw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="LAD" Name="VesselName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "HelpIcon",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "9sPzukI_C0KX2MUxUJDhHQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/9sPzukI_C0KX2MUxUJDhHQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-22T17:14:44.8720495Z",
+  "Updated": "2024-02-22T17:14:44.8720495Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "CommentLabelLeftPanel",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "A84LS3YRRk-JP9TQuaSltg",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/A84LS3YRRk-JP9TQuaSltg",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-22T17:47:19.2743114Z",
+  "Updated": "2024-02-22T17:48:13.1745141Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

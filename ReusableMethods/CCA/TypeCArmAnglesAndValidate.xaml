@@ -1,0 +1,447 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="TypeCArmAnglesAndValidate" this:TypeCArmAnglesAndValidate.ViewportIndex="1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:i="clr-namespace:ImageUtilities;assembly=ImageUtilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="InputElement" Type="InArgument(ui:UiElement)" />
+    <x:Property Name="PresetName" Type="InArgument(x:String)" />
+    <x:Property Name="TypeStatus" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="AnglesTextAfter" Type="OutArgument(x:String)" />
+    <x:Property Name="ViewportIndex" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:TypeCArmAnglesAndValidate.InputElement>
+    <InArgument x:TypeArguments="ui:UiElement" />
+  </this:TypeCArmAnglesAndValidate.InputElement>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>582,3190</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>ImageUtilities</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>ImageUtilities</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="TypeCArmAnglesAndValidate" sap:VirtualizedContainerService.HintSize="592,3125" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="530,3014" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="618b1473-28e3-4b61-853d-a74a7a458997" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="496,2877" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Default="chrome" Name="browser" />
+              <Variable x:TypeArguments="ui:UiElement" Name="ViewportElement" />
+              <Variable x:TypeArguments="ui:Image" Name="ViewportScreenshot" />
+              <Variable x:TypeArguments="x:String" Name="ScreenshotPathAfter">
+                <Variable.Default>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_43">"C:\\UiPathTestAutomation\\Images\\ScreenshotAfterTypeInAngle"+PresetName.Split()[0]+PresetName.Split()[2]+PresetName.Split()[3]+PresetName.Split()[5]+".png"</CSharpValue>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="ScreenshotPathBefore">
+                <Variable.Default>
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_44">"C:\\UiPathTestAutomation\\Images\\ScreenshotBeforeTypeInCArmAngle"+PresetName.Split()[0]+PresetName.Split()[2]+PresetName.Split()[3]+PresetName.Split()[5]+".png"</CSharpValue>
+                </Variable.Default>
+              </Variable>
+              <Variable x:TypeArguments="x:String" Name="ModeDetailsAfter" />
+              <Variable x:TypeArguments="x:Boolean" Name="CompRes" />
+              <Variable x:TypeArguments="x:String" Name="Coordinates" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NHighlight Color="Gold" DisplayName="Highlight 'CCAViewPortWithIndex'" HighlightTime="0.2" sap:VirtualizedContainerService.HintSize="434,157" sap2010:WorkflowViewState.IdRef="NHighlight_1" ScopeIdentifier="618b1473-28e3-4b61-853d-a74a7a458997" Version="V3">
+              <uix:NHighlight.OutUiElement>
+                <OutArgument x:TypeArguments="ui:UiElement">
+                  <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">ViewportElement</CSharpReference>
+                </OutArgument>
+              </uix:NHighlight.OutUiElement>
+              <uix:NHighlight.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd" InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NHighlight.Target>
+            </uix:NHighlight>
+            <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="TakeScreenshot_1">
+              <ui:TakeScreenshot.Screenshot>
+                <OutArgument x:TypeArguments="ui:Image">
+                  <CSharpReference x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">ViewportScreenshot</CSharpReference>
+                </OutArgument>
+              </ui:TakeScreenshot.Screenshot>
+              <ui:TakeScreenshot.Target>
+                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Id="d7d290c5-6764-4e4b-8b40-10ce0d5f0554">
+                  <ui:Target.Element>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </ui:Target.Element>
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TakeScreenshot.Target>
+            </ui:TakeScreenshot>
+            <ui:SaveImage DisplayName="Save Image" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="SaveImage_1">
+              <ui:SaveImage.FileName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">ScreenshotPathBefore</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.FileName>
+              <ui:SaveImage.Image>
+                <InArgument x:TypeArguments="ui:Image">
+                  <CSharpValue x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">ViewportScreenshot</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.Image>
+            </ui:SaveImage>
+            <uix:NInjectJsScript DisplayName="Inject Js Script 'CCAViewPortWithIndex'" ExecutionWorld="Page" sap:VirtualizedContainerService.HintSize="434,248" sap2010:WorkflowViewState.IdRef="NInjectJsScript_1" ScopeIdentifier="618b1473-28e3-4b61-853d-a74a7a458997" ScriptCode="ReusableMethods\\Scripts\\RenderingModeTextPositionByName.js" Version="V3">
+              <uix:NInjectJsScript.InputParameter>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">System.Text.RegularExpressions.Regex.Matches(PresetName,@"[A-Z]*[a-z]*\s{1}:\s{1}\d*")[0].ToString()</CSharpValue>
+                </InArgument>
+              </uix:NInjectJsScript.InputParameter>
+              <uix:NInjectJsScript.ScriptOutput>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">Coordinates</CSharpReference>
+                </OutArgument>
+              </uix:NInjectJsScript.ScriptOutput>
+              <uix:NInjectJsScript.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd" InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NInjectJsScript.Target>
+            </uix:NInjectJsScript>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="434,137" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">ViewportElement</CSharpValue>
+                </InArgument>
+              </uix:NClick.InUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="c1bde204-a574-4b3e-aaa3-f273e5993281">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="TopLeft">
+                      <uix:PointOffset.X>
+                        <InArgument x:TypeArguments="x:Int32">
+                          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">Convert.ToInt32(Coordinates.Split()[0])+5</CSharpValue>
+                        </InArgument>
+                      </uix:PointOffset.X>
+                      <uix:PointOffset.Y>
+                        <InArgument x:TypeArguments="x:Int32">
+                          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">Convert.ToInt32(Coordinates.Split()[1])+5</CSharpValue>
+                        </InArgument>
+                      </uix:PointOffset.Y>
+                    </uix:PointOffset>
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="2" DelayBetweenKeys="1" DelayBetweenShortcuts="2" DisplayName="Keyboard Shortcuts 'CCAViewPortWithIndex'" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_1" ScopeIdentifier="618b1473-28e3-4b61-853d-a74a7a458997" Shortcuts="[d(hk)]5[u(hk)][d(hk)]0[u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3">
+              <uix:NKeyboardShortcuts.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd" InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NKeyboardShortcuts.Target>
+            </uix:NKeyboardShortcuts>
+            <uix:NInjectJsScript DisplayName="Inject Js Script 'CCAViewPortWithIndex'" ExecutionWorld="Page" sap:VirtualizedContainerService.HintSize="434,248" sap2010:WorkflowViewState.IdRef="NInjectJsScript_3" ScopeIdentifier="618b1473-28e3-4b61-853d-a74a7a458997" ScriptCode="ReusableMethods\\Scripts\\RenderingModeTextPositionByName.js" Version="V3">
+              <uix:NInjectJsScript.InputParameter>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">System.Text.RegularExpressions.Regex.Matches(PresetName,@"[A-Z]*[a-z]*\s{1}:\s{1}\d*")[1].ToString()</CSharpValue>
+                </InArgument>
+              </uix:NInjectJsScript.InputParameter>
+              <uix:NInjectJsScript.ScriptOutput>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">Coordinates</CSharpReference>
+                </OutArgument>
+              </uix:NInjectJsScript.ScriptOutput>
+              <uix:NInjectJsScript.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd" InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NInjectJsScript.Target>
+            </uix:NInjectJsScript>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DelayAfter="2" DisplayName="Click" sap:VirtualizedContainerService.HintSize="434,137" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Version="V3">
+              <uix:NClick.InUiElement>
+                <InArgument x:TypeArguments="ui:UiElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">ViewportElement</CSharpValue>
+                </InArgument>
+              </uix:NClick.InUiElement>
+              <uix:NClick.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="0, 0, 0, 0" Guid="c1bde204-a574-4b3e-aaa3-f273e5993281">
+                  <uix:TargetAnchorable.PointOffset>
+                    <uix:PointOffset Position="TopLeft">
+                      <uix:PointOffset.X>
+                        <InArgument x:TypeArguments="x:Int32">
+                          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">Convert.ToInt32(Coordinates.Split()[0])+5</CSharpValue>
+                        </InArgument>
+                      </uix:PointOffset.X>
+                      <uix:PointOffset.Y>
+                        <InArgument x:TypeArguments="x:Int32">
+                          <CSharpValue x:TypeArguments="x:Int32" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">Convert.ToInt32(Coordinates.Split()[1])+5</CSharpValue>
+                        </InArgument>
+                      </uix:PointOffset.Y>
+                    </uix:PointOffset>
+                  </uix:TargetAnchorable.PointOffset>
+                </uix:TargetAnchorable>
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DelayAfter="2" DelayBetweenKeys="1" DelayBetweenShortcuts="2" DisplayName="Keyboard Shortcuts 'CCAViewPortWithIndex'" sap:VirtualizedContainerService.HintSize="434,199" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" ScopeIdentifier="618b1473-28e3-4b61-853d-a74a7a458997" Shortcuts="[d(hk)]7[u(hk)][d(hk)]0[u(hk)][d(hk)][k(enter)][u(hk)]" Version="V3">
+              <uix:NKeyboardShortcuts.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd" InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NKeyboardShortcuts.Target>
+            </uix:NKeyboardShortcuts>
+            <ui:TakeScreenshot WaitBefore="{x:Null}" DisplayName="Take Screenshot" sap:VirtualizedContainerService.HintSize="434,87" sap2010:WorkflowViewState.IdRef="TakeScreenshot_2">
+              <ui:TakeScreenshot.Screenshot>
+                <OutArgument x:TypeArguments="ui:Image">
+                  <CSharpReference x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">ViewportScreenshot</CSharpReference>
+                </OutArgument>
+              </ui:TakeScreenshot.Screenshot>
+              <ui:TakeScreenshot.Target>
+                <ui:Target ClippingRegion="{x:Null}" Selector="{x:Null}" Id="d7d290c5-6764-4e4b-8b40-10ce0d5f0554">
+                  <ui:Target.Element>
+                    <InArgument x:TypeArguments="ui:UiElement">
+                      <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">ViewportElement</CSharpValue>
+                    </InArgument>
+                  </ui:Target.Element>
+                  <ui:Target.TimeoutMS>
+                    <InArgument x:TypeArguments="x:Int32" />
+                  </ui:Target.TimeoutMS>
+                  <ui:Target.WaitForReady>
+                    <InArgument x:TypeArguments="ui:WaitForReady" />
+                  </ui:Target.WaitForReady>
+                </ui:Target>
+              </ui:TakeScreenshot.Target>
+            </ui:TakeScreenshot>
+            <ui:SaveImage DisplayName="Save Image" sap:VirtualizedContainerService.HintSize="434,133" sap2010:WorkflowViewState.IdRef="SaveImage_2">
+              <ui:SaveImage.FileName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">ScreenshotPathAfter</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.FileName>
+              <ui:SaveImage.Image>
+                <InArgument x:TypeArguments="ui:Image">
+                  <CSharpValue x:TypeArguments="ui:Image" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">ViewportScreenshot</CSharpValue>
+                </InArgument>
+              </ui:SaveImage.Image>
+            </ui:SaveImage>
+            <uix:NInjectJsScript InputParameter="{x:Null}" DisplayName="Inject Js Script 'CCAViewPortWithIndex'" ExecutionWorld="Page" sap:VirtualizedContainerService.HintSize="434,248" sap2010:WorkflowViewState.IdRef="NInjectJsScript_2" ScopeIdentifier="618b1473-28e3-4b61-853d-a74a7a458997" ScriptCode="ReusableMethods\\Scripts\\RenderingModesDetail.js" Version="V3">
+              <uix:NInjectJsScript.ScriptOutput>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">ModeDetailsAfter</CSharpReference>
+                </OutArgument>
+              </uix:NInjectJsScript.ScriptOutput>
+              <uix:NInjectJsScript.Target>
+                <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tAJL8m9H80yTQkKkbAMG8A" DesignTimeRectangle="679, 229, 818, 764" DesignTimeScaleFactor="1" FriendlyName="'CCAViewPortWithIndex'" FuzzySelectorArgument="&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' type='' aaname='' /&gt;" Guid="199401b7-560e-445f-b729-6ad046a112fd" InformativeScreenshot="81b438702ed85d34b7fd7f7c5e349cf3.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/7P4hFh4SJkKRM1tr-EqoIA" SearchSteps="Selector" Version="V2">
+                  <uix:TargetAnchorable.FullSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">string.Format("&lt;webctrl class='annotationsCanvasG1' tag='CANVAS' parentclass='viewPort' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.FullSelectorArgument>
+                  <uix:TargetAnchorable.ScopeSelectorArgument>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">string.Format("&lt;html app='{0}.exe' title='*' /&gt;", browser)</CSharpValue>
+                    </InArgument>
+                  </uix:TargetAnchorable.ScopeSelectorArgument>
+                </uix:TargetAnchorable>
+              </uix:NInjectJsScript.Target>
+            </uix:NInjectJsScript>
+            <i:CompareImages DisplayName="Compare images" sap:VirtualizedContainerService.HintSize="434,25" sap2010:WorkflowViewState.IdRef="CompareImages_1" Tollerance="1E-09">
+              <i:CompareImages.InputImagePath1>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">ScreenshotPathAfter</CSharpValue>
+                </InArgument>
+              </i:CompareImages.InputImagePath1>
+              <i:CompareImages.InputImagePath2>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">ScreenshotPathBefore</CSharpValue>
+                </InArgument>
+              </i:CompareImages.InputImagePath2>
+              <i:CompareImages.Result>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">CompRes</CSharpReference>
+                </OutArgument>
+              </i:CompareImages.Result>
+            </i:CompareImages>
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">TypeStatus</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">!CompRes &amp;&amp; ModeDetailsAfter.Contains("50") &amp;&amp; ModeDetailsAfter.Contains("70")</CSharpValue>
+                </InArgument>
+              </Assign.Value>
+            </Assign>
+            <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:String">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">AnglesTextAfter</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">(System.Text.RegularExpressions.Regex.Match( ModeDetailsAfter, @"[A-Z]*[a-z]*\s{1}:\s{1}\d*\s{1}[A-Z]*[a-z]*\s{1}:\s{1}\d*\s{1}")).ToString()</CSharpValue>
+                </InArgument>
+              </Assign.Value>
+            </Assign>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.InUiElement>
+        <InArgument x:TypeArguments="ui:UiElement">
+          <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">InputElement</CSharpValue>
+        </InArgument>
+      </uix:NApplicationCard.InUiElement>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>

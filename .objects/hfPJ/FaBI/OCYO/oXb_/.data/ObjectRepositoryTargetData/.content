@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="2Pfj1BG7tk6gF6NNxgmYBA" Reference="_D5NUh_b5Em3iyA_6q7ZHw/oXb_pjvSVEG-PLAeYRfA2g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic5vw430.code1.emi.philips.com/gfn/app/AV/index?study_ids=1.3.46.670589.33.1.2850666031064781382.27307363043434903132&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="imU2b_gHs0CYB-yq9u_0ZA" CvTextArea="856, 606, 83, 15" CvTextArgument="Orientation" CvType="Text" DesignTimeRectangle="598, 657, 152, 22" DesignTimeScaleFactor="1" FriendlyName="'SelectOrientation'" FullSelectorArgument="&lt;webctrl idx='2' tabindex='0' tag='DLS-MENU-ITEM' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tabindex='0' tag='DLS-MENU-ITEM' class='pt-menu-item ng-star-inserted' aaname='                                ' check:innerText='Orientation' /&gt;" Guid="f562ad03-e104-4015-8d7d-6984bc9e3cc3" ImageBase64="" Reference="_D5NUh_b5Em3iyA_6q7ZHw/oXb_pjvSVEG-PLAeYRfA2g" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="d9834a0956e0285126d5579696b11a3a.png" xmlns="">0FVjfOTQvHk-AIo_CassU9A</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "LeftPanelPinIcon",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "0xWwnNWcPUW0p_a6_ITvsw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/0xWwnNWcPUW0p_a6_ITvsw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-22T17:15:09.9681948Z",
+  "Updated": "2024-02-22T17:16:20.0891222Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

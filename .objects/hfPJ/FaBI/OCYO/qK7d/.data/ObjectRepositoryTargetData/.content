@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="PsleDoq4d0ut-TBhj6VoFA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://192.168.58.202/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" DesignTimeRectangle="557, 493, 275, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="4e19fdd0-63cb-4389-bbcc-2d0f0b98d1ff" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARcAAAAgCAYAAAA42zx1AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAADeSURBVHhe7d2xDcJAEERROiCkBTrgRBeUQgFEVAgNHWxgC9uJjTzZC55kefOvy+bQWusAe5vE5doukyPAWvN+jHF53M79fT/1/jwCbPb69qM6MolLFacOw0+Af9QDZXjBjC+XKs/wDfCP346IC7AbcQEixAWIEBcgQlyACHEBIsQFiBAXIEJcgAhxASLEBYgQFyBCXIAIcQEixAWIEBcgQlyACHEBIsQFiBAXIEJcgAhxASIWcbFbBOyhOrLYLaqltDpUeQC2qkG0xeLiYL71CrDWvB+TuADsRVyAgNY/CUvBjcFccasAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.FuzzySelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl tag='INPUT' type='text' aaname='{0}' /&gt;", QuickBatchOrientation)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FuzzySelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="63a2e5c93a3136c61b55edf92e0ac643.png" xmlns="">0NEzvMzQkXEKFcGlbZ-rMMA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="SagittalQuickBatch" Name="QuickBatchOrientation" />
+    </scg:List>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

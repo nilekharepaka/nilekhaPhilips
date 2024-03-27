@@ -1,0 +1,14 @@
+﻿{
+  "Name": "LayoutDropDown",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "dp02a4I5MUOOW3YmMtWTMQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/dp02a4I5MUOOW3YmMtWTMQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-01-23T09:05:20.4339138Z",
+  "Updated": "2024-01-23T09:05:20.4339138Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

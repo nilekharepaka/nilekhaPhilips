@@ -1,0 +1,392 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SwitchPhase" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:i="clr-namespace:ImageUtilities;assembly=ImageUtilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="Status" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="InputElement" Type="InArgument(ui:UiElement)" />
+    <x:Property Name="phaseToBeSelected" Type="InArgument(x:String)" />
+  </x:Members>
+  <this:SwitchPhase.InputElement>
+    <InArgument x:TypeArguments="ui:UiElement" />
+  </this:SwitchPhase.InputElement>
+  <this:SwitchPhase.phaseToBeSelected>
+    <InArgument x:TypeArguments="x:String" />
+  </this:SwitchPhase.phaseToBeSelected>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>1226,3767</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>ImageUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Net.Mail</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>ImageUtilities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SwitchPhase" sap:VirtualizedContainerService.HintSize="1236,3702" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <Sequence DisplayName="SwitchPhase" sap:VirtualizedContainerService.HintSize="1174,3591" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="1112,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info">
+        <ui:LogMessage.Message>
+          <InArgument x:TypeArguments="x:Object">
+            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">
+              <CSharpValue.Result>
+                <OutArgument x:TypeArguments="x:Object" />
+              </CSharpValue.Result>"Switch phase to "+phaseToBeSelected+ " Started"</CSharpValue>
+          </InArgument>
+        </ui:LogMessage.Message>
+      </ui:LogMessage>
+      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="1112,3299" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="5aa2dc95-ffe2-4755-bfda-e86b8d7c6f78" Version="V2">
+        <uix:NApplicationCard.Body>
+          <ActivityAction x:TypeArguments="x:Object">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+            </ActivityAction.Argument>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1078,3162" sap2010:WorkflowViewState.IdRef="Sequence_10">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,3047" sap2010:WorkflowViewState.IdRef="Sequence_2">
+                <Sequence.Variables>
+                  <Variable x:TypeArguments="x:String" Default="C:\UiPathTestAutomation\Images\\BeforePhase.png" Name="ViewportBeforePhase" />
+                  <Variable x:TypeArguments="x:String" Default="C:\UiPathTestAutomation\Images\\AfterPhase.png" Name="ViewportAfterPhase" />
+                </Sequence.Variables>
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'LayoutDropdownButton'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_1" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5aa2dc95-ffe2-4755-bfda-e86b8d7c6f78" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="lBSghBMv20ejcMIhDlpfnA" DesignTimeRectangle="268, 235, 17, 17" DesignTimeScaleFactor="1" FriendlyName="'LayoutDropdownButton'" FullSelectorArgument="&lt;webctrl src='*layouts/DLS_Layout*' tag='IMG' /&gt;" FuzzySelectorArgument="&lt;webctrl src='*layouts/DLS_Layout*' tag='IMG' type='' class='pt-image pt-image-left dls-icon' aaname='' /&gt;" Guid="a29742f6-91fe-4001-b743-e94b34dc9e83" InformativeScreenshot="eaee981fa456eed12dc193219c42ffcf.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/egJPL_xMfEW2RfiUScwEtg" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NCheckState DisplayName="Check App State 'LayoutDropdown'" sap:VirtualizedContainerService.HintSize="954,489" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="5aa2dc95-ffe2-4755-bfda-e86b8d7c6f78" Version="V3">
+                  <uix:NCheckState.IfExists>
+                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_4">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Layout1x1'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_2" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5aa2dc95-ffe2-4755-bfda-e86b8d7c6f78" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="http://ingbtcpic5vw430.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="Yhzc4p5iS0WCfiVy-q8mHA" CvElementArea="278, 271, 25, 32" CvTextArea="281, 292, 17, 11" CvTextArgument="1x1" CvType="Icon" DesignTimeRectangle="272, 265, 36, 47" DesignTimeScaleFactor="1" FriendlyName="'Layout1x1'" FullSelectorArgument="&lt;webctrl class='layoutcommand' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='layoutcommand' parentid='undefined' tag='DIV' type='' aaname='' check:innerText='1x1' /&gt;" Guid="10d9c862-e3e3-4d2b-bb2f-86ed42e469ca" InformativeScreenshot="136ec3e4557a5c2780c55bcf1cc7530b.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/ludus8rCI0mTuE-UidbIdw" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.IfNotExists>
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_2">
+                        <ui:LogMessage.Level>
+                          <InArgument x:TypeArguments="ui:LogLevel">
+                            <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">
+                              <CSharpValue.Result>
+                                <OutArgument x:TypeArguments="ui:LogLevel" />
+                              </CSharpValue.Result>UiPath.Core.Activities.LogLevel.Error</CSharpValue>
+                          </InArgument>
+                        </ui:LogMessage.Level>
+                        <ui:LogMessage.Message>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">
+                              <CSharpValue.Result>
+                                <OutArgument x:TypeArguments="x:Object" />
+                              </CSharpValue.Result>"Drop does not appear"</CSharpValue>
+                          </InArgument>
+                        </ui:LogMessage.Message>
+                      </ui:LogMessage>
+                    </Sequence>
+                  </uix:NCheckState.IfNotExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable BrowserURL="http://ingbtcpic5vw430.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="E1aHzo-c0E23AzWGNiwKXQ" DesignTimeRectangle="272, 264, 154, 253" DesignTimeScaleFactor="1" FriendlyName="'LayoutDropdown'" FullSelectorArgument="&lt;webctrl class='layout-manager-toolCommands-container' parentid='undefined' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='layout-manager-toolCommands-container' parentid='undefined' tag='DIV' type='' aaname='' check:innerText='1x1&amp;#xD;&amp;#xA;1x2&amp;#xD;&amp;#xA;1x3&amp;#xD;&amp;#xA;1x4&amp;#xD;&amp;#xA;2x1&amp;#xD;&amp;#xA;2x2&amp;#xD;&amp;#xA;2x3&amp;#xD;&amp;#xA;2x4&amp;#xD;&amp;#xA;3x1&amp;#xD;&amp;#xA;3x2&amp;#xD;&amp;#xA;3x3&amp;#xD;&amp;#xA;3x4&amp;#xD;&amp;#xA;4x1&amp;#xD;&amp;#xA;4x2&amp;#xD;&amp;#xA;4x3&amp;#xD;&amp;#xA;4x4&amp;#xD;&amp;#xA;4x5' /&gt;" Guid="c7193113-aa3d-472c-ad54-077a9bd44c0a" InformativeScreenshot="5fccfc0d4318769738d48f1d1fe46949.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/G32FdRanKkiJ1g9i1VbveA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NCheckState.Target>
+                </uix:NCheckState>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'EyeIcon'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_3" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5aa2dc95-ffe2-4755-bfda-e86b8d7c6f78" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="vh8ZeCNBW0uJD6wKMXmrzg" DesignTimeRectangle="456, 187, 44, 22" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'EyeIcon'" FullSelectorArgument="&lt;webctrl parentid='ViewMenuPopupVALN*' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='ViewMenuPopupVALN0' tag='BUTTON' type='' class='pt-quiet pt-button' aaname='       ' /&gt;" Guid="1dd45252-8876-453e-afd4-484837a4638f" InformativeScreenshot="7208a12bb9169074a55d1084a2a6c0d8.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/0uDJUfcB7kGPK1D6Wwp1rQ" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NCheckState DisplayName="Check App State 'ContextualToolbars'" sap:VirtualizedContainerService.HintSize="954,489" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="5aa2dc95-ffe2-4755-bfda-e86b8d7c6f78" Version="V3">
+                  <uix:NCheckState.IfExists>
+                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'ShowMovieBar'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_4" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5aa2dc95-ffe2-4755-bfda-e86b8d7c6f78" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="mIsFzL2QQEKkEmbldd9vng" CvElementArea="467, 349, 16, 16" CvTextArea="512, 352, 87, 11" CvTextArgument="Show Movie Bar" CvType="Icon" DesignTimeRectangle="466, 348, 132, 20" DesignTimeScaleFactor="1" FriendlyName="'ShowMovieBar'" FullSelectorArgument="&lt;webctrl tag='DIV' class='menu-item-container ng-star-inserted' idx='5' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' class='menu-item-container ng-star-inserted' type='' aaname='' check:text='Show Movie Bar' /&gt;" Guid="adcfe1ff-6fe3-480b-925b-a170558895d2" InformativeScreenshot="16acac58e2ce7496843b481643c03049.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/W6lAaPvNUE61LuQYhru0EQ" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.IfNotExists>
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_3">
+                        <ui:LogMessage.Level>
+                          <InArgument x:TypeArguments="ui:LogLevel">
+                            <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">
+                              <CSharpValue.Result>
+                                <OutArgument x:TypeArguments="ui:LogLevel" />
+                              </CSharpValue.Result>UiPath.Core.Activities.LogLevel.Error</CSharpValue>
+                          </InArgument>
+                        </ui:LogMessage.Level>
+                        <ui:LogMessage.Message>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">
+                              <CSharpValue.Result>
+                                <OutArgument x:TypeArguments="x:Object" />
+                              </CSharpValue.Result>"Drop down didn't appear"</CSharpValue>
+                          </InArgument>
+                        </ui:LogMessage.Message>
+                      </ui:LogMessage>
+                    </Sequence>
+                  </uix:NCheckState.IfNotExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="37hg87uFG0OHd3rBG9cdiA" DesignTimeRectangle="456, 209, 401, 207" DesignTimeScaleFactor="1" FriendlyName="'ContextualToolbars'" FullSelectorArgument="&lt;webctrl tag='SECTION' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SECTION' type='' class='pt-menu ng-tns-c50-6 view-menu-section-area' aaname='                              ' check:innerText='Contextual Toolbars&amp;#xD;&amp;#xA;All series of current exam were displayed during reading session&amp;#xD;&amp;#xA;Show all' /&gt;" Guid="1432956e-6cc4-4e88-9f04-fbcabbb39f65" InformativeScreenshot="cf24b0894f90672ff90b85f4834ce2e8.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/k_AAI0JaXUS86IJ6lzh6yA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NCheckState.Target>
+                </uix:NCheckState>
+                <uix:NTakeScreenshot DisplayName="Take Screenshot 'Viewport'" FileNameMode="None" sap:VirtualizedContainerService.HintSize="954,233" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" ScopeIdentifier="5aa2dc95-ffe2-4755-bfda-e86b8d7c6f78" Version="V3">
+                  <uix:NTakeScreenshot.FileName>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">
+                        <CSharpValue.Result>
+                          <OutArgument x:TypeArguments="x:String" />
+                        </CSharpValue.Result>ViewportBeforePhase</CSharpValue>
+                    </InArgument>
+                  </uix:NTakeScreenshot.FileName>
+                  <uix:NTakeScreenshot.Target>
+                    <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="aDx-Ldgrm0Ga88A2bsxdVg" DesignTimeRectangle="265, 288, 679, 695" DesignTimeScaleFactor="1" FriendlyName="'Viewport'" FullSelectorArgument="&lt;webctrl idx='2' parentid='*' tag='CANVAS' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='2300' tag='CANVAS' class='annotationsCanvasG1 burnedAnnotations' aaname='' /&gt;" Guid="c5574fac-07aa-414c-8ab9-c75f19b4ad69" InformativeScreenshot="7c2e65ce678116ab581967ba435fd154.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/EaKHS3iSq06gICUVPUWJWA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NTakeScreenshot.Target>
+                </uix:NTakeScreenshot>
+                <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SwitchPhaseMenuButton'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_5" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5aa2dc95-ffe2-4755-bfda-e86b8d7c6f78" Version="V3">
+                  <uix:NClick.Target>
+                    <uix:TargetAnchorable BrowserURL="http://192.168.58.206/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.13786265022005672006.26445001253937339832&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="3jmt-PHWJ0uwhT7-XBaKaA" DesignTimeRectangle="753, 263, 50, 22" DesignTimeScaleFactor="1" FriendlyName="'SwitchPhaseMenuButton'" FullSelectorArgument="&lt;webctrl parentname='TabContainerWidgetPT_*' tag='BUTTON' class='pt-quiet-default series-title pt-button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='      ' parentname='TabContainerWidgetPT_1786' tag='DLS-LAYOUT-CONTAINER' type='' class='pt-layout-container' check:innerText='1: B' /&gt;" Guid="ef37d571-afc2-450d-a1bb-7654240c180a" InformativeScreenshot="67987b2c73da0a075665ef318ff2d1ac.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/BQEtpvhCh0iUbcrTnmBiCw" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NClick.Target>
+                </uix:NClick>
+                <uix:NCheckState DisplayName="Check App State 'AllSeriesPhaseDropdown'" sap:VirtualizedContainerService.HintSize="954,489" sap2010:WorkflowViewState.IdRef="NCheckState_3" ScopeIdentifier="5aa2dc95-ffe2-4755-bfda-e86b8d7c6f78" Version="V3">
+                  <uix:NCheckState.IfExists>
+                    <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click Phase from the dropdown" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_6" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="5aa2dc95-ffe2-4755-bfda-e86b8d7c6f78" Version="V3">
+                        <uix:NClick.Target>
+                          <uix:TargetAnchorable BrowserURL="http://192.168.58.206/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.13786265022005672006.26445001253937339832&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="48mk1iB4WEyCfUx35bZC3w" DesignTimeRectangle="754, 401, 188, 21" DesignTimeScaleFactor="1" FriendlyName="'RequiredPase'" Guid="2e531a11-792f-41a3-8d9e-7b58b7d8564c"   InformativeScreenshot="6394a2f3bdc083c47c87a5f5514f213b.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/H97XYBNAwku2Y_xNJrTZcg" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                            <uix:TargetAnchorable.FullSelectorArgument>
+                              <InArgument x:TypeArguments="x:String">
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">string.Format("&lt;webctrl class='series-option' tag='DIV' innertext='{0}' /&gt;", phaseToBeSelected)</CSharpValue>
+                              </InArgument>
+                            </uix:TargetAnchorable.FullSelectorArgument>
+                            <uix:TargetAnchorable.FuzzySelectorArgument>
+                              <InArgument x:TypeArguments="x:String">
+                                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">string.Format("&lt;webctrl class='series-option' tag='DIV' innertext='{0}' type='' aaname='' check:text='6: 75.0% (364)' /&gt;", phaseToBeSelected)</CSharpValue>
+                              </InArgument>
+                            </uix:TargetAnchorable.FuzzySelectorArgument>
+                          </uix:TargetAnchorable>
+                        </uix:NClick.Target>
+                      </uix:NClick>
+                    </Sequence>
+                  </uix:NCheckState.IfExists>
+                  <uix:NCheckState.IfNotExists>
+                    <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_4" Level="Error">
+                        <ui:LogMessage.Message>
+                          <InArgument x:TypeArguments="x:Object">
+                            <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">
+                              <CSharpValue.Result>
+                                <OutArgument x:TypeArguments="x:Object" />
+                              </CSharpValue.Result>"Could not open the phase selection dropdown."</CSharpValue>
+                          </InArgument>
+                        </ui:LogMessage.Message>
+                      </ui:LogMessage>
+                    </Sequence>
+                  </uix:NCheckState.IfNotExists>
+                  <uix:NCheckState.Target>
+                    <uix:TargetAnchorable BrowserURL="http://192.168.58.206/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.13786265022005672006.26445001253937339832&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="71a-rEQY-kunAfVoPry5Xw" DesignTimeRectangle="753, 285, 170, 159" DesignTimeScaleFactor="1" FriendlyName="'AllSeriesPhaseDropdown'" FullSelectorArgument="&lt;webctrl tag='DIV' class='dropdown-body-container ng-tns-* drpdown-body-open' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' class='dropdown-body-container ng-tns-* drpdown-body-open' type='' aaname='' check:text='All Series Combined (2194)1: B (9)11: 40.0% (364)11 a: 0.0%, 40.0%, 75.0% (1092)3: locator (1)6: 75' /&gt;" Guid="397e9d78-94cc-4b2b-b5bd-504360690d40" InformativeScreenshot="6e45df5decb6deb6c139fa92f86f849c.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/FGAwBZ51uEir4FxQev8ipg" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                  </uix:NCheckState.Target>
+                </uix:NCheckState>
+                <uix:NTakeScreenshot DelayBefore="5" DisplayName="Take Screenshot 'Viewport'" FileNameMode="None" sap:VirtualizedContainerService.HintSize="954,233" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" ScopeIdentifier="5aa2dc95-ffe2-4755-bfda-e86b8d7c6f78" Version="V3">
+                  <uix:NTakeScreenshot.FileName>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">
+                        <CSharpValue.Result>
+                          <OutArgument x:TypeArguments="x:String" />
+                        </CSharpValue.Result>ViewportAfterPhase</CSharpValue>
+                    </InArgument>
+                  </uix:NTakeScreenshot.FileName>
+                  <uix:NTakeScreenshot.Target>
+                    <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="aDx-Ldgrm0Ga88A2bsxdVg" DesignTimeRectangle="265, 288, 679, 695" DesignTimeScaleFactor="1" FriendlyName="'Viewport'" FullSelectorArgument="&lt;webctrl idx='2' parentid='*' tag='CANVAS' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='2300' tag='CANVAS' class='annotationsCanvasG1 burnedAnnotations' aaname='' /&gt;" Guid="c5574fac-07aa-414c-8ab9-c75f19b4ad69" InformativeScreenshot="7c2e65ce678116ab581967ba435fd154.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/EaKHS3iSq06gICUVPUWJWA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Visible" WaitForReadyArgument="Complete" />
+                  </uix:NTakeScreenshot.Target>
+                </uix:NTakeScreenshot>
+                <i:CompareImages DisplayName="Compare images" sap:VirtualizedContainerService.HintSize="954,25" sap2010:WorkflowViewState.IdRef="CompareImages_1" Tollerance="0.03">
+                  <i:CompareImages.InputImagePath1>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">
+                        <CSharpValue.Result>
+                          <OutArgument x:TypeArguments="x:String" />
+                        </CSharpValue.Result>ViewportBeforePhase</CSharpValue>
+                    </InArgument>
+                  </i:CompareImages.InputImagePath1>
+                  <i:CompareImages.InputImagePath2>
+                    <InArgument x:TypeArguments="x:String">
+                      <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">
+                        <CSharpValue.Result>
+                          <OutArgument x:TypeArguments="x:String" />
+                        </CSharpValue.Result>ViewportAfterPhase</CSharpValue>
+                    </InArgument>
+                  </i:CompareImages.InputImagePath2>
+                  <i:CompareImages.Result>
+                    <OutArgument x:TypeArguments="x:Boolean">
+                      <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">
+                        <CSharpReference.Result>
+                          <OutArgument x:TypeArguments="Location(x:Boolean)" />
+                        </CSharpReference.Result>Status</CSharpReference>
+                    </OutArgument>
+                  </i:CompareImages.Result>
+                </i:CompareImages>
+                <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,143" sap2010:WorkflowViewState.IdRef="LogMessage_5">
+                  <ui:LogMessage.Message>
+                    <InArgument x:TypeArguments="x:Object">
+                      <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">
+                        <CSharpValue.Result>
+                          <OutArgument x:TypeArguments="x:Object" />
+                        </CSharpValue.Result>"Image comparision : "+Status+"Images are not same. Hence, Switch phase to" + phaseToBeSelected+" is completed."</CSharpValue>
+                    </InArgument>
+                  </ui:LogMessage.Message>
+                </ui:LogMessage>
+              </Sequence>
+            </Sequence>
+          </ActivityAction>
+        </uix:NApplicationCard.Body>
+        <uix:NApplicationCard.InUiElement>
+          <InArgument x:TypeArguments="ui:UiElement">
+            <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">
+              <CSharpValue.Result>
+                <OutArgument x:TypeArguments="ui:UiElement" />
+              </CSharpValue.Result>InputElement</CSharpValue>
+          </InArgument>
+        </uix:NApplicationCard.InUiElement>
+        <uix:NApplicationCard.TargetApp>
+          <uix:TargetApp Area="0, 0, 0, 0" />
+        </uix:NApplicationCard.TargetApp>
+      </uix:NApplicationCard>
+    </Sequence>
+  </Sequence>
+</Activity>

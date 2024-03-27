@@ -1,0 +1,16 @@
+﻿{
+  "Name": "FindingCardNameWithIndex",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "zCVzAq45a0u7F-cjXhjAOg",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/zCVzAq45a0u7F-cjXhjAOg",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-28T04:07:30.3001987Z",
+  "Updated": "2024-02-28T04:08:25.4162427Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

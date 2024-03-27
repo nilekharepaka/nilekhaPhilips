@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="zGJmwJt7nkmH-F2O1fcoSw" Reference="_D5NUh_b5Em3iyA_6q7ZHw/IfDmeVnRKUGGx58uoNlQdw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://192.168.58.202/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" CvTextArea="322, 378, 103, 12" CvTextArgument="SagittalQuickBatch" CvType="Text" DesignTimeRectangle="324, 379, 100, 11" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'FindingSagittalQuickBatch'" Guid="edbf6574-4b54-4e4a-8b0c-7f34b7715552" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl aaname='{0}' parentid='PopupVALN1' tag='SPAN' /&gt;", OrientationVerificationName)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <TargetAnchorable.FuzzySelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl aaname='{0}' parentid='PopupVALN1' tag='SPAN' type='' class='truncate finding-title' check:text='SagittalQuickBatch' /&gt;", OrientationVerificationName)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FuzzySelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="112aaa53016a1661d03467d8b995c0cb.png" xmlns="">0LzuCYTf9dEuriTj3SRfDPw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="SagittalQuickBatch" Name="OrientationVerificationName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

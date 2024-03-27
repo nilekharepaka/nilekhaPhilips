@@ -1,0 +1,17 @@
+﻿{
+  "Name": "LeftPanelPlanningLabel",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "TkztDjUNN0G1t16MLFa-Gw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/TkztDjUNN0G1t16MLFa-Gw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-14T17:03:32.5144027Z",
+  "Updated": "2024-02-14T17:32:25.1872244Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

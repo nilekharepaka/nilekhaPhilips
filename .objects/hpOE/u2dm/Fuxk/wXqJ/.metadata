@@ -1,0 +1,16 @@
+﻿{
+  "Name": "FloatingBarCancelIcon",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "wXqJTKKxm0Ovd0L6z560Lw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/wXqJTKKxm0Ovd0L6z560Lw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-14T15:30:38.4768582Z",
+  "Updated": "2024-02-14T15:31:09.1507445Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="TMATuvXb1EupGBa7hFtUWQ" Reference="_D5NUh_b5Em3iyA_6q7ZHw/dTA2Ijp0rE6dq0fNYOa98g" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" CvTextArea="1724, 387, 33, 13" CvTextArgument="Slab" CvType="Text" DesignTimeRectangle="1120, 267, 41, 40" DesignTimeScaleFactor="1" FriendlyName="'SelectSlabViewmode'" FullSelectorArgument="&lt;webctrl idx='2' parentid='popupLayoutViewManager' tag='DLS-LAYOUT-CONTAINER' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='popupLayoutViewManager' tag='DLS-LAYOUT-CONTAINER' class='pt-layout-container' aaname='      ' check:innerText='Slab' /&gt;" Guid="6614d494-2375-4e0f-b09b-ff97ee11e235" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="845942f70f7eee78e7cd6e049b794b2a.png" xmlns="">0TJMCNsWNMUaUQEmJcQbR7g</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

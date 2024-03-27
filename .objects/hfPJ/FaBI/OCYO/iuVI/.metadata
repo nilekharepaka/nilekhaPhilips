@@ -1,0 +1,13 @@
+﻿{
+  "Name": "ExitButton_AVW",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "iuVIr677e0GlyZXY6Th_AQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/iuVIr677e0GlyZXY6Th_AQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/OCYOHz9Y9kKH6bCHntO-Xg",
+  "Created": "2024-03-12T07:23:38.1264991Z",
+  "Updated": "2024-03-12T07:23:38.1264991Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

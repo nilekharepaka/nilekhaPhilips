@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-KTXzK8hz0q49S-3IaN1Hg" Reference="_D5NUh_b5Em3iyA_6q7ZHw/QdMWioG4t0-PBUWr3M8hGA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic5vw430.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="n5G1KbHPv0iZYZEIEfzBlA" CvTextArea="833, 697, 55, 11" CvTextArgument="Short Axis" CvType="Text" DesignTimeRectangle="805, 747, 113, 11" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Short Axis'" Guid="a00484f8-2de9-4850-a0c6-acbf3d5552f8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAAPCAYAAADavYAbAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAJuSURBVFhH7ZYvz9swEMb7sQpMQkZCQkpCQkJCQgJa8EaaUmBN0SSTEJOQSJOJiT9aP8Czu/xvmzUFG2gW8JPiu7Nj+bk7+3A8HrGzLXZRN8gu6gZZFVXEErWxsHaggcq+kS+CorGKlue9TwKpcpwWfR1JZeFcA3la9t8R0H5r+XK9rbMiaoSSBK1SMdm8CFHY+f6OqDm0VYgWfUyKymrI0sCU4YJ/55EVUflAH0Qd6UStygpNW8GEviBofQKni4YZ7LaGSoNuXqRga4WyIXvzq41xznVxjXwSV9A6vK4IS4qtkLR2gVgZ2CqFaMecfAbq+492L65PkrbLjHuwqOXpbu2tstp+w6KGpUM3dQWZxfC9wceikhgq7g5WxDQ2KLlyWTg62Fj0sQFXY43C732O4tpqZ15Vqo+ipsRJZt/p4AshKTF05rUCmzLq7dN6uXaoiykhhVhKzu3x3kPJC5EWCpoO0Tk62Mwn+3P75UPU+RFR2yqHQ+5I6V5k3yD4JOILUX1JlTf5RN5X7eCn+7PtElThXYdgpvUCjucuUaSI/P9DUOY9UWcEsoHTOX3/e1FDWsdR9RtqrR0koOsrnmMGUc2sKzyu5/mIMwlNcx/3tFVWRD0hTkJ4MxuLanVG338WdbX9PolaIR3HAwnd5/TiHQTs4eSoC+4U3H7pHo1Fl0TDNTAT1fO8aW5M/zXlYvJsjVVR84pE5GoYoEdOGrDvhahrD6U7UQOa18fNHkoirehfBfwxrichu/mJL75HRyHnr/RJ1IQfU+MeDPSl38PGOZzP50XHzudyuF6vi46dz2Wv1A1yuN1ui46dT+WI3wjxKHc5iIUmAAAAAElFTkSuQmCC" Reference="_D5NUh_b5Em3iyA_6q7ZHw/QdMWioG4t0-PBUWr3M8hGA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl aaname='{0}' tag='LABEL' /&gt;", OrientationName3D2)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <TargetAnchorable.FuzzySelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl aaname='{0}' parentid='undefined' tag='LABEL' type='' class='ng-star-inserted' check:innerText='{0}' /&gt;", OrientationName3D2)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FuzzySelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="537ed3cd6460930bdfff7c65aee655b2.png" xmlns="">0AVn_pGUgdEG-azQcFnIsnQ</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="Vertical Long Axis" Name="OrientationName3D2" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

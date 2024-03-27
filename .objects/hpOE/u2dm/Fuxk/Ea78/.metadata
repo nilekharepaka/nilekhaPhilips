@@ -1,0 +1,14 @@
+﻿{
+  "Name": "ModifyVesselBtn",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "Ea78qHw8CE2gMcogWYQvdw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/Ea78qHw8CE2gMcogWYQvdw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-05T13:46:25.2328991Z",
+  "Updated": "2024-02-05T13:46:25.2328991Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

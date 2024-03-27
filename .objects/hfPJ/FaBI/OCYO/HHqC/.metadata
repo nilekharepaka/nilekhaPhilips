@@ -1,0 +1,14 @@
+﻿{
+  "Name": "QuickBatchViewportImage",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "HHqCe04AI0qzN6_x85LLMQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/HHqCe04AI0qzN6_x85LLMQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/OCYOHz9Y9kKH6bCHntO-Xg",
+  "Created": "2024-01-12T09:42:07.3611981Z",
+  "Updated": "2024-01-12T09:42:07.3611981Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

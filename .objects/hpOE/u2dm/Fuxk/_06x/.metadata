@@ -1,0 +1,16 @@
+﻿{
+  "Name": "VesselNameLabelInFindingsPanel",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "_06x1Pd89UuY-lShDg7YDw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/_06x1Pd89UuY-lShDg7YDw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-21T05:57:45.3832057Z",
+  "Updated": "2024-02-21T05:59:37.7979743Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

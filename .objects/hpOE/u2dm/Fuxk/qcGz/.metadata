@@ -1,0 +1,16 @@
+﻿{
+  "Name": "StentCardFindingsTab",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "qcGzIsoXR02JfMzIdwN91A",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/qcGzIsoXR02JfMzIdwN91A",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-03-07T05:09:01.6346754Z",
+  "Updated": "2024-03-07T05:11:13.6896301Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

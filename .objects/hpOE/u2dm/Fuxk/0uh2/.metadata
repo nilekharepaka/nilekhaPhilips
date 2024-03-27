@@ -1,0 +1,16 @@
+﻿{
+  "Name": "FloatingBarRedoIcon",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "0uh2e5JsuUW5DNIvBpXvyQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/0uh2e5JsuUW5DNIvBpXvyQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-15T04:23:45.9723486Z",
+  "Updated": "2024-02-15T04:24:48.8951126Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

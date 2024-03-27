@@ -1,0 +1,16 @@
+﻿{
+  "Name": "PlaqueAnalysisLabel",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "3B7tVg70WkGeaJBBct2u-w",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/3B7tVg70WkGeaJBBct2u-w",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-22T17:30:32.1687662Z",
+  "Updated": "2024-02-22T17:31:36.9433331Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

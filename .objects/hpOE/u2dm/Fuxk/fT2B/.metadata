@@ -1,0 +1,17 @@
+﻿{
+  "Name": "GlobeRenderingAnnotationText",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "fT2BW4krIUKauCIHQhCZJA",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/fT2BW4krIUKauCIHQhCZJA",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-01-29T17:23:02.8870105Z",
+  "Updated": "2024-01-30T08:34:32.1623216Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

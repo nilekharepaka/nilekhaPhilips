@@ -1,0 +1,16 @@
+﻿{
+  "Name": "OverallCADRADSScoreLabel",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "9NP7enn8PU-BkKXAHSB2qw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/9NP7enn8PU-BkKXAHSB2qw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-22T17:34:26.0911449Z",
+  "Updated": "2024-02-22T17:35:37.1807654Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "DefinePlaqueBtn",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "aPbzTjKsd0q1-kYpTBCQHA",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/aPbzTjKsd0q1-kYpTBCQHA",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-22T17:32:28.3222723Z",
+  "Updated": "2024-02-22T17:33:30.6069226Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

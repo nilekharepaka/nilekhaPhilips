@@ -1,0 +1,16 @@
+﻿{
+  "Name": "RightClickSubOptionByName",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "yFrl0oOOFkG-Vo8sAOa_pg",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/yFrl0oOOFkG-Vo8sAOa_pg",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-03-12T05:56:58.3166413Z",
+  "Updated": "2024-03-12T05:58:24.6755331Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

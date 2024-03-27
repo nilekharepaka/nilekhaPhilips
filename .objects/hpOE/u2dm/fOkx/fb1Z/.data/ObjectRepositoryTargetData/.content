@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="h7wJLdpVDkub1JWE5UEKyA" Reference="_D5NUh_b5Em3iyA_6q7ZHw/fb1Z_U38UkiZQEmVrhy89A" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic5vw430.code1.emi.philips.com/gfn/app/AV/index?study_ids=1.3.46.670589.33.1.2850666031064781382.27307363043434903132&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="ysOzPpPoq0eMnnzNVOIlyw" CvTextArea="1071, 792, 74, 15" CvTextArgument="Short Axis" CvType="Text" DesignTimeRectangle="830, 747, 113, 11" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Short Axis'" Guid="1962bd00-c3f2-4bf3-b27c-9cf9dfd98cd0" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ4AAAATCAYAAABhq7R9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAO/SURBVGhD7ZhXS2RBEEb9gYPggwqiiIqCIqgoRsSEqIgBc0ARM+ac/lzJKaihr9urPePOzks9fFxvV3UY+3RV9a3I5XLicv1vOXiussjBc5VFDp6rLEoGr6OjQ46OjuTt7U0+Pj5UDw8Psru7K3V1deqzvb0tJycnf/T9V2pubtb5uru7o/avwpd18ozZv9P09LQ8PT1Jb29v1O76nZLAa2xslMvLSzk9PZXW1lZtq6qqksHBQTk8PJT29nZtKzV4wH9/fy8jIyNRe6i2tja5u7uTq6srub29VWhjfq7yKAk8NprTPzo6GrWbSg1ef3+/RtkU8GZmZhTSsbExeXx81PeYn6s8Sgbv9fVVlpaWonYT4BEV2WQAIc09Pz/LwsKCVFZW5v3Gx8fl5uYmn7L5mzazE9mur69lbm5Ox2Fu0rz5m/AhGls/U3V1ta6DFMu8x8fHKlsD0Y++rNfaampqdA50fn6u4zOvQT40NJRf8/v7ux7EjY2N/JyuwlRQquWfzoYCidV1odhIQDs4OJCGhgbdVKBjk0jL+FA7vby8yPz8vKZrBKj4ABo+gAdwpMqwxrLI+1PE6+npyURGxifq0W4+RG/GYj28sx5SspUN4VyAim1nZ0fXix2/8LC4ClPy5aKpqUn29/cVGgDkknFxcSF9fX15H8Bjw23zENBa9AJW+sSKffoCNz6Ax6avr69nfFLBo5+NxXtLS4uCs7q6mvHb2trS9c7OzuozLCXCuagXSdvLy8uZ/q7ilQyeiSjGrRJQgBANDAyojTbSFKnO/EPwDCiLbKEmJiZ08/GxiGfRyJQCnkWnxcXFTDuwhzAi0uvZ2ZkeIiC0tIvCuWgHZvz4LSsrK5nD5SpcBYMXijTI5mxubuo74H29XBQLXuz2mgIel4nwk08o2rGbL+BR+1GzcTsPD0xsLqBm7Qbr3t5epo8rXb8Cz6BKBe+7VBumx2LBIzIBEBcEA9jU1dWl4wOL+RPlaBseHtb5qPPM9tNcU1NTelDCutGVriTwuNFxyimmiRK08STlsDlhqv0OPN5Jn1xAfrpcxMDr7OzUSwI1Ge/19fWZ9IgdGP726YT0i500ST3H31bXsR7mtI/TIXj8BtZt3wJZMwfFxrLxXelKAg8QgIqNsTTGk+hl0KEU8FDK55QYeEDGJwzmJj1STwKf2blB04/LQNjPRHQCJiIudeDa2lreZp9T+E2s+St43NQ5MKyXuZlncnIyM74rXb9KtS5XsaogjcYMLlcp5RHPVRZV1NbWRg0uV+mUk093uW4qd/6WcwAAAABJRU5ErkJggg==" Reference="_D5NUh_b5Em3iyA_6q7ZHw/fb1Z_U38UkiZQEmVrhy89A" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl aaname='{0}' tag='LABEL' /&gt;", OrientationName3D)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <TargetAnchorable.FuzzySelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl aaname='{0}' parentid='undefined' tag='LABEL' innertext='Short Axis' type='' class='ng-star-inserted' check:text='Short Axis' /&gt;", OrientationName3D)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FuzzySelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="74dc8d9c0a042f2627faac1dda627e05.png" xmlns="">02hc1s1G_pkGg-u-hrBLsUg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="Short Axis" Name="OrientationName3D" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

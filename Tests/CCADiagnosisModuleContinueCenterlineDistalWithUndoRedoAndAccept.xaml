@@ -1,0 +1,1344 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="CCADiagnosisModuleContinueCenterlineDistalWithUndoRedoAndAccept" sap2010:ExpressionActivityEditor.ExpressionActivityEditor="C#" sap:VirtualizedContainerService.HintSize="858,10460" sap2010:WorkflowViewState.IdRef="CCADiagnosisModuleContinueCenterlineDistalWithUndoRedoAndAccept_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:aca="clr-namespace:AVCommon.Common.AVApps;assembly=AVCommon" xmlns:acaa="clr-namespace:AVCommon.Common.AVW.ActivitiesOnPatientDirectory;assembly=AVCommon" xmlns:acal="clr-namespace:AVCommon.Common.AVW.Login;assembly=AVCommon" xmlns:acama="clr-namespace:AVCommon.Common.AVApps.MRCAppsSuite.AVViewer;assembly=AVCommon" xmlns:acas="clr-namespace:AVCommon.Common.AVApps.StandaloneGfnPD;assembly=AVCommon" xmlns:acc="clr-namespace:AVCommon.Common.Core;assembly=AVCommon" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:njl="clr-namespace:Newtonsoft.Json.Linq;assembly=Newtonsoft.Json" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:t="clr-namespace:TestScriptLogGenerator;assembly=TestScriptLogGenerator" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>Newtonsoft.Json.Linq</x:String>
+      <x:String>Newtonsoft.Json</x:String>
+      <x:String>System.Dynamic</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Collections.Specialized</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Activities.Runtime.Collections</x:String>
+      <x:String>TestScriptLogGenerator</x:String>
+      <x:String>AVCommon.Common.Core</x:String>
+      <x:String>AVCommon.Common.AVW.Login</x:String>
+      <x:String>AVCommon.Common.AVApps</x:String>
+      <x:String>AVCommon.Common.AVApps.MRCAppsSuite.AVViewer</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>AVCommon.Common.AVApps.StandaloneGfnPD</x:String>
+      <x:String>AVCommon.Common.AVW.ActivitiesOnPatientDirectory</x:String>
+      <x:String>UiPath.Web.Activities</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>netstandard</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>Newtonsoft.Json</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Collections.Specialized</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>TestScriptLogGenerator</AssemblyReference>
+      <AssemblyReference>AVCommon</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Web.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="CCADiagnosisModuleContinueCenterlineDistalWithUndoRedoAndAccept" sap:VirtualizedContainerService.HintSize="734,10395" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <ui:Comment sap:VirtualizedContainerService.HintSize="672,380" sap2010:WorkflowViewState.IdRef="Comment_1" Text="Dataset used :   &#xA;Multiphase Cardiac CT&#xA;&#xA;Dataset  Path: &#xA;\\ingbtcpic5vw113\ICAP_Repository\ISP_Verification_Datasets\Cardiac Apps\Philips\CT\CCA\Cardiac 10 Phases&#xA;&#xA;Preconditons : &#xA;1. Load Harmony Patient Directory.&#xA;2. Filter and select study &quot;Cardiac 10 Phases&quot; (Cardiac 3 Phases) and select Cardiac CT. AV Viewer should be displayed.&#xA;3. Launch CCA. CCA application should be loaded. DefaultDiagnosisWithoutResult layout should be displayed. Activate all algorithms. CoronaryOverviewLayout displayed." />
+    <TryCatch DisplayName="Try Catch" sap:VirtualizedContainerService.HintSize="672,9864" sap2010:WorkflowViewState.IdRef="TryCatch_1">
+      <TryCatch.Variables>
+        <Variable x:TypeArguments="x:String" Default="grapheneapplethost.exe" Name="WebBrowserType" />
+        <Variable x:TypeArguments="x:Boolean" Name="AppLaunchStatus" />
+        <Variable x:TypeArguments="ui:UiElement" Name="RootWindow" />
+        <Variable x:TypeArguments="x:Boolean" Default="False" Name="WorkflowAnalyserPer" />
+        <Variable x:TypeArguments="njl:JObject" Name="JsonForLogging" />
+        <Variable x:TypeArguments="x:String" Default="1558120_DiagnosisModuleContinueCenterlineDistalWithUndoRedoAndAcceptl" Name="TestName" />
+      </TryCatch.Variables>
+      <TryCatch.Try>
+        <Sequence sap:VirtualizedContainerService.HintSize="634,9636" sap2010:WorkflowViewState.IdRef="Sequence_8">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence sap:VirtualizedContainerService.HintSize="572,9525" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Default="*Cardiac*" Name="WebBrowserPageTitle" />
+              <Variable x:TypeArguments="njl:JObject" Name="AppConfig" />
+              <Variable x:TypeArguments="x:String" Name="ServerIPAddress" />
+              <Variable x:TypeArguments="x:Boolean" Name="AppOpened" />
+              <Variable x:TypeArguments="x:String" Name="PDApp" />
+              <Variable x:TypeArguments="x:String" Name="Username" />
+              <Variable x:TypeArguments="x:String" Name="Password" />
+              <Variable x:TypeArguments="x:Boolean" Name="PortalLaunchStatus" />
+              <Variable x:TypeArguments="x:Boolean" Default="True" Name="AutomateViaWebBrowser" />
+              <Variable x:TypeArguments="x:String" Name="StandalonePDURL" />
+              <Variable x:TypeArguments="x:Boolean" Name="ViewerLaunchStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="LayoutStatus" />
+              <Variable x:TypeArguments="x:String" Name="LayoutText" />
+              <Variable x:TypeArguments="x:Boolean" Name="ModifyResult" />
+              <Variable x:TypeArguments="x:Boolean" Name="VerificationStatusLog" />
+              <Variable x:TypeArguments="x:Boolean" Name="InjectDyeStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="AddBalloonStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="RemoveBrushStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="AddCoronaryStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="CancelStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="CurveActivateCommandStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="CurveLumensCalculateCommandStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="PlanningModeResultsActivateCommandStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="EditCurveStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="ContinueCenterlineDistalStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="ContinueCenterlineProximalStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="UndoStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="ResetStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="AcceptStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="RedoStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="ClickStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="BalloonStatusAfterAdd" />
+              <Variable x:TypeArguments="x:Boolean" Name="StatusAfterUndo" />
+              <Variable x:TypeArguments="x:Boolean" Name="StatusAfterRedo" />
+              <Variable x:TypeArguments="x:Boolean" Name="StatusAfterReset" />
+              <Variable x:TypeArguments="x:Double" Name="DyeColorPerctAfterReset" />
+              <Variable x:TypeArguments="x:Boolean" Name="ClickCancelStatus" />
+              <Variable x:TypeArguments="x:String" Name="ScreenshotVolumePath" />
+              <Variable x:TypeArguments="x:Boolean" Name="ValidationStatus" />
+              <Variable x:TypeArguments="x:Boolean" Name="CoronaryStatusAfterAdd" />
+              <Variable x:TypeArguments="x:Boolean" Name="CompareStatus" />
+              <Variable x:TypeArguments="x:String" Name="ScreenshotVolumePath1" />
+              <Variable x:TypeArguments="x:Boolean" Name="CenterlineDistalResult" />
+              <Variable x:TypeArguments="x:Boolean" Name="CheckStatus" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <t:Generate_Test_Case DisplayName="Generate Test Case" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="Generate_Test_Case_1">
+              <t:Generate_Test_Case.TestCaseJSONObject>
+                <OutArgument x:TypeArguments="njl:JObject">
+                  <CSharpReference x:TypeArguments="njl:JObject" sap2010:WorkflowViewState.IdRef="CSharpReference`1_1">JsonForLogging</CSharpReference>
+                </OutArgument>
+              </t:Generate_Test_Case.TestCaseJSONObject>
+              <t:Generate_Test_Case.TestCaseName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_1">TestName</CSharpValue>
+                </InArgument>
+              </t:Generate_Test_Case.TestCaseName>
+            </t:Generate_Test_Case>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_1">
+              <ui:LogMessage.Level>
+                <InArgument x:TypeArguments="ui:LogLevel">
+                  <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_2">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Level>
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_3">"Start Test CCA - Diagnosis Module - Continue Centerline (Distal) with Undo, Redo and Accept "</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <acc:AppConfigReader BreakTriggerScopeInArgument="{x:Null}" StopTriggersOutArgument="{x:Null}" ConfigFilePath="C:\UiPathTestAutomation\AppConfig.json" DisplayName=" ()" sap:VirtualizedContainerService.HintSize="510,243" sap2010:WorkflowViewState.IdRef="AppConfigReader_1">
+              <acc:AppConfigReader.ConfigFileOutputInJSON>
+                <OutArgument x:TypeArguments="njl:JObject">
+                  <CSharpReference x:TypeArguments="njl:JObject" sap2010:WorkflowViewState.IdRef="CSharpReference`1_2">AppConfig</CSharpReference>
+                </OutArgument>
+              </acc:AppConfigReader.ConfigFileOutputInJSON>
+            </acc:AppConfigReader>
+            <ui:MultipleAssign DisplayName="Multiple Assign" sap:VirtualizedContainerService.HintSize="510,318" sap2010:WorkflowViewState.IdRef="MultipleAssign_1">
+              <ui:MultipleAssign.AssignOperations>
+                <scg:List x:TypeArguments="ui:AssignOperation" Capacity="8">
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_1">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_3">AutomateViaWebBrowser</CSharpReference>
+                      </OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Boolean">
+                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_4">Convert.ToBoolean(AppConfig.SelectToken("AVApps.AutomateViaWebBrowser").ToString())</CSharpValue>
+                      </InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_2">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_4">WebBrowserPageTitle</CSharpReference>
+                      </OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_5">AppConfig.SelectToken("AVApps.WebBrowserPageTitle").ToString()</CSharpValue>
+                      </InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_3">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_5">WebBrowserType</CSharpReference>
+                      </OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_6">AppConfig.SelectToken("AVApps.WebBrowserType").ToString()</CSharpValue>
+                      </InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_4">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">ServerIPAddress</CSharpReference>
+                      </OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_7">AppConfig.SelectToken("Generic.ServerIP").ToString()</CSharpValue>
+                      </InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_5">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">PDApp</CSharpReference>
+                      </OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_8">AppConfig.SelectToken("Generic.PDLaunchType").ToString().ToLower()</CSharpValue>
+                      </InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_6">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_8">Username</CSharpReference>
+                      </OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_9">AppConfig.SelectToken("Generic.username").ToString()</CSharpValue>
+                      </InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_7">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_9">Password</CSharpReference>
+                      </OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_10">AppConfig.SelectToken("Generic.password").ToString()</CSharpValue>
+                      </InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                  <ui:AssignOperation sap2010:WorkflowViewState.IdRef="AssignOperation_8">
+                    <ui:AssignOperation.To>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_10">WorkflowAnalyserPer</CSharpReference>
+                      </OutArgument>
+                    </ui:AssignOperation.To>
+                    <ui:AssignOperation.Value>
+                      <InArgument x:TypeArguments="x:Boolean">
+                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_11">Convert.ToBoolean(AppConfig.SelectToken("Generic.FindWorkflowCoveragePercentage").ToString())</CSharpValue>
+                      </InArgument>
+                    </ui:AssignOperation.Value>
+                  </ui:AssignOperation>
+                </scg:List>
+              </ui:MultipleAssign.AssignOperations>
+            </ui:MultipleAssign>
+            <acc:KillActiveChromeBrowser sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="KillActiveChromeBrowser_1">
+              <acc:KillActiveChromeBrowser.BrowserCloseStatus>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_11">AppLaunchStatus</CSharpReference>
+                </OutArgument>
+              </acc:KillActiveChromeBrowser.BrowserCloseStatus>
+              <acc:KillActiveChromeBrowser.BrowserType>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_12">WebBrowserType</CSharpValue>
+                </InArgument>
+              </acc:KillActiveChromeBrowser.BrowserType>
+            </acc:KillActiveChromeBrowser>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_2">
+              <ui:LogMessage.Level>
+                <InArgument x:TypeArguments="ui:LogLevel">
+                  <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_13">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Level>
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_14">"PreStep 1: Launch PD and AV viewer Application "</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <aca:PDAppLaunch sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="PDAppLaunch_1">
+              <aca:PDAppLaunch.ApplicationOpenStatus>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_12">AppOpened</CSharpReference>
+                </OutArgument>
+              </aca:PDAppLaunch.ApplicationOpenStatus>
+              <aca:PDAppLaunch.BrowserType>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_15">WebBrowserType</CSharpValue>
+                </InArgument>
+              </aca:PDAppLaunch.BrowserType>
+            </aca:PDAppLaunch>
+            <If sap:VirtualizedContainerService.HintSize="510,52" sap2010:WorkflowViewState.IdRef="If_1">
+              <If.Condition>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_16">PDApp == "gfn" &amp;&amp; AppOpened</CSharpValue>
+                </InArgument>
+              </If.Condition>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <If.Then>
+                <Sequence sap:VirtualizedContainerService.HintSize="476,1070" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <Assign sap:VirtualizedContainerService.HintSize="434,82" sap2010:WorkflowViewState.IdRef="Assign_1">
+                    <Assign.To>
+                      <OutArgument x:TypeArguments="x:String">
+                        <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_13">StandalonePDURL</CSharpReference>
+                      </OutArgument>
+                    </Assign.To>
+                    <Assign.Value>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_17">AppConfig.SelectToken("Generic.PDLaunchGfnHost").ToString()</CSharpValue>
+                      </InArgument>
+                    </Assign.Value>
+                  </Assign>
+                  <acas:LaunchAVViewer AppModality="CardiacCT" sap:VirtualizedContainerService.HintSize="434,294" sap2010:WorkflowViewState.IdRef="LaunchAVViewer_1" PatientName="Cardiac 10 Phases" RowNumberToPerformCheckOperation="2">
+                    <acas:LaunchAVViewer.BrowserType>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_18">WebBrowserType</CSharpValue>
+                      </InArgument>
+                    </acas:LaunchAVViewer.BrowserType>
+                    <acas:LaunchAVViewer.StandaloneURL>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_19">StandalonePDURL</CSharpValue>
+                      </InArgument>
+                    </acas:LaunchAVViewer.StandaloneURL>
+                  </acas:LaunchAVViewer>
+                  <aca:FindRootForAVApps sap:VirtualizedContainerService.HintSize="434,243" sap2010:WorkflowViewState.IdRef="FindRootForAVApps_2">
+                    <aca:FindRootForAVApps.BrowserProcess>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_20">WebBrowserType+".exe"</CSharpValue>
+                      </InArgument>
+                    </aca:FindRootForAVApps.BrowserProcess>
+                    <aca:FindRootForAVApps.MainWindow>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_14">RootWindow</CSharpReference>
+                      </OutArgument>
+                    </aca:FindRootForAVApps.MainWindow>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <aca:FindRootForAVApps.WebBrowserAutomation>
+                      <InArgument x:TypeArguments="x:Boolean">
+                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_21">AutomateViaWebBrowser</CSharpValue>
+                      </InArgument>
+                    </aca:FindRootForAVApps.WebBrowserAutomation>
+                    <aca:FindRootForAVApps.WebBrowserTitle>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_22">WebBrowserPageTitle</CSharpValue>
+                      </InArgument>
+                    </aca:FindRootForAVApps.WebBrowserTitle>
+                  </aca:FindRootForAVApps>
+                  <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\CheckAVViewerLaunched.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\CheckAVViewerLaunched.xaml">
+                    <ui:InvokeWorkflowFile.Arguments>
+                      <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                        <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_23">RootWindow</CSharpValue>
+                      </InArgument>
+                      <OutArgument x:TypeArguments="x:Boolean" x:Key="AVViewerLaunchedStatus">
+                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_15">ViewerLaunchStatus</CSharpReference>
+                      </OutArgument>
+                    </ui:InvokeWorkflowFile.Arguments>
+                  </ui:InvokeWorkflowFile>
+                  <uta:VerifyExpression KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="ISP should be launched and AV Viewer application should be launched" ContinueOnFailure="False" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="434,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_9" OutputMessageFormat="ISP and AV Viewer were launched" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+                    <uta:VerifyExpression.Expression>
+                      <InArgument x:TypeArguments="x:Boolean">
+                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_24">AppOpened &amp;&amp; ViewerLaunchStatus</CSharpValue>
+                      </InArgument>
+                    </uta:VerifyExpression.Expression>
+                    <uta:VerifyExpression.Result>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_16">VerificationStatusLog</CSharpReference>
+                      </OutArgument>
+                    </uta:VerifyExpression.Result>
+                  </uta:VerifyExpression>
+                </Sequence>
+              </If.Then>
+              <If.Else>
+                <Sequence sap:VirtualizedContainerService.HintSize="376,1148" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_14">
+                    <ui:LogMessage.Level>
+                      <InArgument x:TypeArguments="ui:LogLevel">
+                        <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_25">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Level>
+                    <ui:LogMessage.Message>
+                      <InArgument x:TypeArguments="x:Object">
+                        <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_26">"PreStep 1: Launch Portal, Launch AV Viewer application and validate"</CSharpValue>
+                      </InArgument>
+                    </ui:LogMessage.Message>
+                  </ui:LogMessage>
+                  <acal:HandleInitializationFailedPopup sap:VirtualizedContainerService.HintSize="334,25" sap2010:WorkflowViewState.IdRef="HandleInitializationFailedPopup_1" />
+                  <uta:VerifyExpression KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Launch Portal" ContinueOnFailure="False" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_10" OutputMessageFormat="Portal is launched" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+                    <uta:VerifyExpression.Expression>
+                      <InArgument x:TypeArguments="x:Boolean">
+                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_27">AppOpened</CSharpValue>
+                      </InArgument>
+                    </uta:VerifyExpression.Expression>
+                  </uta:VerifyExpression>
+                  <acaa:SelectPatientFromPatientDirectory PatientSelectedStatus="{x:Null}" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="SelectPatientFromPatientDirectory_1" PatientName="Cardiac 10 Phases" />
+                  <acaa:AVViewerLaunchInAVW sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="AVViewerLaunchInAVW_1">
+                    <acaa:AVViewerLaunchInAVW.AppLaunched>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_17">AppLaunchStatus</CSharpReference>
+                      </OutArgument>
+                    </acaa:AVViewerLaunchInAVW.AppLaunched>
+                  </acaa:AVViewerLaunchInAVW>
+                  <uta:VerifyExpression KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Verifying the AV Viewer launch status" ContinueOnFailure="False" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="334,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_11" OutputMessageFormat="Study is launched in AV Viewer" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+                    <uta:VerifyExpression.Expression>
+                      <InArgument x:TypeArguments="x:Boolean">
+                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_28">AppLaunchStatus</CSharpValue>
+                      </InArgument>
+                    </uta:VerifyExpression.Expression>
+                    <uta:VerifyExpression.Result>
+                      <OutArgument x:TypeArguments="x:Boolean">
+                        <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_18">VerificationStatusLog</CSharpReference>
+                      </OutArgument>
+                    </uta:VerifyExpression.Result>
+                  </uta:VerifyExpression>
+                  <aca:FindRootForAVApps sap:VirtualizedContainerService.HintSize="334,243" sap2010:WorkflowViewState.IdRef="FindRootForAVApps_1">
+                    <aca:FindRootForAVApps.BrowserProcess>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_29">WebBrowserType+".exe"</CSharpValue>
+                      </InArgument>
+                    </aca:FindRootForAVApps.BrowserProcess>
+                    <aca:FindRootForAVApps.MainWindow>
+                      <OutArgument x:TypeArguments="ui:UiElement">
+                        <CSharpReference x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpReference`1_19">RootWindow</CSharpReference>
+                      </OutArgument>
+                    </aca:FindRootForAVApps.MainWindow>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <aca:FindRootForAVApps.WebBrowserAutomation>
+                      <InArgument x:TypeArguments="x:Boolean">
+                        <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_30">AutomateViaWebBrowser</CSharpValue>
+                      </InArgument>
+                    </aca:FindRootForAVApps.WebBrowserAutomation>
+                    <aca:FindRootForAVApps.WebBrowserTitle>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_31">WebBrowserPageTitle</CSharpValue>
+                      </InArgument>
+                    </aca:FindRootForAVApps.WebBrowserTitle>
+                  </aca:FindRootForAVApps>
+                </Sequence>
+              </If.Else>
+            </If>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_12">
+              <ui:LogMessage.Level>
+                <InArgument x:TypeArguments="ui:LogLevel">
+                  <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_32">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Level>
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_33">"PreStep 2: Launch CCA Application"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_20">AppLaunchStatus</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+              </Assign.Value>
+            </Assign>
+            <acama:LaunchSpecificApplication AppName="Cca" sap:VirtualizedContainerService.HintSize="510,294" sap2010:WorkflowViewState.IdRef="LaunchSpecificApplication_1" SeriesIndexToSelect="8">
+              <acama:LaunchSpecificApplication.AppLaunchStatus>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_21">AppLaunchStatus</CSharpReference>
+                </OutArgument>
+              </acama:LaunchSpecificApplication.AppLaunchStatus>
+              <acama:LaunchSpecificApplication.BrowserType>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_34">WebBrowserType+".exe"</CSharpValue>
+                </InArgument>
+              </acama:LaunchSpecificApplication.BrowserType>
+              <acama:LaunchSpecificApplication.InputElement>
+                <InArgument x:TypeArguments="ui:UiElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_35">RootWindow</CSharpValue>
+                </InArgument>
+              </acama:LaunchSpecificApplication.InputElement>
+            </acama:LaunchSpecificApplication>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_13">
+              <ui:LogMessage.Level>
+                <InArgument x:TypeArguments="ui:LogLevel">
+                  <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_36">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Level>
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_37">"AppLaunchStatus : "+AppLaunchStatus</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_3">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_22">AppLaunchStatus</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\CheckCCAApplicationIsLaunched.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\CheckCCAApplicationIsLaunched.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_38">RootWindow</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CcaLaunchedStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_23">AppLaunchStatus</CSharpReference>
+                </OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uta:VerifyExpression KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="CCA application should launch" ContinueOnFailure="False" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_7" OutputMessageFormat=" CCA application launched" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+              <uta:VerifyExpression.Expression>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_39">AppLaunchStatus</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpression.Expression>
+              <uta:VerifyExpression.Result>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_24">VerificationStatusLog</CSharpReference>
+                </OutArgument>
+              </uta:VerifyExpression.Result>
+            </uta:VerifyExpression>
+            <Assign sap:VirtualizedContainerService.HintSize="510,82" sap2010:WorkflowViewState.IdRef="Assign_4">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_25">LayoutStatus</CSharpReference>
+                </OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Boolean">False</InArgument>
+              </Assign.Value>
+            </Assign>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\GetVolumeScreenshotBeforeEditSegmentation.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_4" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\GetVolumeScreenshotBeforeEditSegmentation.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_45">RootWindow</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:String" x:Key="ScreenshotVolumePath">
+                  <CSharpReference x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpReference`1_28">ScreenshotVolumePath</CSharpReference>
+                </OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_10">
+              <ui:LogMessage.Level>
+                <InArgument x:TypeArguments="ui:LogLevel">
+                  <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_46">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Level>
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_47">"Step-1 Click Modify"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\ClickModifyVesselAndValidate.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_5" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\ClickModifyVesselAndValidate.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_48">RootWindow</CSharpValue>
+                </InArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="browser">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_49">WebBrowserType</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="EditVesselBtnClickStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_29">ModifyResult</CSharpReference>
+                </OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\ClickViewport.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_6" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\ClickViewport.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_50">RootWindow</CSharpValue>
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\DisplayCheckForAllFloatingBarIcons.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_7" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\DisplayCheckForAllFloatingBarIcons.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_51">RootWindow</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="InjectDyeStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_30">InjectDyeStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AddBalloonStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_31">AddBalloonStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="RemoveBrushStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_32">RemoveBrushStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AddCoronaryStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_33">AddCoronaryStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CancelStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_34">CancelStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CurveActivateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_35">CurveActivateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CurveLumensCalculateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_36">CurveLumensCalculateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="PlanningModeResultsActivateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_37">PlanningModeResultsActivateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="EditCurveStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_38">EditCurveStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ContinueCenterlineDistalStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_39">ContinueCenterlineDistalStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ContinueCenterlineProximalStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_40">ContinueCenterlineProximalStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="UndoStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_41">UndoStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ResetStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_42">ResetStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AcceptStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_43">AcceptStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="RedoStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_44">RedoStatus</CSharpReference>
+                </OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uta:VerifyExpression KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Layout should change to Edit Annotation Layout for the first vessel as default.A floating tool bar must be available with Editing Tools: Edit Curve ,Continue Centerline (Distal),Continue Centerline (Proximal)" ContinueOnFailure="False" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" OutputMessageFormat="Layout displayed and floating window was verified" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+              <uta:VerifyExpression.Expression>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_52">ModifyResult &amp;&amp; !InjectDyeStatus &amp;&amp; !AddBalloonStatus &amp;&amp; !RemoveBrushStatus &amp;&amp; !AddCoronaryStatus &amp;&amp; !CancelStatus &amp;&amp; !CurveActivateCommandStatus &amp;&amp; !CurveLumensCalculateCommandStatus &amp;&amp; !PlanningModeResultsActivateCommandStatus &amp;&amp; EditCurveStatus &amp;&amp; ContinueCenterlineDistalStatus &amp;&amp; ContinueCenterlineProximalStatus &amp;&amp; !AcceptStatus &amp;&amp; !RedoStatus</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpression.Expression>
+              <uta:VerifyExpression.Result>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_45">VerificationStatusLog</CSharpReference>
+                </OutArgument>
+              </uta:VerifyExpression.Result>
+            </uta:VerifyExpression>
+            <t:Log_Step_Details ActualText="Layout displayed and floating window was verified" Description="Click Modify" DisplayName="Log Step Details" ExpectedText="Layout should change to Edit Annotation Layout for the first vessel as default.A floating tool bar must be available with Editing Tools: Edit Curve ,Continue Centerline (Distal),Continue Centerline (Proximal)" sap:VirtualizedContainerService.HintSize="510,345" sap2010:WorkflowViewState.IdRef="Log_Step_Details_1">
+              <t:Log_Step_Details.Status>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_53">VerificationStatusLog</CSharpValue>
+                </InArgument>
+              </t:Log_Step_Details.Status>
+              <t:Log_Step_Details.TestCaseJSONObject>
+                <InOutArgument x:TypeArguments="njl:JObject">
+                  <CSharpReference x:TypeArguments="njl:JObject" sap2010:WorkflowViewState.IdRef="CSharpReference`1_46">JsonForLogging</CSharpReference>
+                </InOutArgument>
+              </t:Log_Step_Details.TestCaseJSONObject>
+              <t:Log_Step_Details.TestCaseName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_54">TestName</CSharpValue>
+                </InArgument>
+              </t:Log_Step_Details.TestCaseName>
+            </t:Log_Step_Details>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_3">
+              <ui:LogMessage.Level>
+                <InArgument x:TypeArguments="ui:LogLevel">
+                  <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_55">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Level>
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_56">"Step-2 Click Continue Centerline (Distal)"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\ClickViewport.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_8" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\ClickViewport.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_57">RootWindow</CSharpValue>
+                </InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\ClickContinueCenterlineDistal.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_9" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\ClickContinueCenterlineDistal.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_58">RootWindow</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ClickStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_47">ClickStatus</CSharpReference>
+                </OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\DisplayCheckForAllFloatingBarIcons.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_10" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\DisplayCheckForAllFloatingBarIcons.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_59">RootWindow</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="InjectDyeStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_48">InjectDyeStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AddBalloonStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_49">AddBalloonStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="RemoveBrushStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_50">RemoveBrushStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AddCoronaryStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_51">AddCoronaryStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CancelStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_52">CancelStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CurveActivateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_53">CurveActivateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CurveLumensCalculateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_54">CurveLumensCalculateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="PlanningModeResultsActivateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_55">PlanningModeResultsActivateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="EditCurveStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_56">EditCurveStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ContinueCenterlineDistalStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_57">ContinueCenterlineDistalStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ContinueCenterlineProximalStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_58">ContinueCenterlineProximalStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="UndoStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_59">UndoStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ResetStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_60">ResetStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AcceptStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_61">AcceptStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="RedoStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_62">RedoStatus</CSharpReference>
+                </OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uta:VerifyExpression KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Layout should change to CenterLine Extend Curve Modification Layout for the same vessel.A floating tool bar must be available with following options only: Cancel" ContinueOnFailure="False" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_12" OutputMessageFormat="Layout changed and floating window has only specified icons" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+              <uta:VerifyExpression.Expression>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_60" xml:space="preserve">ClickStatus &amp;&amp; !InjectDyeStatus &amp;&amp; !AddBalloonStatus &amp;&amp; !RemoveBrushStatus &amp;&amp; !AddCoronaryStatus &amp;&amp; CancelStatus &amp;&amp; !CurveActivateCommandStatus &amp;&amp;  !CurveLumensCalculateCommandStatus &amp;&amp; !PlanningModeResultsActivateCommandStatus &amp;&amp; !EditCurveStatus &amp;&amp; !ContinueCenterlineDistalStatus &amp;&amp; !ContinueCenterlineProximalStatus &amp;&amp; !UndoStatus &amp;&amp; !ResetStatus &amp;&amp; !AcceptStatus &amp;&amp; !RedoStatus</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpression.Expression>
+              <uta:VerifyExpression.Result>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_63">VerificationStatusLog</CSharpReference>
+                </OutArgument>
+              </uta:VerifyExpression.Result>
+            </uta:VerifyExpression>
+            <t:Log_Step_Details ActualText="Layout changed and floating window has only specified icons" Description="Click Continue Centerline (Distal)." DisplayName="Log Step Details" ExpectedText="Layout should change to CenterLine Extend Curve Modification Layout for the same vessel.A floating tool bar must be available with following options only: Cancel" sap:VirtualizedContainerService.HintSize="510,345" sap2010:WorkflowViewState.IdRef="Log_Step_Details_7">
+              <t:Log_Step_Details.Status>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_61">VerificationStatusLog</CSharpValue>
+                </InArgument>
+              </t:Log_Step_Details.Status>
+              <t:Log_Step_Details.TestCaseJSONObject>
+                <InOutArgument x:TypeArguments="njl:JObject">
+                  <CSharpReference x:TypeArguments="njl:JObject" sap2010:WorkflowViewState.IdRef="CSharpReference`1_64">JsonForLogging</CSharpReference>
+                </InOutArgument>
+              </t:Log_Step_Details.TestCaseJSONObject>
+              <t:Log_Step_Details.TestCaseName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_62">TestName</CSharpValue>
+                </InArgument>
+              </t:Log_Step_Details.TestCaseName>
+            </t:Log_Step_Details>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_9">
+              <ui:LogMessage.Level>
+                <InArgument x:TypeArguments="ui:LogLevel">
+                  <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_63">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Level>
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_64">"Step-3 Drag cursor marker on centerline on the Volume.."</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\ContinueCenterlineDistalEditOnVolume.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_11" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\ContinueCenterlineDistalEditOnVolume.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_65">RootWindow</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CenterlineDistalResult">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_65">CenterlineDistalResult</CSharpReference>
+                </OutArgument>
+                <InArgument x:TypeArguments="x:Int32" x:Key="ClickDownX">345</InArgument>
+                <InArgument x:TypeArguments="x:Int32" x:Key="ClickDownY">522</InArgument>
+                <InArgument x:TypeArguments="x:Int32" x:Key="ClickUpX">314</InArgument>
+                <InArgument x:TypeArguments="x:Int32" x:Key="ClickUpY">414</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\DisplayCheckForAllFloatingBarIcons.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_12" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\DisplayCheckForAllFloatingBarIcons.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_66">RootWindow</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="InjectDyeStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_66">InjectDyeStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AddBalloonStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_67">AddBalloonStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="RemoveBrushStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_68">RemoveBrushStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AddCoronaryStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_69">AddCoronaryStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CancelStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_70">CancelStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CurveActivateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_71">CurveActivateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CurveLumensCalculateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_72">CurveLumensCalculateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="PlanningModeResultsActivateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_73">PlanningModeResultsActivateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="EditCurveStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_74">EditCurveStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ContinueCenterlineDistalStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_75">ContinueCenterlineDistalStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ContinueCenterlineProximalStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_76">ContinueCenterlineProximalStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="UndoStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_77">UndoStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ResetStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_78">ResetStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AcceptStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_79">AcceptStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="RedoStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_80">RedoStatus</CSharpReference>
+                </OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uta:VerifyExpression KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Centerline should be edited..Floating toolbar must change and list following options only:Undo,Reset,Accept,Cancel" ContinueOnFailure="False" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" OutputMessageFormat="Centerline Changed and Floating window had the specified buttons only" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+              <uta:VerifyExpression.Expression>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_67" xml:space="preserve">CenterlineDistalResult &amp;&amp; !InjectDyeStatus &amp;&amp; !AddBalloonStatus &amp;&amp; !RemoveBrushStatus &amp;&amp; !AddCoronaryStatus &amp;&amp; CancelStatus &amp;&amp; !CurveActivateCommandStatus &amp;&amp;  !CurveLumensCalculateCommandStatus &amp;&amp; !PlanningModeResultsActivateCommandStatus &amp;&amp; !EditCurveStatus &amp;&amp; !ContinueCenterlineDistalStatus &amp;&amp; !ContinueCenterlineProximalStatus &amp;&amp; UndoStatus &amp;&amp; ResetStatus &amp;&amp; AcceptStatus &amp;&amp; !RedoStatus</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpression.Expression>
+              <uta:VerifyExpression.Result>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_81">VerificationStatusLog</CSharpReference>
+                </OutArgument>
+              </uta:VerifyExpression.Result>
+            </uta:VerifyExpression>
+            <t:Log_Step_Details ActualText="Centerline Changed and Floating window had the specified buttons only" Description="Drag cursor marker on centerline on the Volume.." DisplayName="Log Step Details" ExpectedText="Centerline should be edited..Floating toolbar must change and list following options only:Undo,Reset,Accept,Cancel" sap:VirtualizedContainerService.HintSize="510,345" sap2010:WorkflowViewState.IdRef="Log_Step_Details_2">
+              <t:Log_Step_Details.Status>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_68">VerificationStatusLog</CSharpValue>
+                </InArgument>
+              </t:Log_Step_Details.Status>
+              <t:Log_Step_Details.TestCaseJSONObject>
+                <InOutArgument x:TypeArguments="njl:JObject">
+                  <CSharpReference x:TypeArguments="njl:JObject" sap2010:WorkflowViewState.IdRef="CSharpReference`1_82">JsonForLogging</CSharpReference>
+                </InOutArgument>
+              </t:Log_Step_Details.TestCaseJSONObject>
+              <t:Log_Step_Details.TestCaseName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_69">TestName</CSharpValue>
+                </InArgument>
+              </t:Log_Step_Details.TestCaseName>
+            </t:Log_Step_Details>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_4">
+              <ui:LogMessage.Level>
+                <InArgument x:TypeArguments="ui:LogLevel">
+                  <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_70">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Level>
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_71">"Step-4 Click Undo"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\ClickUndoAndValidateImage.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_13" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\ClickUndoAndValidateImage.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_72">RootWindow</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="StatusAfterUndo">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_83">StatusAfterUndo</CSharpReference>
+                </OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="SecondViewportNumber">2</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\DisplayCheckForAllFloatingBarIcons.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_14" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\DisplayCheckForAllFloatingBarIcons.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_73">RootWindow</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="InjectDyeStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_84">InjectDyeStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AddBalloonStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_85">AddBalloonStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="RemoveBrushStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_86">RemoveBrushStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AddCoronaryStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_87">AddCoronaryStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CancelStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_88">CancelStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CurveActivateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_89">CurveActivateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CurveLumensCalculateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_90">CurveLumensCalculateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="PlanningModeResultsActivateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_91">PlanningModeResultsActivateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="EditCurveStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_92">EditCurveStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ContinueCenterlineDistalStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_93">ContinueCenterlineDistalStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ContinueCenterlineProximalStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_94">ContinueCenterlineProximalStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="UndoStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_95">UndoStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ResetStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_96">ResetStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AcceptStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_97">AcceptStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="RedoStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_98">RedoStatus</CSharpReference>
+                </OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uta:VerifyExpression KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Changes must be reverted on Volume.Floating toolbar must change and list following options only:Redo,Reset,Accept,Cancel" ContinueOnFailure="False" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_3" OutputMessageFormat="Changes Reverted back and the floating window had specified icons" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+              <uta:VerifyExpression.Expression>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_74" xml:space="preserve">StatusAfterUndo &amp;&amp; !InjectDyeStatus &amp;&amp; !AddBalloonStatus &amp;&amp; !RemoveBrushStatus &amp;&amp; !AddCoronaryStatus &amp;&amp; CancelStatus &amp;&amp; !CurveActivateCommandStatus &amp;&amp;  !CurveLumensCalculateCommandStatus &amp;&amp; !PlanningModeResultsActivateCommandStatus &amp;&amp; !EditCurveStatus &amp;&amp; !ContinueCenterlineDistalStatus &amp;&amp; !ContinueCenterlineProximalStatus &amp;&amp; !UndoStatus &amp;&amp; ResetStatus &amp;&amp; AcceptStatus &amp;&amp; RedoStatus</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpression.Expression>
+              <uta:VerifyExpression.Result>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_99">VerificationStatusLog</CSharpReference>
+                </OutArgument>
+              </uta:VerifyExpression.Result>
+            </uta:VerifyExpression>
+            <t:Log_Step_Details ActualText="Changes Reverted back and the floating window had specified icons" Description="Click Undo" DisplayName="Log Step Details" ExpectedText="Changes must be reverted on Volume.Floating toolbar must change and list following options only:Redo,Reset,Accept,Cancel" sap:VirtualizedContainerService.HintSize="510,345" sap2010:WorkflowViewState.IdRef="Log_Step_Details_3">
+              <t:Log_Step_Details.Status>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_75">VerificationStatusLog</CSharpValue>
+                </InArgument>
+              </t:Log_Step_Details.Status>
+              <t:Log_Step_Details.TestCaseJSONObject>
+                <InOutArgument x:TypeArguments="njl:JObject">
+                  <CSharpReference x:TypeArguments="njl:JObject" sap2010:WorkflowViewState.IdRef="CSharpReference`1_100">JsonForLogging</CSharpReference>
+                </InOutArgument>
+              </t:Log_Step_Details.TestCaseJSONObject>
+              <t:Log_Step_Details.TestCaseName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_76">TestName</CSharpValue>
+                </InArgument>
+              </t:Log_Step_Details.TestCaseName>
+            </t:Log_Step_Details>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_5">
+              <ui:LogMessage.Level>
+                <InArgument x:TypeArguments="ui:LogLevel">
+                  <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_77">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Level>
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_78">"Step-5 Click Redo"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\ClickRedoAndValidateImaged.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_15" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\ClickRedoAndValidateImages.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_79">RootWindow</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="StatusAfterRedo">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_101">StatusAfterRedo</CSharpReference>
+                </OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="SecondViewportNumber">2</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\DisplayCheckForAllFloatingBarIcons.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_16" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\DisplayCheckForAllFloatingBarIcons.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_80">RootWindow</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="InjectDyeStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_102">InjectDyeStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AddBalloonStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_103">AddBalloonStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="RemoveBrushStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_104">RemoveBrushStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AddCoronaryStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_105">AddCoronaryStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CancelStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_106">CancelStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CurveActivateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_107">CurveActivateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CurveLumensCalculateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_108">CurveLumensCalculateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="PlanningModeResultsActivateCommandStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_109">PlanningModeResultsActivateCommandStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="EditCurveStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_110">EditCurveStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ContinueCenterlineDistalStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_111">ContinueCenterlineDistalStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ContinueCenterlineProximalStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_112">ContinueCenterlineProximalStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="UndoStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_113">UndoStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="ResetStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_114">ResetStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AcceptStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_115">AcceptStatus</CSharpReference>
+                </OutArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="RedoStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_116">RedoStatus</CSharpReference>
+                </OutArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uta:VerifyExpression KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Changes must be redone on cMPR &amp; Volume.Floating toolbar must change and list following options only:Redo,Reset,Accept,Cancel" ContinueOnFailure="False" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_4" OutputMessageFormat="Changes appeared back and the floating window had specified icons" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+              <uta:VerifyExpression.Expression>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_81" xml:space="preserve">StatusAfterRedo &amp;&amp; !InjectDyeStatus &amp;&amp; !AddBalloonStatus &amp;&amp; !RemoveBrushStatus &amp;&amp; !AddCoronaryStatus &amp;&amp; CancelStatus &amp;&amp; !CurveActivateCommandStatus &amp;&amp;  !CurveLumensCalculateCommandStatus &amp;&amp; !PlanningModeResultsActivateCommandStatus &amp;&amp; !EditCurveStatus &amp;&amp; !ContinueCenterlineDistalStatus &amp;&amp; !ContinueCenterlineProximalStatus &amp;&amp; UndoStatus &amp;&amp; ResetStatus &amp;&amp; AcceptStatus &amp;&amp; !RedoStatus</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpression.Expression>
+              <uta:VerifyExpression.Result>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_117">VerificationStatusLog</CSharpReference>
+                </OutArgument>
+              </uta:VerifyExpression.Result>
+            </uta:VerifyExpression>
+            <t:Log_Step_Details ActualText="Changes appeared back and the floating window had specified icons" Description="Click Redo" DisplayName="Log Step Details" ExpectedText="Changes must be redone on cMPR &amp; Volume.Floating toolbar must change and list following options only:Redo,Reset,Accept,Cancel" sap:VirtualizedContainerService.HintSize="510,345" sap2010:WorkflowViewState.IdRef="Log_Step_Details_4">
+              <t:Log_Step_Details.Status>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_82">VerificationStatusLog</CSharpValue>
+                </InArgument>
+              </t:Log_Step_Details.Status>
+              <t:Log_Step_Details.TestCaseJSONObject>
+                <InOutArgument x:TypeArguments="njl:JObject">
+                  <CSharpReference x:TypeArguments="njl:JObject" sap2010:WorkflowViewState.IdRef="CSharpReference`1_118">JsonForLogging</CSharpReference>
+                </InOutArgument>
+              </t:Log_Step_Details.TestCaseJSONObject>
+              <t:Log_Step_Details.TestCaseName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_83">TestName</CSharpValue>
+                </InArgument>
+              </t:Log_Step_Details.TestCaseName>
+            </t:Log_Step_Details>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="510,141" sap2010:WorkflowViewState.IdRef="LogMessage_8">
+              <ui:LogMessage.Level>
+                <InArgument x:TypeArguments="ui:LogLevel">
+                  <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_84">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Level>
+              <ui:LogMessage.Message>
+                <InArgument x:TypeArguments="x:Object">
+                  <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_85">"Step-6 Click Accept"</CSharpValue>
+                </InArgument>
+              </ui:LogMessage.Message>
+            </ui:LogMessage>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\ClickAccept.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_17" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\ClickAccept.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="x:String" x:Key="ScreenshotVolumeBefore">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_86">ScreenshotVolumePath</CSharpValue>
+                </InArgument>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_87">RootWindow</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="AcceptStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_119">AcceptStatus</CSharpReference>
+                </OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="LayoutName">Default Diagnosis Layout</InArgument>
+                <InArgument x:TypeArguments="x:Double" x:Key="DelayNeeded">20</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\VerifySelectedVesselByName.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="510,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_18" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\VerifySelectedVesselByName.xaml">
+              <ui:InvokeWorkflowFile.Arguments>
+                <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                  <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_88">RootWindow</CSharpValue>
+                </InArgument>
+                <OutArgument x:TypeArguments="x:Boolean" x:Key="CheckStatus">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_120">CheckStatus</CSharpReference>
+                </OutArgument>
+                <InArgument x:TypeArguments="x:String" x:Key="VesselName">LAD</InArgument>
+              </ui:InvokeWorkflowFile.Arguments>
+            </ui:InvokeWorkflowFile>
+            <uta:VerifyExpression KeepScreenshots="{x:Null}" ScreenshotsPath="{x:Null}" AlternativeVerificationTitle="Layout should change to Default Diagnosis layout with the same vessel selected and layout displayed for same vessel. Curve should be modified as per the first modification done." ContinueOnFailure="False" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="510,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_6" OutputMessageFormat="All changes Displayed and the layout changes to the default diagnosis layout with the same vessel selected" TakeScreenshotInCaseOfFailingAssertion="True" TakeScreenshotInCaseOfSucceedingAssertion="True">
+              <uta:VerifyExpression.Expression>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_89">AcceptStatus &amp;&amp; CheckStatus</CSharpValue>
+                </InArgument>
+              </uta:VerifyExpression.Expression>
+              <uta:VerifyExpression.Result>
+                <OutArgument x:TypeArguments="x:Boolean">
+                  <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_121">VerificationStatusLog</CSharpReference>
+                </OutArgument>
+              </uta:VerifyExpression.Result>
+            </uta:VerifyExpression>
+            <t:Log_Step_Details ActualText="All changes reflected and the layout changes to the default diagnosis layout with the same vessel selected" Description="Click Accept" DisplayName="Log Step Details" ExpectedText="Layout should change to Default Diagnosis layout with the same vessel selected and layout displayed for same vessel. Curve should be modified as per the first modification done." sap:VirtualizedContainerService.HintSize="510,345" sap2010:WorkflowViewState.IdRef="Log_Step_Details_6">
+              <t:Log_Step_Details.Status>
+                <InArgument x:TypeArguments="x:Boolean">
+                  <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_90">VerificationStatusLog</CSharpValue>
+                </InArgument>
+              </t:Log_Step_Details.Status>
+              <t:Log_Step_Details.TestCaseJSONObject>
+                <InOutArgument x:TypeArguments="njl:JObject">
+                  <CSharpReference x:TypeArguments="njl:JObject" sap2010:WorkflowViewState.IdRef="CSharpReference`1_122">JsonForLogging</CSharpReference>
+                </InOutArgument>
+              </t:Log_Step_Details.TestCaseJSONObject>
+              <t:Log_Step_Details.TestCaseName>
+                <InArgument x:TypeArguments="x:String">
+                  <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_91">TestName</CSharpValue>
+                </InArgument>
+              </t:Log_Step_Details.TestCaseName>
+            </t:Log_Step_Details>
+          </Sequence>
+        </Sequence>
+      </TryCatch.Try>
+      <TryCatch.Catches>
+        <Catch x:TypeArguments="s:Exception" sap:VirtualizedContainerService.HintSize="638,21" sap2010:WorkflowViewState.IdRef="Catch`1_1">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">False</x:Boolean>
+              <x:Boolean x:Key="IsPinned">False</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <ActivityAction x:TypeArguments="s:Exception">
+            <ActivityAction.Argument>
+              <DelegateInArgument x:TypeArguments="s:Exception" Name="exception" />
+            </ActivityAction.Argument>
+            <Sequence sap:VirtualizedContainerService.HintSize="450,769" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_7">
+                <ui:LogMessage.Level>
+                  <InArgument x:TypeArguments="ui:LogLevel">
+                    <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_92">UiPath.Core.Activities.LogLevel.Error</CSharpValue>
+                  </InArgument>
+                </ui:LogMessage.Level>
+                <ui:LogMessage.Message>
+                  <InArgument x:TypeArguments="x:Object">
+                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_93">"Test case ended with exception :"+ exception.Message +" and exception source was: "+exception.Source</CSharpValue>
+                  </InArgument>
+                </ui:LogMessage.Message>
+              </ui:LogMessage>
+              <uix:NTakeScreenshot DisplayName="Take Screenshot" FileName="C:\\ExceptionScreenShots\\CCAChangeRenderingModesTest.png" FileNameMode="DateTime" sap:VirtualizedContainerService.HintSize="388,231" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" Version="V3" />
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="LogMessage_15">
+                <ui:LogMessage.Level>
+                  <InArgument x:TypeArguments="ui:LogLevel">
+                    <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_94">UiPath.Core.Activities.LogLevel.Info</CSharpValue>
+                  </InArgument>
+                </ui:LogMessage.Level>
+                <ui:LogMessage.Message>
+                  <InArgument x:TypeArguments="x:Object">
+                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_95">exception.Message</CSharpValue>
+                  </InArgument>
+                </ui:LogMessage.Message>
+              </ui:LogMessage>
+              <Rethrow sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="Rethrow_1" />
+            </Sequence>
+          </ActivityAction>
+        </Catch>
+      </TryCatch.Catches>
+      <TryCatch.Finally>
+        <Sequence sap:VirtualizedContainerService.HintSize="450,702" sap2010:WorkflowViewState.IdRef="Sequence_10">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <t:Save_Test_Data DisplayName="Save Test Data" sap:VirtualizedContainerService.HintSize="388,192" sap2010:WorkflowViewState.IdRef="Save_Test_Data_1" TestCaseData_FolderPath="C://UiPathTestAutomation/TestExecutionResults">
+            <t:Save_Test_Data.TestCaseData_FileName>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_96">TestName</CSharpValue>
+              </InArgument>
+            </t:Save_Test_Data.TestCaseData_FileName>
+            <t:Save_Test_Data.TestCaseJSONObject>
+              <InArgument x:TypeArguments="njl:JObject">
+                <CSharpValue x:TypeArguments="njl:JObject" sap2010:WorkflowViewState.IdRef="CSharpValue`1_97">JsonForLogging</CSharpValue>
+              </InArgument>
+            </t:Save_Test_Data.TestCaseJSONObject>
+          </t:Save_Test_Data>
+          <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="ReusableMethods\\CCA\\GenerateWorkflowAnalyserPercentage.xaml - Invoke Workflow File" sap:VirtualizedContainerService.HintSize="388,113" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_19" UnSafe="False" WorkflowFileName="ReusableMethods\\CCA\\GenerateWorkflowAnalyserPercentage.xaml">
+            <ui:InvokeWorkflowFile.Arguments>
+              <InArgument x:TypeArguments="ui:UiElement" x:Key="InputElement">
+                <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_98">RootWindow</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:String" x:Key="browser">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_99">WebBrowserType</CSharpValue>
+              </InArgument>
+              <InArgument x:TypeArguments="x:Boolean" x:Key="WorkflowAnalyser">
+                <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_100">WorkflowAnalyserPer</CSharpValue>
+              </InArgument>
+            </ui:InvokeWorkflowFile.Arguments>
+          </ui:InvokeWorkflowFile>
+          <acc:KillActiveChromeBrowser sap:VirtualizedContainerService.HintSize="388,141" sap2010:WorkflowViewState.IdRef="KillActiveChromeBrowser_2">
+            <acc:KillActiveChromeBrowser.BrowserCloseStatus>
+              <OutArgument x:TypeArguments="x:Boolean">
+                <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_123">AppLaunchStatus</CSharpReference>
+              </OutArgument>
+            </acc:KillActiveChromeBrowser.BrowserCloseStatus>
+            <acc:KillActiveChromeBrowser.BrowserType>
+              <InArgument x:TypeArguments="x:String">
+                <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_101">WebBrowserType</CSharpValue>
+              </InArgument>
+            </acc:KillActiveChromeBrowser.BrowserType>
+          </acc:KillActiveChromeBrowser>
+          <acal:CloseAVW_CMD sap:VirtualizedContainerService.HintSize="388,25" sap2010:WorkflowViewState.IdRef="CloseAVW_CMD_1" />
+        </Sequence>
+      </TryCatch.Finally>
+    </TryCatch>
+  </Sequence>
+</Activity>

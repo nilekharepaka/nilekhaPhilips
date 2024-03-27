@@ -1,0 +1,14 @@
+﻿{
+  "Name": "PlanningModeResultsActivateCmdFloatingIcon",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "IOcXXl_C_kaW0jKhdSz4ZQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/IOcXXl_C_kaW0jKhdSz4ZQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-01-23T13:07:40.9848258Z",
+  "Updated": "2024-01-23T13:07:40.9848258Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

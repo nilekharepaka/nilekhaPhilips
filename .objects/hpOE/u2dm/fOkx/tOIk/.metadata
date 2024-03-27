@@ -1,0 +1,14 @@
+﻿{
+  "Name": "OrientationButton",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "tOIktKRX2kuzx_DQwG821g",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/tOIktKRX2kuzx_DQwG821g",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/fOkxFK_x2UyFhKyF61sQbg",
+  "Created": "2024-01-22T10:36:29.138486Z",
+  "Updated": "2024-01-22T10:36:29.138486Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

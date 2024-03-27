@@ -1,0 +1,14 @@
+﻿{
+  "Name": "AVViewerIcon",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "XFFNZkjKY0mUDQYUJgHNoQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/XFFNZkjKY0mUDQYUJgHNoQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/OCYOHz9Y9kKH6bCHntO-Xg",
+  "Created": "2024-01-12T09:39:51.9806898Z",
+  "Updated": "2024-01-12T09:39:51.9806898Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

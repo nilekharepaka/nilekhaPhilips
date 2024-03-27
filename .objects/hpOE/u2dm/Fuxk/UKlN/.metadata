@@ -1,0 +1,14 @@
+﻿{
+  "Name": "AppCcaTab",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "UKlN4l-Br0S1J9M0N7qX5A",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/UKlN4l-Br0S1J9M0N7qX5A",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-01-18T21:04:18.6789003Z",
+  "Updated": "2024-01-18T21:04:18.6789003Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

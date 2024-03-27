@@ -1,0 +1,16 @@
+﻿{
+  "Name": "GeneralCArmAngleCardByIndex",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "S-bWu2SW3Uil7hLtUZw6Vw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/S-bWu2SW3Uil7hLtUZw6Vw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-03-12T07:24:28.963813Z",
+  "Updated": "2024-03-12T07:28:26.9592386Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

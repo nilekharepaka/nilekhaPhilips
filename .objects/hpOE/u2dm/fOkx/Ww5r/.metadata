@@ -1,0 +1,16 @@
+﻿{
+  "Name": "CloseBrowser",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "Ww5rhJOLEEiTw9x9wTgWIw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/Ww5rhJOLEEiTw9x9wTgWIw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/fOkxFK_x2UyFhKyF61sQbg",
+  "Created": "2024-01-23T05:25:20.1504334Z",
+  "Updated": "2024-01-23T05:31:29.299976Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

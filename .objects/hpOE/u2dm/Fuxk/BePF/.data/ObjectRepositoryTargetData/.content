@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-Z_pem8OsUu8F4l42FEmaA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.33.1.2850666031064781382.27307363043434903132&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" CvTextArea="408, 316, 99, 13" CvTextArgument="Planning Overview" CvType="Text" DesignTimeRectangle="408, 348, 220, 11" DesignTimeScaleFactor="1" FriendlyName="'VR Overview'" Guid="23051cc5-1571-4b6a-870d-f810ece9aa72" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAOAAAAAPCAYAAAD9P8O2AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMPSURBVGhD7Zm/a9tAFMf7H92ssUvBJaMmEzCEJoPJ4KEeggYTKB5MIArEk4e4BASpJkGRCTZEIXAgOIKGoH/n23cnyfrpdmnsQt/wQdLp3kkGfe7dO38QQoBhmMPAAjLMAWEBGeaAbAV01wmCb1a9w/ECkfIxpvPZKkWaJEheS+SDA7vav8B2sHyUZV8VIbg+hdXV9y/ieBL+pPsew/yLbAXs3WyQrmY1SQZ3Eup+aM61gOFVeU9Yp1i+kLSXlTbTPoInE4TX/XKsj2NqSxEtBvW+DPOfUy5BrSmCZAP3qLg5IMEklifZdUtAYuQpyO+ntbYukQ0nS8gkwEQfnxfob+9NEMQ+HEvA+uIiJHl11lRKYrMYmXFmKwX/PoSi9uCuO/5HQHFv5Tt2jqWf/TRHz8RZ5jcVE4wQDvyY3m87LsO8P5Ua0MKUPuLNTS+7PvegXpYY5PfbGZAyXUxifK20ERMaoyllBn3gryT0WV1scRnQUnZM50N4zzQB2EV/G+5jBO88e3YSTHOpd8ULDO9V/o67xqJ2GWJGshtxpYIqZKbfK7smDoZ5R+qbMPQxJ3mG0B9zdJvLSBgJYglJH798UZRt6GPvqOt2C6iF1QIK9BcR5J1ejmrpqW7TEp9RdnqjWDN+DgkeTNvyd8ZT+1bA34zl+HTUy+YLH9KfYv4UYU5ZX4+5nXwYZk/UBRRj+CrC4piOcXU52pRAZyFlslMZm/HHJag+P3KxkR6Getn7lGdZLU3sYVSNyWll3654oibgjrH0JKN8h/pG8C8y8aJbm56xMSK2+jPMO9IQUGD8QJnvJ9VbazevlTKaEmjRymVhBUvXUs1NmCHm66SyCdODu6bl60OIyGQy3ablp7grO7+mOu5zH/anDgE746tL0N1jCWtGtWGAYJ1PBjQxRCt9Xa0rGWY/tAQ0tV/a/kuiJYFFNdQrZcuiFqvS/BuCar/mctW6CpGmOttW2iobJwbpY9IpYHd8KeDusYrNl3LyoLowrm7GMMz+aAvIMMzeYAEZ5oCwgAxzQFhAhjkYAr8AV3Kq0gDFhyMAAAAASUVORK5CYII=" ScopeSelectorArgument="&lt;html app='*.exe' title='CardiacCT' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl aaname='{0}' tag='SPAN' parentclass='hanging-list-item-body' /&gt;", LayoutName)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <TargetAnchorable.FuzzySelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl aaname='{0}' tag='SPAN' parentclass='hanging-list-item-body' type='' class='' check:text='VR Overview' /&gt;", LayoutName)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FuzzySelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="4fd470791f83a3e74b4d130fd637736a.png" xmlns="">0vAW3gFupX0CuQCHJ6TiNcg</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="VR Overview" Name="LayoutName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

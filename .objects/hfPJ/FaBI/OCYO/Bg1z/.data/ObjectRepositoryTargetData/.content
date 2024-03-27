@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="XFo3KnSppE2yTM4uHcOQLw" Reference="_D5NUh_b5Em3iyA_6q7ZHw/Gr5T989CMEaEyaddxa6wUw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic5vw430.code1.emi.philips.com/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" DesignTimeRectangle="1070, 286, 188, 359" DesignTimeScaleFactor="1" FriendlyName="'2DViewport'" FullSelectorArgument="&lt;webctrl class='layout-manager-dropdown-body' parentid='popupLayoutViewManager' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='layout-manager-dropdown-body' parentid='popupLayoutViewManager' tag='DIV' type='' aaname='' check:innerText='View mode&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;2D&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;Slab&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;3D&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;&amp;#xD;&amp;#xA;Curve&amp;#xD;&amp;#xA;Layouts&amp;#xD;&amp;#xA;1x1&amp;#xD;&amp;#xA;2x2&amp;#xD;&amp;#xA;3x3&amp;#xD;&amp;#xA;4x4&amp;#xD;&amp;#xA;Auto&amp;#xD;&amp;#xA;1x2&amp;#xD;&amp;#xA;1x3&amp;#xD;&amp;#xA;1x4&amp;#xD;&amp;#xA;2x1&amp;#xD;&amp;#xA;2x3&amp;#xD;&amp;#xA;2x4&amp;#xD;&amp;#xA;3x1&amp;#xD;&amp;#xA;3x2&amp;#xD;&amp;#xA;3x4' /&gt;" Guid="2d6036eb-4ede-4bbd-9909-ddda3a89015b" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="47818c16c0e7d027aa53b248a28dd90b.png" xmlns="">0-s83_tHmyUWmcTmHe_XjPA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

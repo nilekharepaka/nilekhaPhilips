@@ -1,0 +1,14 @@
+﻿{
+  "Name": "Layout1x1",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "ludus8rCI0mTuE-UidbIdw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/ludus8rCI0mTuE-UidbIdw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/fOkxFK_x2UyFhKyF61sQbg",
+  "Created": "2024-01-22T09:47:05.2275252Z",
+  "Updated": "2024-01-22T09:47:05.2275252Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

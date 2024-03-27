@@ -1,0 +1,17 @@
+﻿{
+  "Name": "2DViewport",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "0YOHgzl5IUiDOiXRDPWFEQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/0YOHgzl5IUiDOiXRDPWFEQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/fOkxFK_x2UyFhKyF61sQbg",
+  "Created": "2024-01-23T09:34:44.8660657Z",
+  "Updated": "2024-01-23T10:47:15.971239Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

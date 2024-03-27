@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="6dPbTLo-kkahSx05HZTZjw" Reference="_D5NUh_b5Em3iyA_6q7ZHw/pJmzdCZVzECjadl0YHeZVw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" CvTextArea="522, 880, 22, 15" CvTextArgument="3D" CvType="Text" DesignTimeRectangle="522, 880, 22, 15" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'3D'" Guid="e2df7f04-d87d-4a13-9cfc-ef2eb1a9cd6f" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CardiacCT' /&gt;" SearchSteps="CV" TargetType="ComputerVisionBased" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="4">
+          <Target CvTextArea="522, 902, 32, 16" CvTextArgument="MIP" CvType="Text" DesignTimeRectangle="523, 902, 30, 16" ElementType="Text" FriendlyName="'MIP'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="00f548c41890c93ea5d417bf59c6ca63.png" xmlns="">0_RqFuAuEYkudxCXie8u4bw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

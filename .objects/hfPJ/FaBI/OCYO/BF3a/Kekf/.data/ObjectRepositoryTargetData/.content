@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="EZotUU5GIUuckVXZZYDOfQ" Reference="_D5NUh_b5Em3iyA_6q7ZHw/McByHbYd1Uu3dfJWb6CgLA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://192.168.58.202/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" CvTextArea="27, 235, 121, 17" CvTextArgument="Results Summary" CvType="Text" DesignTimeRectangle="25, 227, 124, 35" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'ResultsSummaryTitle'" FullSelectorArgument="&lt;webctrl class='title' parentid='PopupVALN1' tag='SPAN' aaname='Results Summary' parentclass='header-title' /&gt;" FuzzySelectorArgument="&lt;webctrl class='title' parentid='PopupVALN1' tag='SPAN' aaname='Results Summary' parentclass='header-title' type='' check:text='Results Summary' /&gt;" Guid="03aa68e6-39c1-4b0e-a307-62552c7f1900" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="7b8770f4a8fc45594c5e14cf372104b4.png" xmlns="">0TDidRz29MkC-TkVRVqmkuw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">CheckState</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

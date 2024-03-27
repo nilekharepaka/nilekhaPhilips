@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="kkPA5ZVYfkeZz6DTLpBJwg" Reference="_D5NUh_b5Em3iyA_6q7ZHw/2X69zwxjJES8Cycg90tH6w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" DesignTimeRectangle="319, 260, 636, 25" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'QuickBatchName'" FullSelectorArgument="&lt;webctrl parentid='undefined' tag='SPAN' /&gt;" Guid="6ec461c3-f1c6-495c-8e9f-0d5aa278590a" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.FuzzySelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl parentid='undefined' tag='SPAN' type='' class='pt-title finding-title' aaname='{0}' check:innerText='{0}' /&gt;", VerificationName)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FuzzySelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="79b23856de9971edaad1c1ce5509b3d7.png" xmlns="">01b17BEVZZk2oXlNwE5uaGA</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="QuickBatchSlabMode" Name="VerificationName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

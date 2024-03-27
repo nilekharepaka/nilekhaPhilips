@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="lLMcpFAo1EeoDYvId9dPjg" Reference="_D5NUh_b5Em3iyA_6q7ZHw/SH6ZqE6kKU6U6YOJbLiusQ" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" CvTextArea="1839, 292, 22, 15" CvTextArgument="2D" CvType="Text" DesignTimeRectangle="1201, 265, 58, 19" DesignTimeScaleFactor="1" FriendlyName="'SelectViewmode'" FullSelectorArgument="&lt;webctrl parentid='layoutcontainerbtn' tag='DLS-LAYOUT-CONTAINER' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='layoutcontainerbtn' tag='DLS-LAYOUT-CONTAINER' type='' class='pt-layout-container' aaname='      2D  ' /&gt;" Guid="3dd83913-729a-4d58-ac5a-64c9398bc98a" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="f043e79f11928794e5eb8660ccc54992.png" xmlns="">0fWlkfuJHx02mpu5gdk1UPA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

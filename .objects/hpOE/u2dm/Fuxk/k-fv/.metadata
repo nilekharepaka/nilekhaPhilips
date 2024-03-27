@@ -1,0 +1,16 @@
+﻿{
+  "Name": "TickMarkOnVesselNameLeftPanel",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "k-fv1nPKlE-gKjAZm4njNQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/k-fv1nPKlE-gKjAZm4njNQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-03-06T05:12:39.171485Z",
+  "Updated": "2024-03-06T05:13:51.0025931Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "FloatingBarAddBalloonIcon",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "Rvm0L10NUkKYC5xYRI4Nsw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/Rvm0L10NUkKYC5xYRI4Nsw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-14T15:29:50.0953827Z",
+  "Updated": "2024-02-14T15:30:15.6904876Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

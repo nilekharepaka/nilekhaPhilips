@@ -1,0 +1,16 @@
+﻿{
+  "Name": "DeleteStentButtonOnStentcard",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "PS1Gbd-0YUmtA4-akgQ_8A",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/PS1Gbd-0YUmtA4-akgQ_8A",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-03-07T05:43:55.5342078Z",
+  "Updated": "2024-03-07T05:44:59.873783Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

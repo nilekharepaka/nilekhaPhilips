@@ -1,0 +1,13 @@
+﻿{
+  "Name": "PreferencesButton",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "9zHQDQwPfkyv2oxWw9H5SQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/9zHQDQwPfkyv2oxWw9H5SQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/OCYOHz9Y9kKH6bCHntO-Xg",
+  "Created": "2024-03-12T07:25:35.0786133Z",
+  "Updated": "2024-03-12T07:25:35.0786133Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

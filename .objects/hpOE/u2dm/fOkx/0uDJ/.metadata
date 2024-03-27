@@ -1,0 +1,14 @@
+﻿{
+  "Name": "EyeIcon",
+  "Type": "Element",
+  "TaxonomyType": "Button",
+  "Id": "0uDJUfcB7kGPK1D6Wwp1rQ",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/0uDJUfcB7kGPK1D6Wwp1rQ",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/fOkxFK_x2UyFhKyF61sQbg",
+  "Created": "2024-01-22T09:48:17.834784Z",
+  "Updated": "2024-01-22T09:48:17.834784Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

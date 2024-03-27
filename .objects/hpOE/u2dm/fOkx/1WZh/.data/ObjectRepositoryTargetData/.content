@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="JprOvodqMkO_HDR4yBPMMQ" Reference="_D5NUh_b5Em3iyA_6q7ZHw/1WZhY4bU9kmsF9w9ONkbsA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:p="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="Lc8A3aheO0Cb1Nc6nw-GhQ" CvTextArea="1142, 805, 74, 15" CvTextArgument="Short Axis" CvType="Text" DesignTimeRectangle="1183, 744, 154, 15" DesignTimeScaleFactor="1.25" ElementType="Text" FriendlyName="'Short Axis'" Guid="172f0a07-ffa4-466c-9e5f-a4dd865eb4a3" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAJ4AAAATCAYAAABhq7R9AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAO8SURBVGhD7ZjbK31BFMf9WScPHijJg5IoyYNLQnhACrl3TpFropBLjkvux3H598bvs2rt5mxbxj4/9st6+MaevWbWnOaz12VqcrmcM5n+WgaeKRMZeKZMZOCZMlEweA0NDW59fd2VSiX3/v4uen5+dmdnZ66vr09s5ubm3PX1tWtpafk0/3+oqanJbW5uutHR0cT3cS0vL7u3tzd3enrq6uvrE22+0tDQkHt6enKTk5OJ703VKRg8Dvzh4UEOvba2VsY6Ozvd7u6um56eluffBo91WR8/Se99AenFxYW7vLx0j4+Prre3N9HOlI2CwNMD39nZSXyv+m3wOjo63P39fRB4w8PDYkvEurm5kWidZGfKRj8Cj7RKyk2yQQre1NSUu729lTT38vIi0dKfNzAwINHo9fVVbABkcXExiqT4KxaLMsZ62BwdHclamuYRqbCrqyta1xeRWFPs9vZ2xQeBHx1rbW2N5uDv7u7OnZ+fRz4U8u7ubtkTe2acMmN/f18iq843hetHqRYAAGppacm1t7d/suGQOBAOjjTM2MTEhNSFs7Oz8qy108bGhsAIBKRv0jg+sFHQGWO+rg9kzP0u4rW1tck+5+fn5Znox7zx8fHIBuCurq7cwcGB7KGnp0egm5mZkfe+L+AF4pOTkwg05rM3Ay+dgsGrq6uTYp3oBIBJkYpDKpfLctA6j3ccGhGGZw46qdjXaAOwCt7h4WG0NgoFD8h1LZ7xxceAb98O4FmvUChINNva2or8+b60XiTC+fsxpVcweL742ol6mk7X1tZknENijIjj2xMpAE+BUgh90RkT4cbGxiK71dXVCpsQ8DQ67e3tVYzrR6MwqvL5vPwGmhA/7cZ98ZdUz+8jMtOsGITplQo8FamSuo+U1dzcLIcDMFpLqdKCFwcsBDyA8K98fAEYAPr2KysrUrcBJXWcjif5IvLRwWu9CeDx32oKU1XgITrdUPD4/6tU66fHasCjeyV6UbNh7wtgSLnqm1QLcHS+x8fH8l6boO989ff3yzWN3fOlUxB4QMXBUAtpOiLNaFPgp9rvwBscHJQDC2ku4oeu48xlHvui9oy//+rqBEiIhtSg/A4A1bpOmwsiILY+eIBK06FpGnsaF9YaGRmp8GEKUxB4jY2NkqI4KL3S0OaCcT38EPBQyHVKEnhoYWEh2gP1ll+z0bUCNXD7c1TAxp0e9R+NQvFfQ+F3pewB2IApDh4fBWuzX3wDHZDqnk0/U9Wp1mRKIwPPlIlq/Ds3k+mvZBHPlIFy7gPfJt3eEVYt/gAAAABJRU5ErkJggg==" Reference="_D5NUh_b5Em3iyA_6q7ZHw/1WZhY4bU9kmsF9w9ONkbsA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <TargetAnchorable.FullSelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl tag='DLS-POPUP-CONTAINER' idx='2' /&gt;&lt;webctrl aaname='{0}' tag='LABEL' /&gt;", OrientationName)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FullSelectorArgument>
+      <TargetAnchorable.FuzzySelectorArgument>
+        <p:InArgument x:TypeArguments="x:String">
+          <p:CSharpValue x:TypeArguments="x:String">string.Format("&lt;webctrl tag='DLS-POPUP-CONTAINER' /&gt;&lt;webctrl aaname='{0}' tag='LABEL' type='' class='ng-star-inserted' check:text='{0}' /&gt;", OrientationName)</p:CSharpValue>
+        </p:InArgument>
+      </TargetAnchorable.FuzzySelectorArgument>
+      <imageRef attrName="InformativeScreenshot" originalValue="a80e03e7a88666748acfe80b399de895.png" xmlns="">0xfDnWG3IS0aGsL8TOofkSw</imageRef>
+    </TargetAnchorable>
+    <scg:List x:TypeArguments="ObjectRepositoryVariableData" x:Key="Variables" Capacity="1">
+      <ObjectRepositoryVariableData DefaultValue="Short Axis" Name="OrientationName" />
+    </scg:List>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "MinimizeLeftPanelBtn",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "W_q43xp16E-mp-VVPWb_hA",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/W_q43xp16E-mp-VVPWb_hA",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-22T17:16:55.2211257Z",
+  "Updated": "2024-02-22T17:18:02.7992633Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

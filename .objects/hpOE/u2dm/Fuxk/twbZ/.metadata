@@ -1,0 +1,17 @@
+﻿{
+  "Name": "EditCurveFloatingIcon",
+  "Type": "Element",
+  "TaxonomyType": "Icon",
+  "Id": "twbZ_9jOYkSDy-2fSfaeLw",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/twbZ_9jOYkSDy-2fSfaeLw",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-05T14:36:28.544196Z",
+  "Updated": "2024-02-05T14:36:54.6285581Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="OsPEpI0Ruk66jKJWG2BYVg" Reference="_D5NUh_b5Em3iyA_6q7ZHw/T7ixZcKxdEmwD53AKVxMmA" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" DesignTimeRectangle="10, 220, 108, 22" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Task Guidance'" FullSelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' /&gt;" FuzzySelectorArgument="&lt;webctrl class='suite-application-name' parentid='PopupVALN2' tag='SPAN' aaname='Task Guidance' type='' check:text='Task Guidance' /&gt;" Guid="0c13cc10-d45c-46a5-96f4-f915afa69491" ImageBase64="" ScopeSelectorArgument="&lt;html app='*.exe' title='*' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="deac78f82e2ce1e6a4549c50542229b4.png" xmlns="">0GkytcKbQtk-I_z6jwSi31Q</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">None</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,16 @@
+﻿{
+  "Name": "ViewDropdownOptionsWithName",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "N1LDpvuCX0Wfh9bLdxbN1A",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/N1LDpvuCX0Wfh9bLdxbN1A",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-14T08:23:17.8450716Z",
+  "Updated": "2024-02-14T08:27:59.1427866Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

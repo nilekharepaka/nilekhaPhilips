@@ -1,0 +1,16 @@
+﻿{
+  "Name": "CArmLabelLeftPanel",
+  "Type": "Element",
+  "TaxonomyType": "Label",
+  "Id": "H5irYdON6EOaZK7wOhiQ8w",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/H5irYdON6EOaZK7wOhiQ8w",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/FuxkBz0uM0inN6k-q2TfLQ",
+  "Created": "2024-02-22T17:43:30.2356558Z",
+  "Updated": "2024-02-22T17:44:39.65923Z",
+  "CreatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="NOkQRxcn7kWfujL1eWEv-w" Reference="_D5NUh_b5Em3iyA_6q7ZHw/IWQKTNOM3Eq0uoncX67VHw" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="q4dMT5EpdEijyCbPOff03w" DesignTimeRectangle="318, 342, 660, 440" DesignTimeScaleFactor="1" FriendlyName="'DIV FVI0'" FullSelectorArgument="&lt;webctrl id='FVI*' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl id='FVI0' tag='DIV' type='' class='viewer-image ng-star-inserted' aaname='' /&gt;" Guid="6c691519-c8a1-4af9-bcf1-16ab386cbf62" ImageBase64="" Reference="_D5NUh_b5Em3iyA_6q7ZHw/IWQKTNOM3Eq0uoncX67VHw" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="97ac7c194cf1e3889ec4d2f96d1cd6e9.png" xmlns="">0AphllNn5i02Zx99y_XFKvw</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TakeScreenshot</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

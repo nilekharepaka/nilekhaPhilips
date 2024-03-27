@@ -1,0 +1,17 @@
+﻿{
+  "Name": "Viewport",
+  "Type": "Element",
+  "TaxonomyType": "Element",
+  "Id": "ohaZ_oG4ykag2znn3ZhfzA",
+  "Reference": "_D5NUh_b5Em3iyA_6q7ZHw/ohaZ_oG4ykag2znn3ZhfzA",
+  "ParentRef": "_D5NUh_b5Em3iyA_6q7ZHw/OCYOHz9Y9kKH6bCHntO-Xg",
+  "Created": "2024-01-12T09:14:55.9520336Z",
+  "Updated": "2024-01-31T10:39:56.9265913Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=23.4.8.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=23.10.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

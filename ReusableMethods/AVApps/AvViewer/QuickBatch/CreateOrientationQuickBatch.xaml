@@ -1,0 +1,509 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="ChangeOrientations" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:i="clr-namespace:ImageUtilities;assembly=ImageUtilities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="InputElement" Type="InArgument(ui:UiElement)" />
+    <x:Property Name="HasOrientationNameAppeared" Type="OutArgument(x:Boolean)" />
+    <x:Property Name="TimeToCaptureOrientationBatch" Type="InArgument(x:Double)" />
+    <x:Property Name="Status" Type="OutArgument(x:Boolean)" />
+  </x:Members>
+  <this:ChangeOrientations.TimeToCaptureOrientationBatch>
+    <InArgument x:TypeArguments="x:Double" />
+  </this:ChangeOrientations.TimeToCaptureOrientationBatch>
+  <sap2010:ExpressionActivityEditor.ExpressionActivityEditor>C#</sap2010:ExpressionActivityEditor.ExpressionActivityEditor>
+  <sap:VirtualizedContainerService.HintSize>1164,5706</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>ActivityBuilder_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Text</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Testing.Activities</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>ImageUtilities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>Microsoft.CSharp</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel.Activities</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>ImageUtilities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="ChangeOrientations" sap:VirtualizedContainerService.HintSize="1174,5641" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:String" Default="Sagittal" Name="OrientationName" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application/Browser" sap:VirtualizedContainerService.HintSize="1112,5530" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1078,5393" sap2010:WorkflowViewState.IdRef="Sequence_25">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="1016,5278" sap2010:WorkflowViewState.IdRef="Sequence_16">
+              <Sequence.Variables>
+                <Variable x:TypeArguments="x:String" Default="2" Name="ViewportIndex" />
+                <Variable x:TypeArguments="x:String" Default="SagittalQuickBatch" Name="OrientationVerificationName" />
+                <Variable x:TypeArguments="x:String" Default="SagittalQuickBatch" Name="QuickBatchOrientation" />
+                <Variable x:TypeArguments="x:String" Name="ViewportBeforeOrientation">
+                  <Variable.Default>
+                    <Literal x:TypeArguments="x:String">C:\UiPathTestAutomation\Images\\ViewportBeforeOrientation.png</Literal>
+                  </Variable.Default>
+                </Variable>
+                <Variable x:TypeArguments="x:String" Name="SagittalViewport">
+                  <Variable.Default>
+                    <Literal x:TypeArguments="x:String">C:\UiPathTestAutomation\Images\\SagittalViewport.png</Literal>
+                  </Variable.Default>
+                </Variable>
+              </Sequence.Variables>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NTakeScreenshot DisplayName="Take Screenshot 'Viewport'" FileNameMode="None" sap:VirtualizedContainerService.HintSize="954,233" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_1" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NTakeScreenshot.FileName>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_139">ViewportBeforeOrientation</CSharpValue>
+                  </InArgument>
+                </uix:NTakeScreenshot.FileName>
+                <uix:NTakeScreenshot.Target>
+                  <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="ItYNtohflUSPofTyluhZmg" DesignTimeRectangle="265, 243, 679, 740" DesignTimeScaleFactor="1" FriendlyName="'Viewport'" FullSelectorArgument="&lt;webctrl parentid='*' tag='CANVAS' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='*' tag='CANVAS' type='' class='annotationsCanvas burnedAnnotations' aaname='' /&gt;" Guid="25835191-5691-4d2e-afd3-1819c1fb6471"   InformativeScreenshot="38acc9bdafdeb480537fee54a6f1d368.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/ohaZ_oG4ykag2znn3ZhfzA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTakeScreenshot.Target>
+              </uix:NTakeScreenshot>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Viewport'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_15" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="ItYNtohflUSPofTyluhZmg" DesignTimeRectangle="265, 243, 679, 740" DesignTimeScaleFactor="1" FriendlyName="'Viewport'" FullSelectorArgument="&lt;webctrl parentid='*' tag='CANVAS' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='*' tag='CANVAS' type='' class='annotationsCanvas burnedAnnotations' aaname='' /&gt;" Guid="25835191-5691-4d2e-afd3-1819c1fb6471"   InformativeScreenshot="38acc9bdafdeb480537fee54a6f1d368.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/ohaZ_oG4ykag2znn3ZhfzA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State 'Dropdown'" sap:VirtualizedContainerService.HintSize="954,529" sap2010:WorkflowViewState.IdRef="NCheckState_7" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_17">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OrientationOption'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://ingbtcpic5vw430.code1.emi.philips.com/gfn/app/AV/index?study_ids=1.3.46.670589.33.1.2850666031064781382.27307363043434903132&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="2Pfj1BG7tk6gF6NNxgmYBA" CvTextArea="856, 606, 83, 15" CvTextArgument="Orientation" CvType="Text" DesignTimeRectangle="598, 657, 152, 22" DesignTimeScaleFactor="1" FriendlyName="'OrientationOption'" FullSelectorArgument="&lt;webctrl idx='2' tabindex='0' tag='DLS-MENU-ITEM' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tabindex='0' tag='DLS-MENU-ITEM' class='pt-menu-item ng-star-inserted' aaname='                                ' check:innerText='Orientation' /&gt;" Guid="f562ad03-e104-4015-8d7d-6984bc9e3cc3"   InformativeScreenshot="d9834a0956e0285126d5579696b11a3a.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/oXb_pjvSVEG-PLAeYRfA2g" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_11">
+                      <ui:LogMessage.Level>
+                        <InArgument x:TypeArguments="ui:LogLevel">
+                          <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_109">UiPath.Core.Activities.LogLevel.Error</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Level>
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_108">"Orientation drop down did not open"</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="http://ingbtcpic5vw430.code1.emi.philips.com/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="CCHCtfDx7UuP0c0svrZIoA" DesignTimeRectangle="611, 652, 154, 244" DesignTimeScaleFactor="1" FriendlyName="'Dropdown'" FullSelectorArgument="&lt;webctrl tag='SECTION' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SECTION' type='' class='pt-menu ng-tns-c50-79 grayScroll' aaname='                              ' check:innerText='Image&amp;#xD;&amp;#xA;Orientation&amp;#xD;&amp;#xA;Measurements&amp;#xD;&amp;#xA;Annotations&amp;#xD;&amp;#xA;Findings&amp;#xD;&amp;#xA;Batch Creation&amp;#xD;&amp;#xA;Ava&amp;#xD;&amp;#xA;AV Viewer application&amp;#xD;&amp;#xA;Cca' /&gt;" Guid="f924bbb0-fd05-4aa4-9c78-a9940790fc0d" InformativeScreenshot="7870e85d48495dbe6033fa0ff3785afc.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/3W7ee-PZgEG7134KFPvxcA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SagittalOrientationName'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_17" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://ingbtcpic5vw430.code1.emi.philips.com/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="L3t15wRqu0KXppdfbHPe5Q" DesignTimeRectangle="853, 614, 53, 11" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'SagittalOrientationName'" Guid="6ee5b2f3-b6d3-4ec0-9a0f-3bc460bbefee" InformativeScreenshot="dc3df45e1fba540e475ca497336fa286.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/kZELwnnfD0KBV6rsI4Kv9A" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.FullSelectorArgument>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_110">string.Format("&lt;webctrl aaname='{0}' tag='LABEL' /&gt;", OrientationName)</CSharpValue>
+                      </InArgument>
+                    </uix:TargetAnchorable.FullSelectorArgument>
+                    <uix:TargetAnchorable.FuzzySelectorArgument>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_111">string.Format("&lt;webctrl aaname='{0}' parentid='undefined' tag='LABEL' type='' class='ng-star-inserted' check:innerText='{0}' /&gt;", OrientationName)</CSharpValue>
+                      </InArgument>
+                    </uix:TargetAnchorable.FuzzySelectorArgument>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTakeScreenshot DisplayName="Take Screenshot 'Viewport'" FileNameMode="None" sap:VirtualizedContainerService.HintSize="954,233" sap2010:WorkflowViewState.IdRef="NTakeScreenshot_2" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NTakeScreenshot.FileName>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_140">SagittalViewport</CSharpValue>
+                  </InArgument>
+                </uix:NTakeScreenshot.FileName>
+                <uix:NTakeScreenshot.Target>
+                  <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="ItYNtohflUSPofTyluhZmg" DesignTimeRectangle="265, 243, 679, 740" DesignTimeScaleFactor="1" FriendlyName="'Viewport'" FullSelectorArgument="&lt;webctrl parentid='*' tag='CANVAS' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='*' tag='CANVAS' type='' class='annotationsCanvas burnedAnnotations' aaname='' /&gt;" Guid="25835191-5691-4d2e-afd3-1819c1fb6471"   InformativeScreenshot="38acc9bdafdeb480537fee54a6f1d368.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/ohaZ_oG4ykag2znn3ZhfzA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NTakeScreenshot.Target>
+              </uix:NTakeScreenshot>
+              <i:CompareImages DisplayName="Compare images" sap:VirtualizedContainerService.HintSize="954,25" sap2010:WorkflowViewState.IdRef="CompareImages_1" Tollerance="0.03">
+                <i:CompareImages.InputImagePath1>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_141">ViewportBeforeOrientation</CSharpValue>
+                  </InArgument>
+                </i:CompareImages.InputImagePath1>
+                <i:CompareImages.InputImagePath2>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_142">SagittalViewport</CSharpValue>
+                  </InArgument>
+                </i:CompareImages.InputImagePath2>
+                <i:CompareImages.Result>
+                  <OutArgument x:TypeArguments="x:Boolean">
+                    <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_7">Status</CSharpReference>
+                  </OutArgument>
+                </i:CompareImages.Result>
+              </i:CompareImages>
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="954,143" sap2010:WorkflowViewState.IdRef="LogMessage_17">
+                <ui:LogMessage.Message>
+                  <InArgument x:TypeArguments="x:Object">
+                    <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_143">"Image comparision : "+Status+" hence orientation has been changed to Sagittal."</CSharpValue>
+                  </InArgument>
+                </ui:LogMessage.Message>
+              </ui:LogMessage>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Viewport'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_18" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Right" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="ItYNtohflUSPofTyluhZmg" DesignTimeRectangle="265, 243, 679, 740" DesignTimeScaleFactor="1" FriendlyName="'Viewport'" FullSelectorArgument="&lt;webctrl parentid='*' tag='CANVAS' idx='2' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='*' tag='CANVAS' type='' class='annotationsCanvas burnedAnnotations' aaname='' /&gt;" Guid="25835191-5691-4d2e-afd3-1819c1fb6471"   InformativeScreenshot="38acc9bdafdeb480537fee54a6f1d368.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/ohaZ_oG4ykag2znn3ZhfzA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State 'Dropdown'" sap:VirtualizedContainerService.HintSize="954,489" sap2010:WorkflowViewState.IdRef="NCheckState_8" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,272" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'BatchCreationOption'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NClick_19" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="xSjgIcT58U-ANjCnsy9_Ig" DesignTimeRectangle="649, 674, 152, 22" DesignTimeScaleFactor="1" FriendlyName="'BatchCreationOption'" FullSelectorArgument="&lt;webctrl tag='DLS-MENU-ITEM' idx='6' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DLS-MENU-ITEM' type='' class='pt-menu-item ng-star-inserted' aaname='' check:text='Scroll' /&gt;" Guid="ecfd2741-fcd2-4ecf-8050-fbb16f1a7b60" InformativeScreenshot="ca0068dee00119465a22b985ba692f90.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/0dBfTYf7X0-C3EzJ88CA8Q" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_20">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_12">
+                      <ui:LogMessage.Level>
+                        <InArgument x:TypeArguments="ui:LogLevel">
+                          <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_113">UiPath.Core.Activities.LogLevel.Error</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Level>
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_112">"Different orientations down does not appear"</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="http://ingbtcpic5vw430.code1.emi.philips.com/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="CCHCtfDx7UuP0c0svrZIoA" DesignTimeRectangle="611, 652, 154, 244" DesignTimeScaleFactor="1" FriendlyName="'Dropdown'" FullSelectorArgument="&lt;webctrl tag='SECTION' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='SECTION' type='' class='pt-menu ng-tns-c50-79 grayScroll' aaname='                              ' check:innerText='Image&amp;#xD;&amp;#xA;Orientation&amp;#xD;&amp;#xA;Measurements&amp;#xD;&amp;#xA;Annotations&amp;#xD;&amp;#xA;Findings&amp;#xD;&amp;#xA;Batch Creation&amp;#xD;&amp;#xA;Ava&amp;#xD;&amp;#xA;AV Viewer application&amp;#xD;&amp;#xA;Cca' /&gt;" Guid="f924bbb0-fd05-4aa4-9c78-a9940790fc0d" InformativeScreenshot="7870e85d48495dbe6033fa0ff3785afc.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/3W7ee-PZgEG7134KFPvxcA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'QuickBatch'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_20" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://ingbtcpic6vwp78.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.2420231978979210309.25594691953770140495&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="c3chKNo5PUe2116qKE1pQQ" DesignTimeRectangle="802, 675, 124, 22" DesignTimeScaleFactor="1" FriendlyName="'QuickBatch'" FullSelectorArgument="&lt;webctrl tag='DLS-MENU-ITEM' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DLS-MENU-ITEM' type='' class='pt-menu-item ng-star-inserted' aaname='                                ' check:innerText='Quick Batch' /&gt;" Guid="cb62d992-3b86-428e-8d7c-b9935af873be" InformativeScreenshot="b6f9161c8b69bcdc36ca03e933edc444.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/73jsHLmi30uS5rb1v5WoLQ" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'InputBoxCancelIcon'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_21" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="lr_oiPVLc0y77iH3o3NzVw" CvElementArea="556, 469, 277, 29" CvTextArea="565, 478, 80, 11" CvTextArgument="Batch-5:32 PM" CvType="InputBox" DesignTimeRectangle="810, 476, 17, 17" DesignTimeScaleFactor="1" FriendlyName="'InputBoxCancelIcon'" FullSelectorArgument="&lt;webctrl parentid='undefined' tag='DLS-ICON' class='icon-dls-cross-circle pt-icon' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' parentid='undefined' tag='DLS-ICON' class='icon-dls-cross-circle pt-icon' aaname='' /&gt;" Guid="a4dd02a1-848e-464f-aaaa-c871c3408947" InformativeScreenshot="c500fc96875d62f9e435edba124f0dc8.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/2uaEcoSv9U-9jIo7hX8XcA" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'BatchInputBox'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="954,218" sap2010:WorkflowViewState.IdRef="NTypeInto_5" InteractionMode="HardwareEvents" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NTypeInto.Target>
+                  <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="PsleDoq4d0ut-TBhj6VoFA" DesignTimeRectangle="557, 493, 275, 28" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'BatchInputBox'" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' /&gt;" Guid="4e19fdd0-63cb-4389-bbcc-2d0f0b98d1ff" InformativeScreenshot="63a2e5c93a3136c61b55edf92e0ac643.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/qK7dSdznyEG1206oKvDNPw" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.FuzzySelectorArgument>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_136">string.Format("&lt;webctrl tag='INPUT' type='text' aaname='{0}' /&gt;", QuickBatchOrientation)</CSharpValue>
+                      </InArgument>
+                    </uix:TargetAnchorable.FuzzySelectorArgument>
+                  </uix:TargetAnchorable>
+                </uix:NTypeInto.Target>
+                <uix:NTypeInto.Text>
+                  <InArgument x:TypeArguments="x:String">
+                    <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_137">QuickBatchOrientation</CSharpValue>
+                  </InArgument>
+                </uix:NTypeInto.Text>
+              </uix:NTypeInto>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'CreateFindingButton'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_22" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="J4-sPjPYukOncgZly848Jg" CvElementArea="740, 633, 89, 31" CvTextArea="747, 642, 75, 13" CvTextArgument="Create finding" CvType="Button" DesignTimeRectangle="748, 641, 73, 15" DesignTimeScaleFactor="1" FriendlyName="'CreateFindingButton'" FullSelectorArgument="&lt;webctrl aaname='     Create finding ' parentid='undefined' tag='DLS-LAYOUT-CONTAINER' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='     Create finding ' parentid='undefined' tag='DLS-LAYOUT-CONTAINER' type='' class='pt-layout-container' check:innerText='Create finding' /&gt;" Guid="870448ee-3683-4fe4-af09-135e7fe70fc7" InformativeScreenshot="ffe60ff30cf602c7af0e4ffbd2702842.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/y_R6o3RqlEqvh0vg4nn9bw" ScopeSelectorArgument="&lt;html app='chrome.exe' title='CardioVascular' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'FindingDashboardIcon'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_23" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NClick.DelayBefore>
+                  <InArgument x:TypeArguments="x:Double">
+                    <CSharpValue x:TypeArguments="x:Double" sap2010:WorkflowViewState.IdRef="CSharpValue`1_138">TimeToCaptureOrientationBatch</CSharpValue>
+                  </InArgument>
+                </uix:NClick.DelayBefore>
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://ingbtcpic5vw430.code1.emi.philips.com/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="5duQobMUp0msW4GqN4pRKQ" DesignTimeRectangle="177, 194, 42, 33" DesignTimeScaleFactor="1" FriendlyName="'FindingDashboardIcon'" FullSelectorArgument="&lt;webctrl class='pt-list-item' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='pt-list-item' tag='A' type='' aaname='' /&gt;" Guid="0458203f-1a6b-4513-b1ea-ebe5ec42e251" InformativeScreenshot="3c2909c1214822045daac8714a8cf87b.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/BF3aTdA8rkmY18F8gU64kg" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NCheckState DisplayName="Check App State 'ResultsSummaryTitle'" sap:VirtualizedContainerService.HintSize="954,475" sap2010:WorkflowViewState.IdRef="NCheckState_9" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Timeout="10" Version="V3">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_21">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_13">
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_116">"FD opened successfully"</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_22">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_14">
+                      <ui:LogMessage.Level>
+                        <InArgument x:TypeArguments="ui:LogLevel">
+                          <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_118">UiPath.Core.Activities.LogLevel.Error</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Level>
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_117">"FD did not open"</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="EZotUU5GIUuckVXZZYDOfQ" CvTextArea="27, 235, 121, 17" CvTextArgument="Results Summary" CvType="Text" DesignTimeRectangle="25, 227, 124, 35" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'ResultsSummaryTitle'" FullSelectorArgument="&lt;webctrl class='title' parentid='PopupVALN1' tag='SPAN' aaname='Results Summary' parentclass='header-title' /&gt;" FuzzySelectorArgument="&lt;webctrl class='title' parentid='PopupVALN1' tag='SPAN' aaname='Results Summary' parentclass='header-title' type='' check:text='Results Summary' /&gt;" Guid="03aa68e6-39c1-4b0e-a307-62552c7f1900" InformativeScreenshot="7b8770f4a8fc45594c5e14cf372104b4.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/Kekfqj_CykWaPmGFoOEpdQ" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive" />
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NCheckState DisplayName="Check App State 'FindingSagittalQuickBatch'" sap:VirtualizedContainerService.HintSize="954,475" sap2010:WorkflowViewState.IdRef="NCheckState_10" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Timeout="40" Version="V3">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_15">
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_119">"Found "+OrientationVerificationName</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,258" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="388,143" sap2010:WorkflowViewState.IdRef="LogMessage_16">
+                      <ui:LogMessage.Level>
+                        <InArgument x:TypeArguments="ui:LogLevel">
+                          <CSharpValue x:TypeArguments="ui:LogLevel" sap2010:WorkflowViewState.IdRef="CSharpValue`1_121">UiPath.Core.Activities.LogLevel.Error</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Level>
+                      <ui:LogMessage.Message>
+                        <InArgument x:TypeArguments="x:Object">
+                          <CSharpValue x:TypeArguments="x:Object" sap2010:WorkflowViewState.IdRef="CSharpValue`1_120">"Could not find "+OrientationVerificationName</CSharpValue>
+                        </InArgument>
+                      </ui:LogMessage.Message>
+                    </ui:LogMessage>
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="zGJmwJt7nkmH-F2O1fcoSw" CvTextArea="322, 378, 103, 12" CvTextArgument="SagittalQuickBatch" CvType="Text" DesignTimeRectangle="324, 379, 100, 11" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'FindingSagittalQuickBatch'" Guid="edbf6574-4b54-4e4a-8b0c-7f34b7715552" InformativeScreenshot="112aaa53016a1661d03467d8b995c0cb.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/2Ht0qFtMIEmoLFUI7Bfveg" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.FullSelectorArgument>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_122">string.Format("&lt;webctrl aaname='{0}' parentid='PopupVALN1' tag='SPAN' /&gt;", OrientationVerificationName)</CSharpValue>
+                      </InArgument>
+                    </uix:TargetAnchorable.FullSelectorArgument>
+                    <uix:TargetAnchorable.FuzzySelectorArgument>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_123">string.Format("&lt;webctrl aaname='{0}' parentid='PopupVALN1' tag='SPAN' type='' class='truncate finding-title' check:text='SagittalQuickBatch' /&gt;", OrientationVerificationName)</CSharpValue>
+                      </InArgument>
+                    </uix:TargetAnchorable.FuzzySelectorArgument>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OrientationBatchImage'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_24" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://ingbtcpic5vw430.code1.emi.philips.com/gfn/app/CardiacCT/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="oV2WWAXDuEWtKC4aCdW8Yg" DesignTimeRectangle="318, 356, 270, 176" DesignTimeScaleFactor="1" FriendlyName="'OrientationBatchImage'" FuzzySelectorArgument="&lt;webctrl class='finding-card-image' tag='DIV' type='' aaname='' /&gt;" Guid="34fcc319-b5bd-498a-9026-6ce901ca02d8" InformativeScreenshot="e52caebc8b960b24212b0f55f1f6e172.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/FbwR8sgZD0qPQ_tIIwZBYw" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.FullSelectorArgument>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_124">string.Format("&lt;webctrl class='finding-card-image' tag='DIV' idx='{0}' /&gt;", ViewportIndex)</CSharpValue>
+                      </InArgument>
+                    </uix:TargetAnchorable.FullSelectorArgument>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'SagittalQuickBatch'" sap:VirtualizedContainerService.HintSize="954,157" sap2010:WorkflowViewState.IdRef="NClick_25" InteractionMode="HardwareEvents" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="18ba96e8-5d03-4638-b456-caa90739ee65" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="http://192.168.58.202/gfn/app/CardioVascular/index?study_ids=1.3.46.670589.50.2.241550952205260105.28825143372941924371&amp;device_id=dbcbe8f6-75a3-48f5-aafc-26a0b835099d" ContentHash="tEhe1myBA06fZKe1MvkuxA" CvTextArea="316, 281, 164, 18" CvTextArgument="SagittalQuickBatch" CvType="Text" DesignTimeRectangle="319, 282, 636, 25" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'SagittalQuickBatch'" Guid="99ddc96f-58c1-43a2-b323-22491addf98b" InformativeScreenshot="724232152236414c7910fabcef3f70b1.png" Reference="_D5NUh_b5Em3iyA_6q7ZHw/vYka8Nb7DEOHnI63I88qUw" ScopeSelectorArgument="&lt;html app='*.exe' /&gt;" SearchSteps="Selector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.FullSelectorArgument>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_125">string.Format("&lt;webctrl tag='SPAN' aaname='{0}' parentclass='pt-dialog-header' /&gt;", OrientationVerificationName)</CSharpValue>
+                      </InArgument>
+                    </uix:TargetAnchorable.FullSelectorArgument>
+                    <uix:TargetAnchorable.FuzzySelectorArgument>
+                      <InArgument x:TypeArguments="x:String">
+                        <CSharpValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="CSharpValue`1_126">string.Format("&lt;webctrl tag='SPAN' aaname='{0}' parentclass='pt-dialog-header' type='' class='pt-title finding-title' check:text='SagittalQuickBatch' /&gt;", OrientationVerificationName)</CSharpValue>
+                      </InArgument>
+                    </uix:TargetAnchorable.FuzzySelectorArgument>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <Assign sap:VirtualizedContainerService.HintSize="954,82" sap2010:WorkflowViewState.IdRef="Assign_2">
+                <Assign.To>
+                  <OutArgument x:TypeArguments="x:Boolean">
+                    <CSharpReference x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpReference`1_6">HasOrientationNameAppeared</CSharpReference>
+                  </OutArgument>
+                </Assign.To>
+                <Assign.Value>
+                  <InArgument x:TypeArguments="x:Boolean">
+                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_127">OrientationVerificationName == QuickBatchOrientation</CSharpValue>
+                  </InArgument>
+                </Assign.Value>
+              </Assign>
+              <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" sap:VirtualizedContainerService.HintSize="954,90" sap2010:WorkflowViewState.IdRef="VerifyExpression_2" OutputMessageFormat="Orientation Batch has been sucessfully created." TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False">
+                <uta:VerifyExpression.Expression>
+                  <InArgument x:TypeArguments="x:Boolean">
+                    <CSharpValue x:TypeArguments="x:Boolean" sap2010:WorkflowViewState.IdRef="CSharpValue`1_128">HasOrientationNameAppeared== true</CSharpValue>
+                  </InArgument>
+                </uta:VerifyExpression.Expression>
+              </uta:VerifyExpression>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.InUiElement>
+        <InArgument x:TypeArguments="ui:UiElement">
+          <CSharpValue x:TypeArguments="ui:UiElement" sap2010:WorkflowViewState.IdRef="CSharpValue`1_129">InputElement</CSharpValue>
+        </InArgument>
+      </uix:NApplicationCard.InUiElement>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 0, 0" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
